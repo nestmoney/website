@@ -8,8 +8,8 @@ const socials = [
 
 const Footer = () => {
   return (
-    <div className="bg-secondary w-full h-[366px] md:h-[265px] md:px-[80px]  text-secondary-text flex justify-center text-[12px]">
-      <div className="site-container mx-auto grid grid-cols-1 md:grid-cols-3 place-content-center w-full space-y-[32px]">
+    <div className="bg-secondary w-full h-[366px] md:h-[265px] md:px-[80px]  text-secondary-text flex justify-center text-[12px] md:text-[14px]">
+      <div className="site-container mx-auto grid grid-cols-1 md:grid-cols-3 place-content-center w-full space-y-[32px] ">
         <div className="space-y-1">
           <p className="font-bold">Contact us</p>
           <p>support@nestmoney.in</p>

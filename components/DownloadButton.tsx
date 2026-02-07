@@ -22,11 +22,18 @@ const DownloadBtn = () => {
           alt="Google Play"
           width={135}
           height={40}
+          className="w-[108px] md:w-[134px]"
         />
       )}
 
       {(device === "desktop" || device === "ios") && (
-        <Image src="/appStore.svg" alt="App Store" width={135} height={40} />
+        <Image
+          src="/appStore.svg"
+          alt="App Store"
+          width={135}
+          height={40}
+          className="w-[108px] md:w-[134px]"
+        />
       )}
     </div>
   );

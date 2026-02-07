@@ -11,11 +11,11 @@ const Download = () => {
           width={600}
           height={82}
           alt="logo of nest money"
-          className="w-[260px] "
+          className="w-[260px] md:w-[400px] lg:w-[600px] "
         ></Image>
         <DownloadBtn />
       </div>
-      <p className="flex">
+      <p className="flex text-[12px] md:text-[19px]">
         Crafted with
         <Image
           src={"/heart.svg"}
