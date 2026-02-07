@@ -29,13 +29,37 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex text-[18px] space-x-[40px] text-secondary">
-          <a href="#about" className="nav-link">
+          <a
+            href="#about"
+            className="relative cursor-pointer inline-block
+    after:absolute after:left-0 after:-bottom-1
+    after:h-[2px] after:w-0
+    after:bg-secondary
+    after:transition-all after:duration-300
+    hover:after:w-full"
+          >
             About
           </a>
-          <a href="#features" className="nav-link">
+          <a
+            href="#features"
+            className="relative cursor-pointer inline-block
+    after:absolute after:left-0 after:-bottom-1
+    after:h-[2px] after:w-0
+    after:bg-secondary
+    after:transition-all after:duration-300
+    hover:after:w-full"
+          >
             Features
           </a>
-          <a href="#links" className="nav-link">
+          <a
+            href="#links"
+            className="relative cursor-pointer inline-block
+    after:absolute after:left-0 after:-bottom-1
+    after:h-[2px] after:w-0
+    after:bg-secondary
+    after:transition-all after:duration-300
+    hover:after:w-full"
+          >
             Links
           </a>
         </div>
