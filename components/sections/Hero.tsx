@@ -4,8 +4,8 @@ import DownloadBtn from "../DownloadButton";
 const Hero = () => {
   return (
     <div className="h-screen py-[73px]">
-      <div className="h-[90%] flex flex-col items-center">
-        <p className="font-bold text-[48px] text-secondary pb-[32px]">
+      <div className="h-[419px] md:h-[436px] lg:h-[544px] xl:[638px] flex flex-col items-center">
+        <p className="font-bold text-[24px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-[32px] text-center">
           A home for your{" "}
           <span className="text-primary-blue">family finances</span>
         </p>
