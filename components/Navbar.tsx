@@ -68,10 +68,14 @@ const Navbar = () => {
               : "-translate-y-6 opacity-0 scale-95 pointer-events-none"
           }`}
         >
-          <ul className="flex flex-col items-center space-y-6 py-6 text-secondary text-[18px]">
+          <ul className="flex flex-col w-full py-6 text-secondary text-[18px]">
             {["about", "features", "links"].map((item) => (
-              <li key={item}>
-                <Link href={`/#${item}`} onClick={() => setOpen(false)}>
+              <li key={item} className="w-full">
+                <Link
+                  href={`/#${item}`}
+                  onClick={() => setOpen(false)}
+                  className="block w-full text-center py-4 hover:bg-gray-100 transition-colors"
+                >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </Link>
               </li>
