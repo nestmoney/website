@@ -6,7 +6,7 @@ const Features = () => {
       <section id="features" className="scroll-mt-[80px]">
         <h2
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
-      font-semibold text-primary-blue text-center "
+      font-semibold text-primary-blue text-center mb-10"
         >
           Monthly essentials
         </h2>
