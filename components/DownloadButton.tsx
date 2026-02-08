@@ -15,7 +15,7 @@ const DownloadBtn = () => {
   }, []);
 
   return (
-    <div className="flex space-x-[16px]">
+    <div className="flex space-x-[16px] ">
       {(device === "desktop" || device === "android") && (
         <Image
           src="/googlePlay.svg"
