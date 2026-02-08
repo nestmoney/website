@@ -81,17 +81,5 @@ nestmoney/
 └── tsconfig.json     # TypeScript configuration
 ```
 
-## 📋 Features Planned
 
-- QR code generation based on operating system
-- Floating assets similar to SuperFam
-- Real-time financial data
-- Secure authentication
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
