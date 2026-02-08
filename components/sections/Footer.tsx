@@ -10,27 +10,31 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary w-full py-12 md:py-16 text-secondary-text flex justify-center text-[12px] md:text-[14px]">
-      <div className="site-container mx-auto grid grid-cols-1 md:grid-cols-3 w-full gap-y-8">
-        <address className="not-italic space-y-1 text-center md:text-left">
-          <p className="font-bold">Contact us</p>
-          <p>support@nestmoney.in</p>
+    <footer className="bg-secondary w-full py-12 md:py-16 text-secondary-text flex justify-center text-[12px] md:text-[14px] ">
+      <div className="site-container mx-auto px-6  flex md:flex-row justify-between w-full flex-col gap-8">
+        {/* Left */}
+        <address className="not-italic space-y-2 text-left">
+          <p className="font-semibold">Contact</p>
+          <p>hello@nestmoney.in</p>
           <p>+91 94810 65253</p>
         </address>
 
-        <nav className="space-y-1 text-center md:text-left" aria-label="Footer">
-          <p className="font-bold">Links</p>
+        {/* Center */}
+        <nav className="space-y-2 " aria-label="Footer">
+          <p className="font-semibold">Links</p>
           <p>
-            <Link href="/terms">Terms of use</Link>
+            <Link href="/terms">Terms and Conditions</Link>
           </p>
           <p>
             <Link href="/privacy">Privacy Policy</Link>
           </p>
         </nav>
 
-        <div className="space-y-2 text-center md:text-left">
-          <p className="font-bold pb-1">Socials</p>
-          <ul className="flex justify-center md:justify-start gap-6">
+        {/* Right */}
+        <div className="space-y-4 ">
+          <p className="font-semibold">Socials</p>
+
+          <ul className="flex  gap-5">
             {socials.map((icon, index) => (
               <li key={index}>
                 <a
@@ -45,8 +49,8 @@ const Footer = () => {
             ))}
           </ul>
 
-          <p className="pt-6 font-medium">
-            (c) {new Date().getFullYear()} Legentree Technologies Pvt Ltd
+          <p className="text-sm opacity-70 mt-7">
+            © {new Date().getFullYear()} Legentree Technologies Pvt Ltd
           </p>
         </div>
       </div>
