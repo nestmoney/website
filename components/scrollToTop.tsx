@@ -26,6 +26,8 @@ const ScrollTopBtn = () => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      type="button"
+      aria-label="Back to top"
       className={`fixed bottom-6 right-6 
         size-9
       bg-primary-blue text-white 

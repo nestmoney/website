@@ -48,27 +48,34 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative h-screen flex items-center justify-center">
+    <section
+      className="relative h-screen flex items-center justify-center"
+      aria-labelledby="hero-title"
+    >
       {/* Floating QR Box */}
-      <div
+      <aside
         className="fixed bottom-10 right-9 z-50 hidden md:flex
                    size-24 bg-primary-blue/10 backdrop-blur-md
                    rounded-xl items-center justify-center
                    transition-all duration-300 ease-out
                    hover:scale-125 hover:shadow-xl"
+        aria-label="Download QR code"
       >
         <div className="relative w-[80%] h-[80%]">
           <Image
             src="/dummyQr.png"
-            alt="QR Code"
+            alt="Download QR code"
             fill
             className="object-contain"
           />
         </div>
-      </div>
+      </aside>
 
       {/* Floating Icons Layer */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      <div
+        className="absolute inset-0 pointer-events-none overflow-hidden"
+        aria-hidden="true"
+      >
         {floatingImages.map((item, index) => (
           <div
             key={index}
@@ -78,12 +85,7 @@ const Hero = () => {
                         lg:w-[32px] lg:h-[32px]
                         xl:w-[40px] xl:h-[40px]`}
           >
-            <Image
-              src={item.src}
-              alt="Floating icon"
-              fill
-              className="object-contain"
-            />
+            <Image src={item.src} alt="" fill className="object-contain" />
           </div>
         ))}
       </div>
@@ -93,8 +95,9 @@ const Hero = () => {
         className="h-[419px] md:h-[436px] lg:h-[544px] xl:h-[638px]
                       flex flex-col items-center justify-between"
       >
-        <div className="flex flex-col items-center">
-          <p
+        <header className="flex flex-col items-center">
+          <h1
+            id="hero-title"
             className="font-bold text-[24px] md:text-[40px] lg:text-[48px] xl:text-[56px]
                         text-secondary pb-[32px] text-center"
           >
@@ -102,14 +105,23 @@ const Hero = () => {
             <span className="text-primary-blue">
               <br className="md:hidden" /> family finances
             </span>
-          </p>
+          </h1>
 
           <DownloadBtn />
-        </div>
+        </header>
 
-        <video src="/heroAnime.mp4" autoPlay loop />
+        <figure>
+          <video
+            src="/heroAnime.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label="Nest Money app preview"
+          />
+        </figure>
       </div>
-    </div>
+    </section>
   );
 };
 

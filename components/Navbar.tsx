@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
@@ -9,8 +8,6 @@ import { Menu } from "lucide-react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  const router = useRouter();
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -23,55 +20,64 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleLogoClick = () => {
-    router.push("/");
-  };
-
   return (
-    <nav className="top-0 left-0 right-0 z-50 bg-white">
-      <div className="site-container mx-auto py-[24px] flex justify-between items-center">
+    <header className="top-0 left-0 right-0 z-50 bg-white">
+      <nav className="site-container mx-auto py-[24px] flex justify-between items-center" aria-label="Primary">
         {/* Logo */}
-        <button onClick={handleLogoClick}>
-          <Image src="/logo.svg" alt="app logo" width={177} height={24} />
-        </button>
+        <Link href="/" aria-label="Nest Money home">
+          <Image src="/logo.svg" alt="Nest Money" width={177} height={24} />
+        </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex text-[18px] space-x-[40px] text-secondary">
-          <Link
-            href="/#about"
-            className="relative after:absolute after:left-0 after:-bottom-1 
-           after:h-[2px] after:w-0 after:bg-secondary 
-           after:transition-all after:duration-300 
-           hover:after:w-full"
-          >
-            About
-          </Link>
-          <Link
-            href="/#features"
-            className="relative after:absolute after:left-0 after:-bottom-1 
-           after:h-[2px] after:w-0 after:bg-secondary 
-           after:transition-all after:duration-300 
-           hover:after:w-full"
-          >
-            Features
-          </Link>
-          <Link
-            href="/#links"
-            className="relative after:absolute after:left-0 after:-bottom-1 
-           after:h-[2px] after:w-0 after:bg-secondary 
-           after:transition-all after:duration-300 
-           hover:after:w-full"
-          >
-            Links
-          </Link>
-        </div>
+        <ul className="hidden md:flex text-[18px] space-x-[40px] text-secondary">
+          <li>
+            <Link
+              href="/#about"
+              className="relative after:absolute after:left-0 after:-bottom-1 
+             after:h-[2px] after:w-0 after:bg-secondary 
+             after:transition-all after:duration-300 
+             hover:after:w-full"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#features"
+              className="relative after:absolute after:left-0 after:-bottom-1 
+             after:h-[2px] after:w-0 after:bg-secondary 
+             after:transition-all after:duration-300 
+             hover:after:w-full"
+            >
+              Features
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#links"
+              className="relative after:absolute after:left-0 after:-bottom-1 
+             after:h-[2px] after:w-0 after:bg-secondary 
+             after:transition-all after:duration-300 
+             hover:after:w-full"
+            >
+              Links
+            </Link>
+          </li>
+        </ul>
 
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button
+          className="md:hidden"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+        >
           <Menu />
         </button>
-      </div>
+      </nav>
 
       <div
+        id="mobile-menu"
         ref={menuRef}
         className={`md:hidden absolute top-full left-0 w-full bg-white shadow-md transition-all duration-300 ${
           open
@@ -79,19 +85,25 @@ const Navbar = () => {
             : "-translate-y-5 opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-center space-y-6 py-6 text-secondary text-[18px]">
-          <Link href="/#about" onClick={() => setOpen(false)}>
-            About
-          </Link>
-          <Link href="/#features" onClick={() => setOpen(false)}>
-            Features
-          </Link>
-          <Link href="/#links" onClick={() => setOpen(false)}>
-            Links
-          </Link>
-        </div>
+        <ul className="flex flex-col items-center space-y-6 py-6 text-secondary text-[18px]">
+          <li>
+            <Link href="/#about" onClick={() => setOpen(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/#features" onClick={() => setOpen(false)}>
+              Features
+            </Link>
+          </li>
+          <li>
+            <Link href="/#links" onClick={() => setOpen(false)}>
+              Links
+            </Link>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </header>
   );
 };
 

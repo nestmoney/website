@@ -16,7 +16,7 @@ const DownloadBtn = () => {
   }, []);
 
   return (
-    <div className="flex space-x-[16px] ">
+    <nav className="flex space-x-[16px]" aria-label="Download options">
       {(device === "desktop" || device === "android") && (
         <a href={Links.playStore}>
           <Image
@@ -30,7 +30,7 @@ const DownloadBtn = () => {
       )}
 
       {(device === "desktop" || device === "ios") && (
-        <a href={Links.appStore} target="_blank">
+        <a href={Links.appStore} target="_blank" rel="noopener noreferrer">
           <Image
             src="/appStore.svg"
             alt="App Store"
@@ -40,7 +40,7 @@ const DownloadBtn = () => {
           />
         </a>
       )}
-    </div>
+    </nav>
   );
 };
 
