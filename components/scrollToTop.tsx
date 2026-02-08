@@ -1,5 +1,5 @@
 "use client";
-import { ArrowBigUp, ArrowBigUpDash } from "lucide-react";
+import { ArrowBigUpDash } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const ScrollTopBtn = () => {

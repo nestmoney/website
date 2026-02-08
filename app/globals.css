@@ -10,3 +10,39 @@
   --color-secondary-text: #737373;
   --font-sans: var(--font-poppins);
 }
+
+@keyframes floatY {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-35px);
+  }
+}
+
+@keyframes floatX {
+
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes floatXY {
+
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(12px, -12px) rotate(2deg);
+  }
+}
