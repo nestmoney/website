@@ -10,25 +10,27 @@ const socials = [
 
 const Footer = () => {
   return (
-    <div className="bg-secondary w-full h-[366px] md:h-[265px] md:px-[80px]  text-secondary-text flex justify-center text-[12px] md:text-[14px]">
-      <div className="site-container mx-auto grid grid-cols-1 md:grid-cols-3 place-content-center w-full space-y-[32px] ">
-        <div className="space-y-1">
+    <div className="bg-secondary w-full py-12 md:py-16 text-secondary-text flex justify-center text-[12px] md:text-[14px]">
+      <div className="site-container mx-auto grid grid-cols-1 md:grid-cols-3 w-full gap-y-8">
+        <div className="space-y-1 text-center md:text-left">
           <p className="font-bold">Contact us</p>
           <p>support@nestmoney.in</p>
           <p>+91 94810 65253</p>
         </div>
-        <div className="space-y-1">
+
+        <div className="space-y-1 text-center md:text-left">
           <p className="font-bold">Links</p>
           <p>
-            <Link href={"/terms"}>Terms of use</Link>
+            <Link href="/terms">Terms of use</Link>
           </p>
           <p>
-            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </p>
         </div>
-        <div className="space-y-[8px]">
+
+        <div className="space-y-2 text-center md:text-left">
           <p className="font-bold pb-1">Socials</p>
-          <div className="flex gap-[24px]">
+          <div className="flex justify-center md:justify-start gap-6">
             {socials.map((icon, index) => (
               <a
                 key={index}
@@ -41,8 +43,9 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="pt-6 font-[500]">
-            &#169; {new Date().getFullYear()} Legentree Technologies Pvt Ltd
+
+          <p className="pt-6 font-medium">
+            © {new Date().getFullYear()} Legentree Technologies Pvt Ltd
           </p>
         </div>
       </div>
