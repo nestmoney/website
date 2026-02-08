@@ -6,3 +6,129 @@ export const Links = {
   facebook: "https://facebook.com",
   x: "https://x.com",
 };
+
+export const TermData = [
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+];
+
+export const privacyPolicyData = [
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+  {
+    title: "Section 1: General",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    ],
+  },
+  {
+    title: "Section 2: Payments",
+    items: [
+      "Payment must be completed before project delivery.",
+      "Late payments may incur additional charges.",
+    ],
+  },
+];

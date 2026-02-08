@@ -1,13 +1,17 @@
 "use client";
+
 import { useState, useRef, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+  const router = useRouter();
 
-  // Close on outside click
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
@@ -19,49 +23,27 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleLogoClick = () => {
+    if (pathname !== "/") {
+      router.push("/");
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white">
       <div className="site-container mx-auto py-[24px] flex justify-between items-center">
         {/* Logo */}
-        <a href="#">
+        <button onClick={handleLogoClick}>
           <Image src="/logo.svg" alt="app logo" width={177} height={24} />
-        </a>
+        </button>
 
         {/* Desktop Links */}
         <div className="hidden md:flex text-[18px] space-x-[40px] text-secondary">
-          <a
-            href="#about"
-            className="relative cursor-pointer inline-block
-    after:absolute after:left-0 after:-bottom-1
-    after:h-[2px] after:w-0
-    after:bg-secondary
-    after:transition-all after:duration-300
-    hover:after:w-full"
-          >
-            About
-          </a>
-          <a
-            href="#features"
-            className="relative cursor-pointer inline-block
-    after:absolute after:left-0 after:-bottom-1
-    after:h-[2px] after:w-0
-    after:bg-secondary
-    after:transition-all after:duration-300
-    hover:after:w-full"
-          >
-            Features
-          </a>
-          <a
-            href="#links"
-            className="relative cursor-pointer inline-block
-    after:absolute after:left-0 after:-bottom-1
-    after:h-[2px] after:w-0
-    after:bg-secondary
-    after:transition-all after:duration-300
-    hover:after:w-full"
-          >
-            Links
-          </a>
+          <Link href="/#about">About</Link>
+          <Link href="/#features">Features</Link>
+          <Link href="/#links">Links</Link>
         </div>
 
         {/* Hamburger */}
@@ -80,27 +62,15 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col items-center space-y-6 py-6 text-secondary text-[18px]">
-          <a
-            href="#about"
-            onClick={() => setOpen(false)}
-            className="flex w-full justify-center "
-          >
+          <Link href="/#about" onClick={() => setOpen(false)}>
             About
-          </a>
-          <a
-            href="#features"
-            onClick={() => setOpen(false)}
-            className="flex w-full justify-center "
-          >
+          </Link>
+          <Link href="/#features" onClick={() => setOpen(false)}>
             Features
-          </a>
-          <a
-            href="#links"
-            onClick={() => setOpen(false)}
-            className="flex w-full justify-center "
-          >
+          </Link>
+          <Link href="/#links" onClick={() => setOpen(false)}>
             Links
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

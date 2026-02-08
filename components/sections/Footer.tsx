@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Links } from "../updatable";
+import Link from "next/link";
 const socials = [
   { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
   { src: "/facebook.svg", alt: "Facebook", href: Links.facebook },
@@ -18,8 +19,12 @@ const Footer = () => {
         </div>
         <div className="space-y-1">
           <p className="font-bold">Links</p>
-          <p>Terms of use</p>
-          <p>Privacy Policy</p>
+          <p>
+            <Link href={"/terms"}>Terms of use</Link>
+          </p>
+          <p>
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+          </p>
         </div>
         <div className="space-y-[8px]">
           <p className="font-bold pb-1">Socials</p>

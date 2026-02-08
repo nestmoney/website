@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+
+import Footer from "@/components/sections/Footer";
+import Download from "@/components/sections/Download";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -23,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} scroll-smooth`}>
       <body className="font-sans antialiased bg-white text-secondary">
+        <Navbar />
         {children}
+        <Download />
+        <Footer />
       </body>
     </html>
   );
