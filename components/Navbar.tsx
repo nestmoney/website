@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
@@ -9,7 +9,7 @@ import { Menu } from "lucide-react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname();
+
   const router = useRouter();
 
   useEffect(() => {
@@ -24,11 +24,7 @@ const Navbar = () => {
   }, []);
 
   const handleLogoClick = () => {
-    if (pathname !== "/") {
-      router.push("/");
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    router.push("/");
   };
 
   return (
@@ -41,9 +37,33 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex text-[18px] space-x-[40px] text-secondary">
-          <Link href="/#about">About</Link>
-          <Link href="/#features">Features</Link>
-          <Link href="/#links">Links</Link>
+          <Link
+            href="/#about"
+            className="relative after:absolute after:left-0 after:-bottom-1 
+           after:h-[2px] after:w-0 after:bg-secondary 
+           after:transition-all after:duration-300 
+           hover:after:w-full"
+          >
+            About
+          </Link>
+          <Link
+            href="/#features"
+            className="relative after:absolute after:left-0 after:-bottom-1 
+           after:h-[2px] after:w-0 after:bg-secondary 
+           after:transition-all after:duration-300 
+           hover:after:w-full"
+          >
+            Features
+          </Link>
+          <Link
+            href="/#links"
+            className="relative after:absolute after:left-0 after:-bottom-1 
+           after:h-[2px] after:w-0 after:bg-secondary 
+           after:transition-all after:duration-300 
+           hover:after:w-full"
+          >
+            Links
+          </Link>
         </div>
 
         {/* Hamburger */}
