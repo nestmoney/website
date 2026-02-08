@@ -11,7 +11,8 @@
   --font-sans: var(--font-poppins);
 }
 
-@keyframes wave {
+/* Default (mobile) */
+@keyframes floatUp {
 
   0%,
   100% {
@@ -19,17 +20,34 @@
   }
 
   50% {
-    transform: translateY(-25px);
+    transform: translateY(-5px);
   }
 }
 
-.wave-bar {
-  animation: wave 3s ease-in-out infinite;
+@keyframes floatDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  @keyframes wave-mobile {
+.float-up {
+  animation: floatUp 2s ease-in-out infinite;
+}
+
+.float-down {
+  animation: floatDown 2s ease-in-out infinite;
+}
+
+
+/* md ≥768px */
+@media (min-width: 768px) {
+  @keyframes floatUp {
 
     0%,
     100% {
@@ -37,11 +55,99 @@
     }
 
     50% {
-      transform: translateY(-12px);
+      transform: translateY(-15px);
     }
   }
 
-  .wave-bar {
-    animation: wave-mobile 2s ease-in-out infinite;
+  @keyframes floatDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(15px);
+    }
+  }
+
+  .float-up {
+    animation-duration: 2.5s;
+  }
+
+  .float-down {
+    animation-duration: 2.5s;
+  }
+}
+
+
+/* lg ≥1024px */
+@media (min-width: 1024px) {
+  @keyframes floatUp {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-22px);
+    }
+  }
+
+  @keyframes floatDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(22px);
+    }
+  }
+
+  .float-up {
+    animation-duration: 3s;
+  }
+
+  .float-down {
+    animation-duration: 3s;
+  }
+}
+
+
+/* xl ≥1280px */
+@media (min-width: 1280px) {
+  @keyframes floatUp {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes floatDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+  .float-up {
+    animation-duration: 3.5s;
+  }
+
+  .float-down {
+    animation-duration: 3.5s;
   }
 }
