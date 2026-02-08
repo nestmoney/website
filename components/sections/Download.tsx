@@ -4,7 +4,10 @@ import DownloadBtn from "../DownloadButton";
 
 const Download = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-blue-600 text-white h-[398px] md:h-[480px] bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex">
+    <div
+      className="flex flex-col justify-center items-center bg-blue-600 text-white h-[398px] md:h-[480px] bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px]"
+      id="links"
+    >
       <div className="flex flex-col items-center justify-center space-y-[40px] h-[90%]">
         <Image
           src={"/linksLogo.svg"}

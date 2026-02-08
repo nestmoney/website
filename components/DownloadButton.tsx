@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Links } from "./updatable";
 
 const DownloadBtn = () => {
   const [device, setDevice] = useState<"desktop" | "android" | "ios">(
@@ -17,23 +18,27 @@ const DownloadBtn = () => {
   return (
     <div className="flex space-x-[16px] ">
       {(device === "desktop" || device === "android") && (
-        <Image
-          src="/googlePlay.svg"
-          alt="Google Play"
-          width={135}
-          height={40}
-          className="w-[108px] md:w-[134px]"
-        />
+        <a href={Links.playStore}>
+          <Image
+            src="/googlePlay.svg"
+            alt="Google Play"
+            width={135}
+            height={40}
+            className="w-[108px] md:w-[134px]"
+          />
+        </a>
       )}
 
       {(device === "desktop" || device === "ios") && (
-        <Image
-          src="/appStore.svg"
-          alt="App Store"
-          width={135}
-          height={40}
-          className="w-[108px] md:w-[134px]"
-        />
+        <a href={Links.appStore} target="_blank">
+          <Image
+            src="/appStore.svg"
+            alt="App Store"
+            width={135}
+            height={40}
+            className="w-[108px] md:w-[134px]"
+          />
+        </a>
       )}
     </div>
   );

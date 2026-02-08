@@ -80,13 +80,25 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col items-center space-y-6 py-6 text-secondary text-[18px]">
-          <a href="#about" onClick={() => setOpen(false)}>
+          <a
+            href="#about"
+            onClick={() => setOpen(false)}
+            className="flex w-full justify-center "
+          >
             About
           </a>
-          <a href="#features" onClick={() => setOpen(false)}>
+          <a
+            href="#features"
+            onClick={() => setOpen(false)}
+            className="flex w-full justify-center "
+          >
             Features
           </a>
-          <a href="#links" onClick={() => setOpen(false)}>
+          <a
+            href="#links"
+            onClick={() => setOpen(false)}
+            className="flex w-full justify-center "
+          >
             Links
           </a>
         </div>

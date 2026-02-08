@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Links } from "../updatable";
 const socials = [
-  { src: "/linkedin.svg", alt: "LinkedIn", href: "https://linkedin.com" },
-  { src: "/facebook.svg", alt: "Facebook", href: "https://facebook.com" },
-  { src: "/instagram.svg", alt: "Instagram", href: "https://instagram.com" },
-  { src: "/x.svg", alt: "X", href: "https://x.com" },
+  { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
+  { src: "/facebook.svg", alt: "Facebook", href: Links.facebook },
+  { src: "/x.svg", alt: "X", href: Links.x },
+  { src: "/linkedin.svg", alt: "LinkedIn", href: Links.linkedin },
 ];
 
 const Footer = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="pt-6 font-[500]">
-            © 2026 Legentree Technologies Pvt Ltd
+            &#169; {new Date().getFullYear()} Legentree Technologies Pvt Ltd
           </p>
         </div>
       </div>

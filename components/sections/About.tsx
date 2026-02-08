@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className=" min-h-screen pt-[75px] " id="about">
+    <div className="  scroll-mt-[80px]  mb-[30]" id="about">
       <div className="flex flex-col lg:flex-row justify-between items-center px-6  gap-10  ">
         <div className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200] flex flex-col gap-6 ">
           <div className="mb-[35px]">

@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section>
-      <section id="features" className="py-20">
+    <section className=" ">
+      <section id="features" className="scroll-mt-[80px]">
         <h2
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
-      font-semibold text-primary-blue text-center mb-20"
+      font-semibold text-primary-blue text-center "
         >
           Monthly essentials
         </h2>
 
-        <div className="space-y-24">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12 ">
+        <div className="">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5 ">
             <Image
               className="size-[160px] md:size-[240px] lg:size-[320px]"
               src="/home.svg"
@@ -33,7 +33,7 @@ const Features = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5 ">
             <Image
               className="size-[160px] md:size-[240px] lg:size-[320px]"
               src="/credit.svg"
@@ -58,19 +58,19 @@ const Features = () => {
       <section className="">
         <h2
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
-      font-semibold text-primary-blue text-center mb-20"
+      font-semibold text-primary-blue text-center mb-10 "
         >
           Thoughtful offerings
         </h2>
 
-        <div className="space-y-24">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12 ">
+        <div className="">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5 ">
             <Image
               className="size-[160px] md:size-[240px] lg:size-[320px]"
-              src="/home.svg"
+              src="/vault.svg"
               width={400}
               height={400}
-              alt="home"
+              alt="vault icon"
             />
 
             <div className="max-w-[600px] text-center md:text-left">
@@ -86,7 +86,7 @@ const Features = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12 ">
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
             <Image
               className="size-[160px] md:size-[240px] lg:size-[320px]"
               src="/credit.svg"
