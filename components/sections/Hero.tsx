@@ -2,51 +2,9 @@
 
 import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
+import { floatIcons } from "../updatable";
 
 const Hero = () => {
-  const floatingImages = [
-    {
-      src: "/favicon.png",
-      position: "top-[60%] left-[10%]",
-      anim: "animate-[floatY_6s_ease-in-out_infinite]",
-    },
-    {
-      src: "/favicon.png",
-      position: "top-[40%] left-[20%]",
-      anim: "animate-[floatY_8s_ease-in-out_infinite]",
-    },
-    {
-      src: "/favicon.png",
-      position: "top-[55%] left-[25%]",
-      anim: "animate-[floatY_7s_ease-in-out_infinite]",
-    },
-    {
-      src: "/favicon.png",
-      position: "top-[55%] left-[40%]",
-      anim: "animate-[floatY_9s_ease-in-out_infinite]",
-    },
-    {
-      src: "/favicon.png",
-      position: "top-[45%] left-[50%]",
-      anim: "animate-[floatY_5s_ease-in-out_infinite]",
-    },
-    {
-      src: "/favicon.png",
-      position: "top-[60%] left-[85%]",
-      anim: "animate-[floatY_10s_ease-in-out_infinite]",
-    },
-    {
-      src: "/heart.svg",
-      position: "top-[50%] left-[60%]",
-      anim: "animate-[floatY_6.5s_ease-in-out_infinite]",
-    },
-    {
-      src: "/favicon.png",
-      position: "top-[40%] left-[70%]",
-      anim: "animate-[floatY_7.5s_ease-in-out_infinite]",
-    },
-  ];
-
   return (
     <section
       className="relative h-screen flex items-center justify-center"
@@ -71,23 +29,23 @@ const Hero = () => {
         </div>
       </aside>
 
-      {/* Floating Icons Layer */}
       <div
-        className="absolute inset-0 pointer-events-none overflow-hidden"
+        className="absolute inset-0 pointer-events-none overflow-hidden  top-[57vh] h-[10vh] md:top-[38vh] md:h-[20vh] lg:h-[20vh] lg:top-[35vh] xl:h-[30vh] xl:top-[25vh]"
         aria-hidden="true"
       >
-        {floatingImages.map((item, index) => (
-          <div
-            key={index}
-            className={`absolute ${item.position} ${item.anim}
-                        w-[14px] h-[14px]
-                        md:w-[18px] md:h-[18px]
-                        lg:w-[32px] lg:h-[32px]
-                        xl:w-[40px] xl:h-[40px]`}
-          >
-            <Image src={item.src} alt="" fill className="object-contain" />
-          </div>
-        ))}
+        <div className="absolute bottom-2 md:bottom-10 left-1/2 -translate-x-1/2     h-[30%] w-[60%] flex justify-between items-center">
+          {floatIcons.map((src, i) => (
+            <Image
+              key={i}
+              src={src}
+              alt=""
+              width={40}
+              height={40}
+              className="wave-bar lg:size-10 md:size-6 size-4"
+              style={{ animationDelay: `${i * 0.15}s` }}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Main Content */}

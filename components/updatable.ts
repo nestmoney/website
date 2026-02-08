@@ -132,3 +132,14 @@ export const privacyPolicyData = [
     ],
   },
 ];
+
+export const floatIcons = [
+  "/float-bill.svg",
+  "/float-card.svg",
+  "/float-cibil.svg",
+  "/float-docs.svg",
+  "/float-home.svg",
+  "/float-money.svg",
+  "/float-security.svg",
+  "/float-papers.svg",
+];
