@@ -26,3 +26,22 @@
 .wave-bar {
   animation: wave 3s ease-in-out infinite;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  @keyframes wave-mobile {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .wave-bar {
+    animation: wave-mobile 2s ease-in-out infinite;
+  }
+}
