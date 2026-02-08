@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NestMoney
 
-## Getting Started
+A modern financial technology application for managing and growing your money, built with [Next.js](https://nextjs.org), [React](https://react.dev), and [Tailwind CSS](https://tailwindcss.com).
 
-First, run the development server:
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 20.9.0 or higher
+- npm, yarn, pnpm, or bun package manager
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development Server
 
 ```bash
 npm run dev
@@ -14,23 +27,71 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application uses **hot module reloading** - your changes will be reflected immediately as you edit files. Start by modifying `app/page.tsx` to see real-time updates.
 
-## Learn More
+## 🎨 Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 16](https://nextjs.org) - React framework with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe development
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com) - Utility-first CSS framework
+- **Icons**: [Lucide React](https://lucide.dev) - Beautiful icon library
+- **React Version**: 19.2.3
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Learn More
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Expand your knowledge with these resources:
 
-## Deploy on Vercel
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about features and API
+- [Learn Next.js](https://nextjs.org/learn) - Interactive tutorials
+- [Next.js GitHub Repository](https://github.com/vercel/next.js) - Contribute or report issues
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Styling guide
+- [React Documentation](https://react.dev) - React fundamentals
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔤 Font Optimization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font) - a modern font family optimized for Vercel projects.
+
+## 🚀 Deployment
+
+### Deploy on Vercel
+
+The easiest way to deploy NestMoney is using the [Vercel Platform](https://vercel.com) - created by the Next.js team.
+
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Import your repository on [Vercel](https://vercel.com/new)
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Your application will be live!
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🗂️ Project Structure
+
+```
+nestmoney/
+├── app/              # Next.js App Router pages
+├── public/           # Static assets
+├── components/       # Reusable React components
+├── styles/           # Global and CSS modules
+├── next.config.ts    # Next.js configuration
+├── tailwind.config.js # Tailwind CSS configuration
+└── tsconfig.json     # TypeScript configuration
+```
+
+## 📋 Features Planned
+
+- QR code generation based on operating system
+- Floating assets similar to SuperFam
+- Real-time financial data
+- Secure authentication
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
