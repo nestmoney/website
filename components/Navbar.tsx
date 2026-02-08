@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white">
+    <nav className="top-0 left-0 right-0 z-50 bg-white">
       <div className="site-container mx-auto py-[24px] flex justify-between items-center">
         {/* Logo */}
         <button onClick={handleLogoClick}>
@@ -66,13 +66,11 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger */}
         <button className="md:hidden" onClick={() => setOpen(!open)}>
           <Menu />
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
       <div
         ref={menuRef}
         className={`md:hidden absolute top-full left-0 w-full bg-white shadow-md transition-all duration-300 ${

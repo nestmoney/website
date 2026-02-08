@@ -1,27 +1,28 @@
 "use client";
 import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
-import DownloadQr from "../DownloadQr";
 
 const Hero = () => {
   return (
     <div className="relative h-screen scroll-mt-[80px] flex items-center justify-center  lg:mt-10">
       <div
-        className="fixed bottom-10 right-6 z-50 
-             size-40 bg-red-600/90 backdrop-blur-sm
+        className="fixed bottom-10 right-9 z-50 
+             size-25 transparent backdrop-blur-md
+             bg-primary-blue/10
              rounded-xl
              flex items-center justify-center
              transition-all duration-300 ease-out
-             hover:scale-110 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]
+             hover:scale-150 hover:shadow-[0_5px_10px_rgba(0,0,0,0.3)]
              group perspective-[1000px] hidden md:flex"
       >
-        <div
-          className="size-[90%] bg-amber-400 rounded-lg
-               transition-transform duration-200
-               transform-style-preserve-3d
-               "
-        >
-          <DownloadQr />
+        <div className="size-[80%] bg-red-300">
+          <Image
+            src={"/dummyQr.png"}
+            width={30}
+            height={30}
+            alt="qr"
+            className="w-full"
+          ></Image>
         </div>
       </div>
 
