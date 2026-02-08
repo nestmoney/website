@@ -89,7 +89,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
             <Image
               className="size-[160px] md:size-[240px] lg:size-[320px]"
-              src="/credit.svg"
+              src="/cibil.svg"
               width={400}
               height={400}
               alt="credit card"

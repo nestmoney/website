@@ -1,4 +1,3 @@
-import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
 import ScrollTopBtn from "../scrollToTop";
 
@@ -15,12 +14,8 @@ const Hero = () => {
           </p>
           <DownloadBtn />
         </div>
-        <Image
-          src={"/dummy.svg"}
-          width={960}
-          height={330}
-          alt="hero image "
-        ></Image>
+
+        <video src={"/heroAnime.mp4"} autoPlay loop />
       </div>
       <ScrollTopBtn />
     </div>
