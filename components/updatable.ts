@@ -11,7 +11,7 @@ export const TermData = [
   {
     title: "Section 1: General",
     items: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...Lorem ipsum dolor sit amet consectetur adipisicing elit...",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
     ],
@@ -133,7 +133,7 @@ export const privacyPolicyData = [
   },
 ];
 
-export const experienceData = [
+export const experianData = [
   {
     title: "Section 1: General",
     items: [

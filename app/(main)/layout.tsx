@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nestmoney.app"), //important change to real domain
+  metadataBase: new URL("https://nestmoney.in"), //important change to real domain
 
   title: {
     default: "Nest Money | Family Finance App",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Nest Money | Family Finance App",
     description:
       "Track bills, manage shared finances, and improve family financial wellbeing with Nest Money.",
-    url: "https://nestmoney.app", //important change to real domain
+    url: "https://nestmoney.in", //important change to real domain
     siteName: "Nest Money",
     type: "website",
     locale: "en_US",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://nestmoney.app", //important change to real domain
+    canonical: "https://nestmoney.in", //important change to real domain
   },
 };
 
@@ -96,7 +96,7 @@ export default function RootLayout({
               operatingSystem: "Web",
               description:
                 "Nest Money helps families manage shared finances and track bills.",
-              url: "https://nestmoney.app", //important change to real domain
+              url: "https://nestmoney.in", //important change to real domain
             }),
           }}
         />

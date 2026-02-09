@@ -8,18 +8,15 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto">
+    <main className="p-[20px] ">
       <div className="space-y-10">
         {TermData.map((term, i) => (
           <section key={i} aria-labelledby={`terms-section-${i}`}>
-            <h2
-              id={`terms-section-${i}`}
-              className="md:text-[20px] text-[14px] font-semibold mb-6"
-            >
+            <h2 id={`terms-section-${i}`} className=" font-semibold mb-6 ">
               {term.title}
             </h2>
 
-            <ol className="list-decimal list-outside pl-6 space-y-4 text-secondary leading-relaxed text-[12px] md:text-[14px]">
+            <ol className="list-decimal  pl-3  text-secondary leading-relaxed text-[12px] md:text-[14px]">
               {term.items.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}

@@ -9,14 +9,14 @@ const Hero = () => {
     <section className="" aria-labelledby="hero-title">
       {/* Floating QR Box */}
       <aside
-        className="fixed bottom-10 right-9 z-50 hidden md:flex
-                   size-24 bg-primary-blue/10 backdrop-blur-md
+        className="fixed bottom-10 right-9 z-50 hidden md:flex  bg-white 
+                   size-24 
                    rounded-xl items-center justify-center
-                   transition-all duration-300 ease-out
-                   hover:scale-125 hover:shadow-xl"
+                   transition-all duration-300 ease-out shadow-xl
+                   hover:scale-200 hover:shadow-md hover:-translate-10"
         aria-label="Download QR code"
       >
-        <div className="relative w-[80%] h-[80%]">
+        <div className="relative size-[95%]">
           <Image
             src="/dummyQr.png"
             alt="Download QR code"
