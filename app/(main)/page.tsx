@@ -5,7 +5,7 @@ import Partners from "@/components/sections/Partners";
 
 export default function Main() {
   return (
-    <main className="site-container mx-auto  space-y-[64px]">
+    <main className="site-container mx-auto  space-y-[80px]">
       <Hero />
       <About />
       <Features />
