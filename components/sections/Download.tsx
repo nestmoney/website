@@ -6,7 +6,6 @@ const Download = () => {
   return (
     <section
       className="flex flex-col justify-center items-center bg-blue-600 text-white h-[398px] md:h-[480px] bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat scroll-mt-[80px]"
-      id="links"
       aria-labelledby="download-title"
     >
       <h2 id="download-title" className="sr-only">

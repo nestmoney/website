@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section className="space-y-10 lg:space-y-0 mb-[64px] md:mb-[128px] xl:mb-[160px]">
+    <section className="space-y-10 mb-[64px] md:mb-[128px] xl:mb-[160px]">
       <section
         id="features"
         className="scroll-mt-[80px] space-y-10 lg:space-y-0"
       >
         <h2
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
-      font-semibold text-primary-blue text-center mb-10"
+      font-semibold text-primary-blue text-center mb-10 md:mb-10 xl:mb-10"
         >
           Monthly essentials
         </h2>
@@ -58,7 +58,8 @@ const Features = () => {
           </div>
         </div>
       </section>
-      <section className="space-y-10 lg:space-y-0">
+      
+      <section className="pt-10 md:pt-0 lg:pt-0 space-y-10 lg:space-y-0">
         <h2
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
       font-semibold text-primary-blue text-center mb-10 "

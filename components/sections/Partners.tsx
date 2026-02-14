@@ -3,7 +3,7 @@ import Image from "next/image";
 const Partners = () => {
   return (
     <section
-      className="min-h-[30vh] flex justify-center items-center  mb-[64px] md:mb-[128px] xl:mb-[160px]"
+      className="flex justify-center items-center mb-[64px] md:mb-[128px] xl:mb-[160px]"
       aria-labelledby="partners-title"
     >
       <h2 id="partners-title" className="sr-only">
