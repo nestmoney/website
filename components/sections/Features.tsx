@@ -3,7 +3,11 @@ import Image from "next/image";
 const Features = () => {
   return (
     <section aria-label="Features">
-      <section id="features" className="scroll-mt-[80px]" aria-labelledby="features-title">
+      <section
+        id="features"
+        className="scroll-mt-[80px]"
+        aria-labelledby="features-title"
+      >
         <h2
           id="features-title"
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
@@ -53,7 +57,7 @@ const Features = () => {
               </h3>
 
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
-                Manage and pay all your family's credit card bills in one place,
+                Manage and pay all your familys credit card bills in one place,
                 so that no one ever misses a due date.
               </p>
             </div>
@@ -111,9 +115,9 @@ const Features = () => {
               </h3>
 
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
-                Track all ongoing loans in one place and monitor each other's
-                credit reports to maintain your family's overall financial
-                wellbeing.
+                Track all ongoing loans in one place and monitor each
+                other&apos;s credit reports to maintain your family&apos;s
+                overall financial wellbeing.
               </p>
             </div>
           </article>

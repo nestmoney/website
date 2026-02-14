@@ -38,22 +38,7 @@ const Hero = () => {
               <br className="md:hidden" /> family finances
             </span>
           </h1>
-
           <DownloadBtn />
-          <div className=" bottom-2 md:bottom-10 left-1/2 h-[6vh] lg:h-[8vh] w-[320px] md:w-[80%] flex justify-between my-12 md:mb-0">
-            {floatIcons.map((src, i) => (
-              <Image
-                key={i}
-                src={src}
-                alt=""
-                width={40}
-                height={40}
-                className={`lg:size-10 md:size-6 size-4  ${
-                  i % 2 === 0 ? "self-start float-up" : "self-end float-up"
-                }`}
-              />
-            ))}
-          </div>
         </header>
 
         <figure>
