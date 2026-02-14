@@ -18,10 +18,10 @@ const DownloadBtn = () => {
   return (
     <nav className="flex space-x-[16px]" aria-label="Download options">
       {(device === "desktop" || device === "android") && (
-        <a href={Links.playStore}>
+        <a href={Links.playStore} target="_blank" rel="noopener noreferrer">
           <Image
             src="/googlePlay.svg"
-            alt="Google Play"
+            alt="App Store"
             width={135}
             height={40}
             className="w-[108px] md:w-[134px]"
@@ -45,3 +45,6 @@ const DownloadBtn = () => {
 };
 
 export default DownloadBtn;
+//  <p className="font-medium rounded-md text-lg text-center text-white bg-secondary p-2">
+//           Launching Soon
+//         </p>

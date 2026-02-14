@@ -16,7 +16,6 @@ const Footer = () => {
         <address className="not-italic space-y-2 text-left">
           <p className="font-semibold">Contact Us</p>
           <p>hello@nestmoney.in</p>
-          <p>+91 94810 65253</p>
         </address>
 
         {/* Center */}
