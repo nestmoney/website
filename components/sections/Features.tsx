@@ -15,7 +15,7 @@ const Features = () => {
         </h2>
 
         <div className="space-y-10 lg:space-y-0">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-5 ">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0 ">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
               src="/home.png"
@@ -36,7 +36,7 @@ const Features = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5 ">
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-0 md:gap-11 lg:gap-0">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
               src="/credit.png"
@@ -67,7 +67,7 @@ const Features = () => {
         </h2>
 
         <div className="space-y-10 lg:space-y-0">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-5 ">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0 ">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
               src="/vault.png"
@@ -89,7 +89,7 @@ const Features = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-0 md:gap-11 lg:gap-01">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
               src="/cibil.png"
