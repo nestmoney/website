@@ -1,5 +1,5 @@
 export const Links = {
-  appStore: "https://www.apple.com/in/app-store/",
+  appStore: "https://play.google.com/store/apps",
   playStore: "https://play.google.com/store/apps",
   instagram: "https://instagram.com",
   linkedin: "https://linkedin.com",
@@ -194,15 +194,4 @@ export const experianData = [
       "Late payments may incur additional charges.",
     ],
   },
-];
-
-export const floatIcons = [
-  "/float-bill.svg",
-  "/float-card.svg",
-  "/float-cibil.svg",
-  "/float-docs.svg",
-  "/float-home.svg",
-  "/float-money.svg",
-  "/float-security.svg",
-  "/float-papers.svg",
 ];

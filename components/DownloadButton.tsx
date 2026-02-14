@@ -17,26 +17,35 @@ const DownloadBtn = () => {
 
   return (
     <nav className="flex space-x-[16px]" aria-label="Download options">
-      {(device === "desktop" || device === "android") && (
+      {/* If no links available */}
+      {!Links.playStore && !Links.appStore && (
+        <p className="font-medium rounded-md text-lg text-center text-white bg-secondary p-2">
+          Launching Soon
+        </p>
+      )}
+
+      {/* Play Store */}
+      {Links.playStore && (device === "desktop" || device === "android") && (
         <a href={Links.playStore} target="_blank" rel="noopener noreferrer">
           <Image
             src="/googlePlay.svg"
-            alt="App Store"
+            alt="Google Play"
             width={135}
             height={40}
-            className="w-[108px] md:w-[134px]"
+            className="w-[108px] md:w-[134px] h-auto"
           />
         </a>
       )}
 
-      {(device === "desktop" || device === "ios") && (
+      {/* App Store */}
+      {Links.appStore && (device === "desktop" || device === "ios") && (
         <a href={Links.appStore} target="_blank" rel="noopener noreferrer">
           <Image
             src="/appStore.svg"
             alt="App Store"
             width={135}
             height={40}
-            className="w-[108px] md:w-[134px]"
+            className="w-[108px] md:w-[134px] h-auto"
           />
         </a>
       )}

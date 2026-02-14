@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
-import { floatIcons } from "../updatable";
+import { Links } from "../updatable";
 
 const Hero = () => {
   return (
@@ -10,24 +10,25 @@ const Hero = () => {
       className=" mb-[64px] md:mb-[128px] xl:mb-[160px]"
       aria-labelledby="hero-title"
     >
-      {/* Floating QR Box */}
-      <aside
-        className="fixed bottom-10 right-9 z-50 hidden md:flex  bg-white 
+      {Links.playStore && Links.appStore && (
+        <aside
+          className="fixed bottom-10 right-9 z-50 hidden md:flex  bg-white 
                    size-24 
                    rounded-xl items-center justify-center
                    transition-all duration-300 ease-out shadow-xl
                    hover:scale-200 hover:shadow-md hover:-translate-10"
-        aria-label="Download QR code"
-      >
-        <div className="relative size-[95%]">
-          <Image
-            src="/dummyQr.png"
-            alt="Download QR code"
-            fill
-            className="object-contain"
-          />
-        </div>
-      </aside>
+          aria-label="Download QR code"
+        >
+          <div className="relative size-[95%] rounded-xl">
+            <Image
+              src="/Qr.png"
+              alt="Download QR code"
+              fill
+              className="object-contain  size-full rounded-xl "
+            />
+          </div>
+        </aside>
+      )}
 
       {/* Main Content */}
       <div className=" flex flex-col items-center justify-between pt-5">
