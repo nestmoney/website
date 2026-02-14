@@ -6,7 +6,10 @@ import { floatIcons } from "../updatable";
 
 const Hero = () => {
   return (
-    <section className="" aria-labelledby="hero-title">
+    <section
+      className=" mb-[64px] md:mb-[128px] xl:mb-[160px]"
+      aria-labelledby="hero-title"
+    >
       {/* Floating QR Box */}
       <aside
         className="fixed bottom-10 right-9 z-50 hidden md:flex  bg-white 

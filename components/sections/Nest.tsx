@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Nest = () => {
   return (
-    <section className="scroll-mt-[80px] mb-[30]" id="nest">
+    <section
+      className="scroll-mt-[80px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
+      id="nest"
+    >
       <div className="flex flex-col lg:flex-row justify-between items-center px-6 gap-10">
         <div className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200] flex flex-col gap-6">
           <header className="mb-[35px]">

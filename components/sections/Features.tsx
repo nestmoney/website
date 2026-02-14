@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section aria-label="Features">
+    <section
+      aria-label="Features"
+      className="mb-[64px] md:mb-[128px] xl:mb-[160px]"
+    >
       <section
         id="features"
         className="scroll-mt-[80px]"
