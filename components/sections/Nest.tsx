@@ -54,13 +54,17 @@ const Nest = () => {
         </div>
 
         <figure className="flex items-end rounded-4xl">
-          <div className="relative border-8 rounded-4xl overflow-hidden shadow-[0_-10px_120px_rgba(0,0,0,0.12)] w-[211px] h-[468px] md:w-[211px] md:h-[468px] lg:w-[207px] lg:h-[458px] xl:w-[267px] xl:h-[598px]">
+          <div
+            className="relative border-8 rounded-4xl overflow-hidden 
+                  shadow-[0_-10px_120px_rgba(0,0,0,0.12)]
+                  w-[200px] xl:w-[260px]"
+          >
             <video
               autoPlay
               muted
               loop
               playsInline
-              className="absolute inset-0 w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             >
               <source src="/nest-video-dummy.mp4" type="video/mp4" />
             </video>
