@@ -2,34 +2,27 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section
-      aria-label="Features"
-      className="mb-[64px] md:mb-[128px] xl:mb-[160px]"
-    >
+    <section className="space-y-10 lg:space-y-0 mb-[64px] md:mb-[128px] xl:mb-[160px]">
       <section
         id="features"
-        className="scroll-mt-[80px]"
-        aria-labelledby="features-title"
+        className="scroll-mt-[80px] space-y-10 lg:space-y-0"
       >
         <h2
-          id="features-title"
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
       font-semibold text-primary-blue text-center mb-10"
         >
           Monthly essentials
         </h2>
 
-        <div>
-          <article className="flex flex-col md:flex-row items-center justify-between gap-5">
-            <figure>
-              <Image
-                className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/home.png"
-                width={400}
-                height={400}
-                alt="Home"
-              />
-            </figure>
+        <div className="space-y-10 lg:space-y-0">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5 ">
+            <Image
+              className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
+              src="/home.png"
+              width={400}
+              height={400}
+              alt="home"
+            />
 
             <div className="max-w-[600px] text-center md:text-left">
               <h3 className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-semibold">
@@ -41,18 +34,16 @@ const Features = () => {
                 recharges, insurance premiums and more in one place.
               </p>
             </div>
-          </article>
+          </div>
 
-          <article className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
-            <figure>
-              <Image
-                className="size-[160px] md:size-[240px] lg:size-[320px] md:p-2"
-                src="/credit.png"
-                width={400}
-                height={400}
-                alt="Credit card"
-              />
-            </figure>
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5 ">
+            <Image
+              className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
+              src="/credit.png"
+              width={400}
+              height={400}
+              alt="credit card"
+            />
 
             <div className="max-w-[600px] text-center md:text-left">
               <h3 className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-semibold">
@@ -60,33 +51,30 @@ const Features = () => {
               </h3>
 
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
-                Manage and pay all your familys credit card bills in one place,
+                Manage and pay all your family’s credit card bills in one place,
                 so that no one ever misses a due date.
               </p>
             </div>
-          </article>
+          </div>
         </div>
       </section>
-      <section aria-labelledby="offerings-title">
+      <section className="space-y-10 lg:space-y-0">
         <h2
-          id="offerings-title"
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
       font-semibold text-primary-blue text-center mb-10 "
         >
           Thoughtful offerings
         </h2>
 
-        <div>
-          <article className="flex flex-col md:flex-row items-center justify-between gap-5">
-            <figure>
-              <Image
-                className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/vault.png"
-                width={400}
-                height={400}
-                alt="Vault"
-              />
-            </figure>
+        <div className="space-y-10 lg:space-y-0">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5 ">
+            <Image
+              className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
+              src="/vault.png"
+              width={400}
+              height={400}
+              alt="vault icon"
+            />
 
             <div className="max-w-[600px] text-center md:text-left">
               <h3 className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-semibold">
@@ -99,18 +87,16 @@ const Features = () => {
                 can access them when it matters the most.
               </p>
             </div>
-          </article>
+          </div>
 
-          <article className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
-            <figure>
-              <Image
-                className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/cibil.png"
-                width={400}
-                height={400}
-                alt="Credit report"
-              />
-            </figure>
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
+            <Image
+              className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
+              src="/cibil.png"
+              width={400}
+              height={400}
+              alt="credit card"
+            />
 
             <div className="max-w-[600px] text-center md:text-left">
               <h3 className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-semibold">
@@ -118,12 +104,12 @@ const Features = () => {
               </h3>
 
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
-                Track all ongoing loans in one place and monitor each
-                other&apos;s credit reports to maintain your family&apos;s
-                overall financial wellbeing.
+                Track all ongoing loans in one place and monitor each other’s
+                credit reports to maintain your family’s overall financial
+                wellbeing.
               </p>
             </div>
-          </article>
+          </div>
         </div>
       </section>
     </section>
