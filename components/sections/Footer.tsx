@@ -10,7 +10,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary w-full py-12 md:py-16 text-secondary-text flex justify-center text-[12px] md:text-[14px] ">
+    <footer className="bg-secondary w-full pt-12 md:pt-16 pb-32 text-secondary-text flex justify-center text-[12px] md:text-[14px]">
       <div className="site-container mx-auto flex md:flex-row justify-between w-full flex-col gap-8">
         {/* Left */}
         <address className="not-italic space-y-2 text-left">

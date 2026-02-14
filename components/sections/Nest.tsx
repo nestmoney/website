@@ -56,7 +56,7 @@ const Nest = () => {
         <figure className="flex items-end rounded-4xl">
           <div
             className="relative border-8 rounded-4xl overflow-hidden 
-                  shadow-[0_-10px_120px_rgba(0,0,0,0.12)]
+
                   w-[200px] xl:w-[260px]"
           >
             <video

@@ -39,7 +39,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-0 md:gap-11 lg:gap-0">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
-              src="/credit.png"
+              src="/cards.png"
               width={400}
               height={400}
               alt="credit card"
@@ -70,7 +70,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0 ">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
-              src="/vault.png"
+              src="/safe.png"
               width={400}
               height={400}
               alt="vault icon"
@@ -92,7 +92,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-0 md:gap-11 lg:gap-01">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
-              src="/cibil.png"
+              src="/credit.png"
               width={400}
               height={400}
               alt="credit card"

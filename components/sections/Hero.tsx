@@ -12,19 +12,19 @@ const Hero = () => {
     >
       {Links.playStore && Links.appStore && (
         <aside
-          className="fixed bottom-10 right-9 z-50 hidden md:flex  bg-white 
+          className="fixed bottom-2 right-2 z-50 hidden md:flex  bg-white 
                    size-24 
                    rounded-xl items-center justify-center
                    transition-all duration-300 ease-out shadow-xl
                    hover:scale-200 hover:shadow-md hover:-translate-10"
           aria-label="Download QR code"
         >
-          <div className="relative size-[95%] rounded-xl">
+          <div className="relative size-[95%] rounded-xl overflow-hidden">
             <Image
               src="/Qr.png"
               alt="Download QR code"
               fill
-              className="object-contain  size-full rounded-xl "
+              className="object-contain size-full"
             />
           </div>
         </aside>
@@ -35,7 +35,7 @@ const Hero = () => {
         <header className="flex flex-col items-center space-y-5 md:space-y-0">
           <h1
             id="hero-title"
-            className="font-bold text-[24px] mt-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-[20px] text-center"
+            className="font-bold text-[24px] mt-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center"
           >
             A home for your{" "}
             <span className="text-primary-blue">
@@ -52,6 +52,16 @@ const Hero = () => {
             loop
             muted
             playsInline
+            aria-label="Nest Money app preview"
+            className="hidden md:block my-3"
+          />
+          <video
+            src="/heroAnimeMob.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="md:hidden pt-[64px]"
             aria-label="Nest Money app preview"
           />
         </figure>
