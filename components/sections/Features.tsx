@@ -21,7 +21,7 @@ const Features = () => {
             <figure>
               <Image
                 className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/home.svg"
+                src="/home.png"
                 width={400}
                 height={400}
                 alt="Home"
@@ -43,8 +43,8 @@ const Features = () => {
           <article className="flex flex-col md:flex-row-reverse items-center justify-between gap-5">
             <figure>
               <Image
-                className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/credit.svg"
+                className="size-[160px] md:size-[240px] lg:size-[320px] md:p-2"
+                src="/credit.png"
                 width={400}
                 height={400}
                 alt="Credit card"
@@ -78,7 +78,7 @@ const Features = () => {
             <figure>
               <Image
                 className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/vault.svg"
+                src="/vault.png"
                 width={400}
                 height={400}
                 alt="Vault"
@@ -102,7 +102,7 @@ const Features = () => {
             <figure>
               <Image
                 className="size-[160px] md:size-[240px] lg:size-[320px]"
-                src="/cibil.svg"
+                src="/cibil.png"
                 width={400}
                 height={400}
                 alt="Credit report"
