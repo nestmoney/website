@@ -3,7 +3,8 @@ import { privacyPolicyData } from "@/components/updatable";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Nest Money",
-  description: "Read the Nest Money privacy policy and how we protect your information.",
+  description:
+    "Read the Nest Money privacy policy and how we protect your information.",
 };
 
 const page = () => {

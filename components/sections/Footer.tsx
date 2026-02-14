@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="site-container mx-auto flex md:flex-row justify-between w-full flex-col gap-8">
         {/* Left */}
         <address className="not-italic space-y-2 text-left">
-          <p className="font-semibold">Contact</p>
+          <p className="font-semibold">Contact Us</p>
           <p>hello@nestmoney.in</p>
           <p>+91 94810 65253</p>
         </address>
@@ -23,7 +23,7 @@ const Footer = () => {
         <nav className="space-y-2 " aria-label="Footer">
           <p className="font-semibold">Links</p>
           <p>
-            <Link href="/terms">Terms and Conditions</Link>
+            <Link href="/terms">Terms of Use</Link>
           </p>
           <p>
             <Link href="/privacy">Privacy Policy</Link>
