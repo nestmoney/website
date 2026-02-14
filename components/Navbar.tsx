@@ -37,6 +37,14 @@ const Navbar = () => {
               <li key={item}>
                 <Link
                   href={`/#${item}`}
+                  scroll={false}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById(item);
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                   className="relative after:absolute after:left-0 after:-bottom-1
                   after:h-[2px] after:w-0 after:bg-secondary
                   after:transition-all after:duration-300
@@ -73,7 +81,15 @@ const Navbar = () => {
               <li key={item} className="w-full">
                 <Link
                   href={`/#${item}`}
-                  onClick={() => setOpen(false)}
+                  scroll={false}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById(item);
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                    }
+                    setOpen(false);
+                  }}
                   className="block w-full text-center py-4 hover:bg-gray-100 transition-colors"
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
