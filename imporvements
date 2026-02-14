@@ -1,4 +1,11 @@
-qr code based on os
-floatin assets just like super fam
-
-NAV NEED NO TO BE STICKY
+1. Spacing between each section must be consistent - 160 for XL, 128 for L & Tab, 64 for Mob (as per figma)
+   ~~2. Rename About section to Nest~~
+2. Add a light shadow to mobile view in Nest section
+3. Text changes - “Contact Us”, “Terms of Use”, “Privacy Policy”
+4. QR code has sharp edges - Clip the content
+5. Add left chat (middle of Husband & Wife) and right chat (middle of Son & Grandpa) - to be slightly bigger in Mob
+6. Update new features assets as png (import 4x)
+7. Add mobile view video - loop
+8. Mobile view - Nav bar and Hero sections to occupy complete width with 20px horizontal padding, instead of fixed width of 320 (Hero is looking too small in 320)
+9. For mobile pages - path should be mobile/xyz instead of mobile-xyz
+10. When android/iOS links are not added(empty), show ‘Launching soon’ and Hide QR code

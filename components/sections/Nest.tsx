@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const About = () => {
+const Nest = () => {
   return (
-    <section className="scroll-mt-[80px] mb-[30]" id="about" aria-labelledby="about-title">
+    <section className="scroll-mt-[80px] mb-[30]" id="nest">
       <div className="flex flex-col lg:flex-row justify-between items-center px-6 gap-10">
         <div className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200] flex flex-col gap-6">
           <header className="mb-[35px]">
@@ -15,10 +15,7 @@ const About = () => {
               aria-hidden="true"
             />
 
-            <h2
-              id="about-title"
-              className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-bold leading-[110%]"
-            >
+            <h2 className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-bold leading-[110%]">
               Financial awareness is the <br className="hidden md:block" />
               foundation of a secure{" "}
               <span className="inline-flex items-end gap-1">
@@ -39,13 +36,14 @@ const About = () => {
             <p>
               <span className="text-primary-blue font-bold">Nest</span> is a
               shared space for your family, where everyone can see finances, pay
-              each other's bills, keep track of financial wellbeing, and more.
+              each other&apos;s bills, keep track of financial wellbeing, and
+              more.
             </p>
             <p className="font-semibold italic">
               It is like a WhatsApp group for family finances.
             </p>
             <p>
-              Boundaries? We've got you covered.
+              Boundaries? We&apos;ve got you covered.
               <br /> You can create multiple nests to manage finances separately
               with your spouse, parents or other family members.
             </p>
@@ -65,4 +63,4 @@ const About = () => {
     </section>
   );
 };
-export default About;
+export default Nest;
