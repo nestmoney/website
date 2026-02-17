@@ -160,6 +160,34 @@ const page = () => {
           </NamedSubSection>
         </Indent>
       </NumberedSection>
+      <NumberedSection sl={2}>
+        Our role in processing personal data
+        <Para>
+          Nest Money acts as the Data Fiduciary under the DPDPA for all Personal
+          Data processed through the Platform. While We may engage third-party
+          Data Processors to perform specific tasks on Our behalf, We remain
+          primarily responsible for ensuring that such processing complies with
+          the Act and applicable sectoral regulatory requirements. All such
+          processors operate under binding valid contracts that mandate the use
+          of reasonable security safeguards, confidentiality obligations and
+          deletion upon completion of services, restrict data use to Our
+          documented instructions, and grant Us the right to audit their
+          compliance periodically.
+        </Para>
+        <Para>
+          Under the DPDPA, certain categories of Data Fiduciaries may be
+          notified by the Government of India as Significant Data Fiduciaries
+          (“SDFs”) based on factors such as volume and sensitivity of data
+          processed, risk to data principals, and impact on national interests.
+          As of the date of this Privacy Policy, Nest Money has not been
+          notified as an SDF. However, in the event Nest Money is designated as
+          an SDF in the future, it shall comply with all additional obligations
+          applicable to such entities, including but not limited to appointment
+          of a Data Protection Officer, conduct of Data Protection Impact
+          Assessments, independent audits and enhanced governance requirements,
+          in accordance with applicable law.
+        </Para>
+      </NumberedSection>
     </main>
   );
 };
