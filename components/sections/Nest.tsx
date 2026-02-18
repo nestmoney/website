@@ -40,15 +40,15 @@ const Nest = () => {
               <span className="text-primary-blue font-bold">Nest</span> is a
               shared space for your family, where everyone can see finances, pay
               each other&apos;s bills, keep track of financial wellbeing, and
-              more.
+              more
             </p>
             <p className="font-semibold italic">
-              It is like a WhatsApp group for family finances.
+              Like a WhatsApp group for family finances
             </p>
             <p>
               Boundaries? We&apos;ve got you covered.
               <br /> You can create multiple nests to manage finances separately
-              with your spouse, parents or other family members.
+              with your spouse, parents or other family members
             </p>
           </div>
         </div>

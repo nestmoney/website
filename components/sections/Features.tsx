@@ -31,7 +31,7 @@ const Features = () => {
 
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
                 Manage and pay household bills like electricity, gas, mobile
-                recharges, insurance premiums and more in one place.
+                recharges, insurance premiums and more in one place
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Features = () => {
 
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
                 Manage and pay all your family’s credit card bills in one place,
-                so that no one ever misses a due date.
+                so that no one ever misses a due date
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Features = () => {
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
                 Share important documents like insurance policies, health cards,
                 investment or loan documents in one secure place so your family
-                can access them when it matters the most.
+                can access them when it matters the most
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Features = () => {
               <p className="text-[14px] md:text-[18px] lg:text-[20px] mt-4">
                 Track all ongoing loans in one place and monitor each other’s
                 credit reports to maintain your family’s overall financial
-                wellbeing.
+                wellbeing
               </p>
             </div>
           </div>
