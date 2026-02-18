@@ -9,3 +9,6 @@
 ~~7. For mobile pages - path should be mobile/xyz instead of mobile-xyz~~
 
 ~~4. When android/iOS links are not added(empty), show ‘Launching soon’ and Hide QR code~~
+
+~~4.How Do We Share Your Personal Data? align roman num~~
+~~link to nestmoney .in terms of use~~

@@ -56,14 +56,16 @@ const data: TableRow[] = [
 const PrivacyTable = () => {
   return (
     <div className="overflow-x-auto my-5">
-      <table className="w-full border border-black border-collapse text-responsive">
+      <table className="w-full border border-secondary border-collapse text-responsive">
         <thead>
           <tr className="text-legal">
-            <th className="border border-black px-3 py-2 text-left">
+            <th className="border border-secondary px-3 py-2 text-left">
               Category of Data
             </th>
-            <th className="border border-black px-3 py-2 text-left">Purpose</th>
-            <th className="border border-black px-3 py-2 text-left">
+            <th className="border border-secondary px-3 py-2 text-left">
+              Purpose
+            </th>
+            <th className="border border-secondary px-3 py-2 text-left">
               Lawful Basis
             </th>
           </tr>
@@ -72,13 +74,13 @@ const PrivacyTable = () => {
         <tbody>
           {data.map((row, index) => (
             <tr key={index}>
-              <td className="border border-black px-3 py-2 align-top font-normal">
+              <td className="border border-secondary px-3 py-2 align-top font-normal">
                 {row.category}
               </td>
-              <td className="border border-black px-3 py-2 align-top font-normal">
+              <td className="border border-secondary px-3 py-2 align-top font-normal">
                 {row.purpose}
               </td>
-              <td className="border border-black px-3 py-2 align-top font-normal">
+              <td className="border border-secondary px-3 py-2 align-top font-normal">
                 {row.lawfulBasis}
               </td>
             </tr>

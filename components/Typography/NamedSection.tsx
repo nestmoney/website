@@ -15,7 +15,9 @@ const NamedSection = ({
   className?: string;
 }) => {
   return (
-    <div className={`flex flex-col heading-legal ${className} space-y-4`}>
+    <div
+      className={`flex flex-col heading-text font-semibold ${className} space-y-4`}
+    >
       <div className="flex">
         <span className="mr-[15px]">{sl}.</span>
         <p>{heading ? toTitleCase(heading) : ""}</p>

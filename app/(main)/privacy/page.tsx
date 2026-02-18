@@ -8,6 +8,7 @@ import PrivacyTable from "@/components/Typography/Table";
 import TypoLinks from "@/components/Typography/TypoLinks";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Nest Money",
@@ -17,11 +18,11 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto text-justify leading-[200%]">
+    <main className="min-h-screen py-[75px] site-container mx-auto text-justify ">
       <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] mb-10 rounded-tl-[24px] rounded-br-[24px]">
         <h1>Privacy Policy</h1>
       </header>
-      <Para Nobreak>
+      <Para>
         Nest Money values the trust You place in Us and respect Your privacy,
         maintaining the highest standards for secure transactions and protection
         of Your Personal Data. We have formulated this privacy policy
@@ -41,9 +42,11 @@ const page = () => {
         the user of the Platform. By visiting, downloading, using Nest Money
         Platform, and/or, providing Your information or availing Our Services,
         You expressly agree to be bound by this Privacy Policy as well as Our
-        Terms of Use.
+        <Link href="/terms" className="text-primary-blue pl-1">
+          Terms of Use.
+        </Link>
       </Para>
-      <Para Nobreak>
+      <Para>
         This Privacy Policy is published and shall be construed in accordance
         with the provisions of Indian laws and regulations including the Digital
         Personal Data Protection Act, 2023 (<Bold>&ldquo;DPDPA&rdquo;</Bold>),
@@ -137,8 +140,11 @@ const page = () => {
             systems, browser types, and network information. Such data may be
             collected at various stages of Your usage of the Platform such as
             visiting the Platform, registering on the Platform as a “User” or
-            any other relationship that may be governed by Our Terms of Use or
-            creating Your Nest Money user account.
+            any other relationship that may be governed by Our{" "}
+            <Link href="/terms" className="text-primary-blue pl-1">
+              Terms of Use.
+            </Link>{" "}
+            or creating Your Nest Money user account.
           </NamedSubSection>
           <NamedSubSection sl="b">
             Personal Data Classification: While such information may be
@@ -203,10 +209,13 @@ const page = () => {
             unambiguous consent, obtained through a clear affirmative action
             (such as a toggle or checkbox). You have the right to withdraw this
             consent at any time through Our privacy settings or contacting Our
-            support centre at support@nestmoney.in. Where enabled under
-            applicable law, You may also manage, review, or withdraw Your
-            consent through any registered Consent Manager authorized by the
-            Data Protection Board of India.
+            support centre at{" "}
+            <TypoLinks email="support@nestmoney.in">
+              support@nestmoney.in
+            </TypoLinks>
+            . Where enabled under applicable law, You may also manage, review,
+            or withdraw Your consent through any registered Consent Manager
+            authorized by the Data Protection Board of India.
           </NamedSubSection>
           <NamedSubSection sl="b">
             <Bold> Legitimate Uses : </Bold>
@@ -406,14 +415,21 @@ const page = () => {
             as well as other third parties, to enforce laws such as those
             regarding, fraud, financial crimes and other personal rights
             violations. Therefore, We share Your information when Nest Money is
-            required by law to share the information in situations such as (i)
-            when We suspect a violation of the Terms; (ii) co-operating with law
-            enforcement agencies in response to any judicial order; or (iii)
-            co-operating with any investigation on matters related to public
-            safety,illegal activities, suspected fraud, intellectual property
-            infringement, threats to the physical safety of any person, or any
-            activity that may expose Us or You to liability etc., as may be
-            permitted by law.
+            required by law to share the information in situations such as
+            <NamedSubSection sl="i">
+              when We suspect a violation of the Terms;
+            </NamedSubSection>
+            <NamedSubSection sl="ii">
+              co-operating with law enforcement agencies in response to any
+              judicial order; or
+            </NamedSubSection>
+            <NamedSubSection sl="iii">
+              co-operating with any investigation on matters related to public
+              safety,illegal activities, suspected fraud, intellectual property
+              infringement, threats to the physical safety of any person, or any
+              activity that may expose Us or You to liability etc., as may be
+              permitted by law.
+            </NamedSubSection>
           </NamedSubSection>
           <NamedSubSection sl="b">
             With third parties such as Axis Bank, Razorpay, Setu, and Experian,
@@ -678,11 +694,14 @@ const page = () => {
             <Bold>nominate :</Bold> You have the right to nominate one or more
             individuals to exercise Your rights under the DPDPA in the event of
             Your death or incapacity. You may submit Your nomination by
-            contacting Our support section at support@nestmoney.in. Please
-            ensure Your nominee is aware of this appointment. To protect Your
-            privacy, We shall enquire the nominee to provide a valid death
-            certificate or proof of incapacity and undergo identity verification
-            before We grant access to Your data. consent
+            contacting Our support section at{" "}
+            <TypoLinks email="support@nestmoney.in">
+              support@nestmoney.in
+            </TypoLinks>
+            . Please ensure Your nominee is aware of this appointment. To
+            protect Your privacy, We shall enquire the nominee to provide a
+            valid death certificate or proof of incapacity and undergo identity
+            verification before We grant access to Your data. consent
           </NamedSubSection>
           <NamedSubSection sl="f">
             <Bold>grievance redressal :</Bold> You have the right to register a
@@ -840,11 +859,15 @@ const page = () => {
       <NumberedSection sl={18} heading="NO CONFLICT">
         <Indent>
           <Para>
-            This Privacy Policy constitutes a part of the Terms of Use. We have
-            taken utmost care to avoid any inconsistency or conflict of this
-            policy with any other terms, agreements or guidelines available on
-            Our Platform. In case there exists a conflict, We request You to
-            kindly contact Us for the final provision and interpretation.
+            This Privacy Policy constitutes a part of the{" "}
+            <Link href="/terms" className="text-primary-blue pl-1">
+              Terms of Use.
+            </Link>
+            . We have taken utmost care to avoid any inconsistency or conflict
+            of this policy with any other terms, agreements or guidelines
+            available on Our Platform. In case there exists a conflict, We
+            request You to kindly contact Us for the final provision and
+            interpretation.
           </Para>
           <Para>
             This Privacy Policy operates subject to applicable sectoral laws and
@@ -931,7 +954,11 @@ const page = () => {
           </Para>
           <Para>
             Detailed information about the Nest and its functionalities, is
-            available in Our Terms of Use.
+            available in Our{" "}
+            <Link href="/terms" className="text-primary-blue pl-1">
+              Terms of Use.
+            </Link>
+            .
           </Para>
         </Indent>
       </NumberedSection>
@@ -1007,8 +1034,11 @@ const page = () => {
           </NamedSubSection>
           <NamedSubSection sl="b">
             other Nest Members may take permitted actions as indicated in Our
-            Terms of Use, on Your behalf within the Nest, based on the
-            permissions and consents granted by You,
+            <Link href="/terms" className="text-primary-blue pl-1">
+              Terms of Use.
+            </Link>
+            , on Your behalf within the Nest, based on the permissions and
+            consents granted by You,
           </NamedSubSection>
           <NamedSubSection sl="c">
             Documents uploaded to the Nest Safe are visible to other Nest
