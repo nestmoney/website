@@ -932,7 +932,9 @@ const page = () => {
         </Indent>
       </NumberedSection>
       <NumberedSection
+        id="nest"
         sl={21}
+        className="scroll-mt-5"
         heading="HOW IS YOUR PERSONAL DATA HANDLED IN THE NEST"
       >
         <Indent>
