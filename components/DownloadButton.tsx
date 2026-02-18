@@ -19,7 +19,7 @@ const DownloadBtn = () => {
     <nav className="flex space-x-[16px]" aria-label="Download options">
       {/* If no links available */}
       {!Links.playStore && !Links.appStore && (
-        <p className="font-medium rounded-md text-lg text-center text-white bg-secondary p-2">
+        <p className="font-medium rounded-md text-lg text-center text-white bg-secondary py-2 px-4">
           Launching Soon
         </p>
       )}
