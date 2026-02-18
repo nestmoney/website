@@ -8,7 +8,7 @@ import TypoLinks from "@/components/Typography/TypoLinks";
 import Link from "next/link";
 const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto text-justify space-y-6">
+    <main className="min-h-screen py-[75px] site-container mx-auto text-justify ">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] mb-10 rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>
@@ -76,7 +76,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           effective immediately upon being posted. If You do not agree to the
           modified Terms for a Service, please discontinue Your use of that
           Service.
-        </Para> 
+        </Para>
       </div>
       <div className="mb-8"></div>
       <NumberedSection sl={1} heading="ELIGIBILITY OF USERS">
@@ -249,7 +249,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
       </NumberedSection>
       <NumberedSection sl={4} heading="USAGE RESTRICTIONS">
         <Indent>
-          <p className="heading-legal my-2 ">
+          <p className="heading-legal  ">
             Account Responsibility and Compliance
           </p>
           <Para>
@@ -260,7 +260,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             electronic commerce, consumer protection, cybersecurity, data
             protection and privacy.
           </Para>
-          <p className="heading-legal my-2">Prohibited Content</p>
+          <p className="heading-legal ">Prohibited Content</p>
           <Para>
             You shall not upload, transmit, store or otherwise make available
             any content through the Platform that :
@@ -296,7 +296,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             advertisements, contests, pyramid schemes or solicitations unrelated
             to the Services.
           </NamedSubSection>
-          <p className="heading-legal my-2">Prohibited Use of the Platform</p>
+          <p className="heading-legal ">Prohibited Use of the Platform</p>
           <Para>
             You shall not use the Platform or the Services in any manner that:
           </Para>

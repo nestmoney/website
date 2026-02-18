@@ -1,6 +1,12 @@
 import { ReactNode } from "react";
 
-const Indent = ({ children }: { children: ReactNode }) => {
-  return <section className="">{children}</section>;
+const Indent = ({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) => {
+  return <section className={` ${className}`}>{children}</section>;
 };
 export default Indent;

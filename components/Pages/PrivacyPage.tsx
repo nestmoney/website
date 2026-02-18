@@ -10,156 +10,172 @@ import Link from "next/link";
 
 const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto text-justify ">
+    <main className="min-h-screen py-[75px] site-container mx-auto text-justify flex flex-col gap-12">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] mb-10 rounded-tl-[24px] rounded-br-[24px]">
           <h1>Privacy Policy</h1>
         </header>
       )}
-      <Para>
-        Nest Money values the trust You place in Us and respect Your privacy,
-        maintaining the highest standards for secure transactions and protection
-        of Your Personal Data. We have formulated this privacy policy
-        (hereinafter referred to as <Bold>&ldquo;Privacy Policy&rdquo;</Bold> or{" "}
-        <Bold>&ldquo;Policy&rdquo;</Bold>) to inform You about how Nest Money
-        collects, stores, uses and otherwise processes Your data including Your
-        Personal Data through Nest Money website www.nestmoney.in, Nest Money
-        mobile Application, chatbots, notifications or any other medium used by
-        Nest Money to provide its Services to You (hereinafter referred to as
-        the <Bold>&ldquo;Platform&rdquo;</Bold>). The Platform is owned,
-        maintained, operated and managed by Legentree Technologies Private
-        Limited (hereafter referred in this document as{" "}
-        <Bold>&ldquo;Nest Money&rdquo;</Bold>/ <Bold>&ldquo;We&rdquo;</Bold>/{" "}
-        <Bold>&ldquo;Us&rdquo;</Bold>). The terms of this Privacy Policy shall
-        apply to You (hereafter referred in this document as{" "}
-        <Bold>&ldquo;You&rdquo;</Bold> or <Bold>&ldquo;User&rdquo;</Bold>) as
-        the user of the Platform. By visiting, downloading, using Nest Money
-        Platform, and/or, providing Your information or availing Our Services,
-        You expressly agree to be bound by this Privacy Policy as well as Our
-        <Link href="/terms" className="text-primary-blue pl-1">
-          Terms of Use.
-        </Link>
-      </Para>
-      <Para>
-        This Privacy Policy is published and shall be construed in accordance
-        with the provisions of Indian laws and regulations including the Digital
-        Personal Data Protection Act, 2023 (<Bold>&ldquo;DPDPA&rdquo;</Bold>),
-        the related DPDP Rules, 2025 and their respective amendments, that
-        require publishing of the privacy policy for collection, use, storage,
-        transfer, disclosure of Personal Data. Personal Data means any data that
-        identifies or relates to an identifiable individual, excluding any
-        information that is made publicly available as per applicable law
-        (hereinafter referred to as <Bold>&ldquo;Personal Data&rdquo;</Bold>).
-        If You disclose to us any Personal Data relating to other people, You
-        represent that You have the authority to do so and permit us to use such
-        information in accordance with this Privacy Policy.
-      </Para>
-
-      <Para>
-        If You do not agree with Our Privacy, please discontinue use of Our
-        Services; Your continued usage of the Platform shall signify Your
-        consent to and acceptance of Our Privacy Policy and the related Terms of
-        Use.
-      </Para>
+      <div className="flex flex-col gap-8">
+        <Para>
+          Nest Money values the trust You place in Us and respect Your privacy,
+          maintaining the highest standards for secure transactions and
+          protection of Your Personal Data. We have formulated this privacy
+          policy (hereinafter referred to as{" "}
+          <Bold>&ldquo;Privacy Policy&rdquo;</Bold> or{" "}
+          <Bold>&ldquo;Policy&rdquo;</Bold>) to inform You about how Nest Money
+          collects, stores, uses and otherwise processes Your data including
+          Your Personal Data through Nest Money website www.nestmoney.in, Nest
+          Money mobile Application, chatbots, notifications or any other medium
+          used by Nest Money to provide its Services to You (hereinafter
+          referred to as the <Bold>&ldquo;Platform&rdquo;</Bold>). The Platform
+          is owned, maintained, operated and managed by Legentree Technologies
+          Private Limited (hereafter referred in this document as{" "}
+          <Bold>&ldquo;Nest Money&rdquo;</Bold>/ <Bold>&ldquo;We&rdquo;</Bold>/{" "}
+          <Bold>&ldquo;Us&rdquo;</Bold>). The terms of this Privacy Policy shall
+          apply to You (hereafter referred in this document as{" "}
+          <Bold>&ldquo;You&rdquo;</Bold> or <Bold>&ldquo;User&rdquo;</Bold>) as
+          the user of the Platform. By visiting, downloading, using Nest Money
+          Platform, and/or, providing Your information or availing Our Services,
+          You expressly agree to be bound by this Privacy Policy as well as Our
+          <Link href="/terms" className="text-primary-blue pl-1">
+            Terms of Use.
+          </Link>
+        </Para>
+        <Para>
+          This Privacy Policy is published and shall be construed in accordance
+          with the provisions of Indian laws and regulations including the
+          Digital Personal Data Protection Act, 2023 (
+          <Bold>&ldquo;DPDPA&rdquo;</Bold>), the related DPDP Rules, 2025 and
+          their respective amendments, that require publishing of the privacy
+          policy for collection, use, storage, transfer, disclosure of Personal
+          Data. Personal Data means any data that identifies or relates to an
+          identifiable individual, excluding any information that is made
+          publicly available as per applicable law (hereinafter referred to as{" "}
+          <Bold>&ldquo;Personal Data&rdquo;</Bold>). If You disclose to us any
+          Personal Data relating to other people, You represent that You have
+          the authority to do so and permit us to use such information in
+          accordance with this Privacy Policy.
+        </Para>
+        <Para>
+          If You do not agree with Our Privacy, please discontinue use of Our
+          Services; Your continued usage of the Platform shall signify Your
+          consent to and acceptance of Our Privacy Policy and the related Terms
+          of Use.
+        </Para>
+      </div>
 
       <NumberedSection sl={1} heading="What data do we collect from YOU?">
-        <Indent>
-          <p className="heading-legal mb-3">Personal Data</p>
-          <Para>
-            We collect Personal Data that You provide voluntarily when You
-            register on to the Platform or procure any Services through the
-            Platform or make any inquiries through the Platform or communicate
-            with Nest Money by email, telephone, letter or other methods, or
-            subscribe for newsletters or other information services, or report a
-            problem with the Platform, or otherwise contact Us.
-          </Para>
-          <Para>
-            We will collect Personal Data necessary to offer and fulfil the
-            Services You request, that You provide Us through the Platform
-            including but not limited to Name, Mobile Number, Email Address. We
-            collect Your Personal Data such as Permanent Account Number (PAN),
-            Your business-related information, videos or other online/ offline
-            verification documents as mandated by relevant regulatory
-            authorities for the purpose of identity verification, compliance
-            with applicable Know Your Customer (KYC) requirements and for
-            enabling Services under the Platform. We may ask You for additional
-            information depending on the nature of Services You seek to avail
-            through the Platform.
-          </Para>
-          <Para>
-            The Platform enables You to create a User profile, which consists of
-            information about You, and may include Your Personal Data, Your
-            financial information and other information including Your username
-            (“Profile”). We will be collecting Your associated Profile
-            information, including but not limited to name, email id, other
-            Profile details as may be provided by You, Your transactions or
-            attempts to transact on the Platform, OTP sent to You by Nest Money,
-            accessing links, e-mails, chat conversations, feedbacks,
-            notifications sent or owned by the Platform and if You opt to
-            participate in Our occasional surveys.
-          </Para>
-          <Para>
-            We and Our service providers or business partners may also collect
-            Your Personal Data from third parties or information made publicly
-            available, as applicable, including but not limited to: Bill-related
-            information, Your demographic and photo information including but
-            not limited to address, gender, and date of birth.
-          </Para>
-          <Para>
-            To provide specific Services, such as identity verification for KYC
-            or secure document uploads to Your Nest Safe, the Platform may
-            request specific device permissions. All such permissions are
-            requested on a &apos;Need-to-Use&apos; basis, and You may revoke
-            these at any time through Your device settings or by reaching out to
-            our support team at{" "}
-            <TypoLinks email="support@nestmoney.in">
-              support@nestmoney.in
-            </TypoLinks>
-            . Please note that revoking certain permissions may limit Your
-            ability to use specific features of the Platform.
-          </Para>
-          <p className="heading-legal mb-3">Technical and Usage Data</p>
-          <Para>
-            We collect Personal Data that You provide voluntarily when You
-            register on to the Platform or procure any Services through the
-            Platform or make any inquiries through the Platform or communicate
-            with Nest Money by email, telephone, letter or other methods, or
-            subscribe for newsletters or other information services, or report a
-            problem with the Platform, or otherwise contact Us.
-          </Para>
-          <NamedSubSection sl="a">
-            Scope of Collection: When You access or use the Platform, We
-            automatically collect certain technical and usage information,
-            including device identifiers, device model, IP addresses, operating
-            systems, browser types, and network information. Such data may be
-            collected at various stages of Your usage of the Platform such as
-            visiting the Platform, registering on the Platform as a “User” or
-            any other relationship that may be governed by Our{" "}
-            <Link href="/terms" className="text-primary-blue pl-1">
-              Terms of Use.
-            </Link>{" "}
-            or creating Your Nest Money user account.
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            Personal Data Classification: While such information may be
-            processed in an aggregated or de-identified manner for analytics and
-            system administration, any data that can be linked to You is treated
-            as “Digital Personal Data” and processed in accordance with the
-            DPDPA.
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            Log Retention: We may retain system logs and technical records for
-            such period as is reasonably required for security monitoring, fraud
-            detection, audit, and compliance with applicable legal and
-            regulatory requirements.
-          </NamedSubSection>
-          <NamedSubSection sl="d">
-            Purpose Limitation: This information is used for platform security,
-            performance monitoring, Service improvement and regulatory
-            compliance. We do not use such data for marketing or advertising
-            profiling without Your consent.
-          </NamedSubSection>
-        </Indent>
+        <div className="flex flex-col gap-4">
+          <NamedSection heading="Personal Data">
+            <Indent className="flex flex-col gap-4">
+              <Para>
+                We collect Personal Data that You provide voluntarily when You
+                register on to the Platform or procure any Services through the
+                Platform or make any inquiries through the Platform or
+                communicate with Nest Money by email, telephone, letter or other
+                methods, or subscribe for newsletters or other information
+                services, or report a problem with the Platform, or otherwise
+                contact Us.
+              </Para>
+              <Para>
+                We will collect Personal Data necessary to offer and fulfil the
+                Services You request, that You provide Us through the Platform
+                including but not limited to Name, Mobile Number, Email Address.
+                We collect Your Personal Data such as Permanent Account Number
+                (PAN), Your business-related information, videos or other
+                online/ offline verification documents as mandated by relevant
+                regulatory authorities for the purpose of identity verification,
+                compliance with applicable Know Your Customer (KYC) requirements
+                and for enabling Services under the Platform. We may ask You for
+                additional information depending on the nature of Services You
+                seek to avail through the Platform.
+              </Para>
+              <Para>
+                The Platform enables You to create a User profile, which
+                consists of information about You, and may include Your Personal
+                Data, Your financial information and other information including
+                Your username (“Profile”). We will be collecting Your associated
+                Profile information, including but not limited to name, email
+                id, other Profile details as may be provided by You, Your
+                transactions or attempts to transact on the Platform, OTP sent
+                to You by Nest Money, accessing links, e-mails, chat
+                conversations, feedbacks, notifications sent or owned by the
+                Platform and if You opt to participate in Our occasional
+                surveys.
+              </Para>
+              <Para>
+                We and Our service providers or business partners may also
+                collect Your Personal Data from third parties or information
+                made publicly available, as applicable, including but not
+                limited to: Bill-related information, Your demographic and photo
+                information including but not limited to address, gender, and
+                date of birth.
+              </Para>
+              <Para>
+                To provide specific Services, such as identity verification for
+                KYC or secure document uploads to Your Nest Safe, the Platform
+                may request specific device permissions. All such permissions
+                are requested on a &apos;Need-to-Use&apos; basis, and You may
+                revoke these at any time through Your device settings or by
+                reaching out to our support team at{" "}
+                <TypoLinks email="support@nestmoney.in">
+                  support@nestmoney.in
+                </TypoLinks>
+                . Please note that revoking certain permissions may limit Your
+                ability to use specific features of the Platform.
+              </Para>
+            </Indent>
+          </NamedSection>
+          <NamedSection heading="Technical and Usage Data">
+            <Indent className="flex flex-col gap-4">
+              <Para>
+                We collect Personal Data that You provide voluntarily when You
+                register on to the Platform or procure any Services through the
+                Platform or make any inquiries through the Platform or
+                communicate with Nest Money by email, telephone, letter or other
+                methods, or subscribe for newsletters or other information
+                services, or report a problem with the Platform, or otherwise
+                contact Us.
+              </Para>
+              <div>
+                <NamedSubSection sl="a">
+                  Scope of Collection: When You access or use the Platform, We
+                  automatically collect certain technical and usage information,
+                  including device identifiers, device model, IP addresses,
+                  operating systems, browser types, and network information.
+                  Such data may be collected at various stages of Your usage of
+                  the Platform such as visiting the Platform, registering on the
+                  Platform as a “User” or any other relationship that may be
+                  governed by Our{" "}
+                  <Link href="/terms" className="text-primary-blue pl-1">
+                    Terms of Use.
+                  </Link>{" "}
+                  or creating Your Nest Money user account.
+                </NamedSubSection>
+                <NamedSubSection sl="b">
+                  Personal Data Classification: While such information may be
+                  processed in an aggregated or de-identified manner for
+                  analytics and system administration, any data that can be
+                  linked to You is treated as “Digital Personal Data” and
+                  processed in accordance with the DPDPA.
+                </NamedSubSection>
+                <NamedSubSection sl="c">
+                  Log Retention: We may retain system logs and technical records
+                  for such period as is reasonably required for security
+                  monitoring, fraud detection, audit, and compliance with
+                  applicable legal and regulatory requirements.
+                </NamedSubSection>
+                <NamedSubSection sl="d">
+                  Purpose Limitation: This information is used for platform
+                  security, performance monitoring, Service improvement and
+                  regulatory compliance. We do not use such data for marketing
+                  or advertising profiling without Your consent.
+                </NamedSubSection>
+              </div>
+            </Indent>
+          </NamedSection>
+        </div>
       </NumberedSection>
       <NumberedSection sl={2} heading="Our role in processing personal data">
         <Indent>
@@ -955,167 +971,169 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               Terms of Use.
             </Link>
           </Para>
+
+          <NamedSection heading="What Personal Data Do We Process?">
+            <>
+              <Para>
+                Depending on Your use of the Nest feature, We may process the
+                following categories of Personal Data:
+              </Para>
+              <NamedSubSection sl="a">
+                Identity Information: Full name, PAN number where required,
+                address, date of birth, gender
+              </NamedSubSection>
+              <NamedSubSection sl="b">
+                Contact Information: Mobile number, Email address
+              </NamedSubSection>
+              <NamedSubSection sl="c">
+                Nest and Account-Related Information: Nest membership and Nest
+                Member details, Profile information visible within the Nest,
+                Transactions, bill payments, and assignments undertaken by You
+                or on Your behalf within the Nest
+              </NamedSubSection>
+              <NamedSubSection sl="d">
+                Credit-Related Information (Where Applicable): Credit score and
+                credit report information obtained from authorised credit
+                bureaus, strictly pursuant to Your explicit consent
+              </NamedSubSection>
+            </>
+          </NamedSection>
+          <NamedSection heading="How and Why Do We Process This Data?">
+            <>
+              <Para>
+                We process Your Personal Data in connection with the Nest
+                feature to:
+              </Para>
+              <NamedSubSection sl="a">
+                create and manage Your Nest membership and profile;
+              </NamedSubSection>
+              <NamedSubSection sl="b">
+                complete KYC formalities and perform Service related obligations
+              </NamedSubSection>
+              <NamedSubSection sl="c">
+                enable shared functionality between Nest Members, including bill
+                payments, credit report fetching, document sharing and other
+                permitted account actions;
+              </NamedSubSection>
+              <NamedSubSection sl="d">
+                facilitate credit report related Services where You have
+                expressly consented;
+              </NamedSubSection>
+              <NamedSubSection sl="e">
+                provide Nest-level visibility and controls to Nest Members; and
+              </NamedSubSection>
+              <NamedSubSection sl="f">
+                comply with applicable legal, regulatory and contractual
+                obligations, where relevant.
+              </NamedSubSection>
+              <Para>
+                Further details on processing purposes, lawful grounds, and
+                safeguards are described in the relevant sections of this
+                Privacy Policy.
+              </Para>
+            </>
+          </NamedSection>
+          <NamedSection heading="Data Visibility and Actions Within a Nest">
+            <>
+              <Para>
+                By choosing to join a Nest, You acknowledge and understand that:
+              </Para>
+              <NamedSubSection sl="a">
+                certain Personal Data relating to You will be visible to other
+                Nest Members of the same Nest,
+              </NamedSubSection>
+              <NamedSubSection sl="b">
+                other Nest Members may take permitted actions as indicated in
+                Our
+                <Link href="/terms" className="text-primary-blue pl-1">
+                  Terms of Use.
+                </Link>
+                , on Your behalf within the Nest, based on the permissions and
+                consents granted by You,
+              </NamedSubSection>
+              <NamedSubSection sl="c">
+                Documents uploaded to the Nest Safe are visible to other Nest
+                Members only if You explicitly choose to share them.
+              </NamedSubSection>
+            </>
+          </NamedSection>
+          <NamedSection heading="Consent and Consent Management">
+            <>
+              <Para>
+                Where consent is the legal basis for processing, consent for the
+                processing of Your Personal Data in connection with the Nest
+                feature is obtained directly from You through either OTP-based
+                confirmation sent to Your registered contact details, or other
+                specific consent mechanisms in the Platform.
+              </Para>
+              <Para>
+                By entering or choosing to share such OTP, You provide Your
+                clear and affirmative consent for the processing of Your
+                Personal Data for the purposes described in this section and
+                elsewhere in this Privacy Policy.
+              </Para>
+              <Para>
+                You may withdraw or modify Your consent at any time using the
+                controls available on the Platform or reaching out Our support
+                team at{" "}
+                <TypoLinks email="support@nestmoney.in">
+                  support@nestmoney.in
+                </TypoLinks>
+                . Withdrawal of consent may result in limited access to certain
+                Nest features, without affecting processing carried out prior to
+                such withdrawal.
+              </Para>
+            </>
+          </NamedSection>
+          <NamedSection heading="Your Rights">
+            <>
+              <Para>
+                Subject to applicable law, including the DPDPA, You have the
+                right to:
+              </Para>
+              <NamedSubSection sl="a">
+                <Bold>Withdraw</Bold> from a Nest or unlink Your profile from a
+                Nest;
+              </NamedSubSection>
+              <NamedSubSection sl="b">
+                <Bold>Correction</Bold> of inaccurate or outdated Personal Data;
+              </NamedSubSection>
+              <NamedSubSection sl="c">
+                <Bold>Consent Management</Bold> including withdrawal of consent
+                for specific Nest-related actions;
+              </NamedSubSection>
+              <NamedSubSection sl="d">
+                <Bold>Nomination</Bold> of a person to exercise Your rights in
+                the event of death or incapacity
+              </NamedSubSection>
+              <Para>
+                Further information on Your rights, and how to exercise them, is
+                provided in the relevant sections of this Privacy Policy.
+              </Para>
+            </>
+          </NamedSection>
+          <NamedSection heading="Grievance Redressal">
+            <>
+              <Para>
+                If You have any questions or grievances relating to the
+                processing of Your Personal Data through the Nest feature, You
+                may contact Our designated Grievance Officer at:
+              </Para>
+              <Para>
+                <Bold>Email:</Bold>{" "}
+                <TypoLinks email="grievance@nestmoney.in">
+                  grievance@nestmoney.in
+                </TypoLinks>
+              </Para>
+              <Para>
+                If You do not receive a response within the period prescribed
+                under applicable law, You may approach the Data Protection Board
+                of India in the manner notified by it.
+              </Para>
+            </>
+          </NamedSection>
         </Indent>
       </NumberedSection>
-      <NamedSection sl="A" heading="What Personal Data Do We Process?">
-        <Indent>
-          <Para>
-            Depending on Your use of the Nest feature, We may process the
-            following categories of Personal Data:
-          </Para>
-          <NamedSubSection sl="a">
-            Identity Information: Full name, PAN number where required, address,
-            date of birth, gender
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            Contact Information: Mobile number, Email address
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            Nest and Account-Related Information: Nest membership and Nest
-            Member details, Profile information visible within the Nest,
-            Transactions, bill payments, and assignments undertaken by You or on
-            Your behalf within the Nest
-          </NamedSubSection>
-          <NamedSubSection sl="d">
-            Credit-Related Information (Where Applicable): Credit score and
-            credit report information obtained from authorised credit bureaus,
-            strictly pursuant to Your explicit consent
-          </NamedSubSection>
-        </Indent>
-      </NamedSection>
-      <NamedSection sl="B" heading="How and Why Do We Process This Data?">
-        <Indent>
-          <Para>
-            We process Your Personal Data in connection with the Nest feature
-            to:
-          </Para>
-          <NamedSubSection sl="a">
-            create and manage Your Nest membership and profile;
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            complete KYC formalities and perform Service related obligations
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            enable shared functionality between Nest Members, including bill
-            payments, credit report fetching, document sharing and other
-            permitted account actions;
-          </NamedSubSection>
-          <NamedSubSection sl="d">
-            facilitate credit report related Services where You have expressly
-            consented;
-          </NamedSubSection>
-          <NamedSubSection sl="e">
-            provide Nest-level visibility and controls to Nest Members; and
-          </NamedSubSection>
-          <NamedSubSection sl="f">
-            comply with applicable legal, regulatory and contractual
-            obligations, where relevant.
-          </NamedSubSection>
-          <Para>
-            Further details on processing purposes, lawful grounds, and
-            safeguards are described in the relevant sections of this Privacy
-            Policy.
-          </Para>
-        </Indent>
-      </NamedSection>
-      <NamedSection sl="C" heading="Data Visibility and Actions Within a Nest">
-        <Indent>
-          <Para>
-            By choosing to join a Nest, You acknowledge and understand that:
-          </Para>
-          <NamedSubSection sl="a">
-            certain Personal Data relating to You will be visible to other Nest
-            Members of the same Nest,
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            other Nest Members may take permitted actions as indicated in Our
-            <Link href="/terms" className="text-primary-blue pl-1">
-              Terms of Use.
-            </Link>
-            , on Your behalf within the Nest, based on the permissions and
-            consents granted by You,
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            Documents uploaded to the Nest Safe are visible to other Nest
-            Members only if You explicitly choose to share them.
-          </NamedSubSection>
-        </Indent>
-      </NamedSection>
-      <NamedSection sl="D" heading="Consent and Consent Management">
-        <Indent>
-          <Para>
-            Where consent is the legal basis for processing, consent for the
-            processing of Your Personal Data in connection with the Nest feature
-            is obtained directly from You through either OTP-based confirmation
-            sent to Your registered contact details, or other specific consent
-            mechanisms in the Platform.
-          </Para>
-          <Para>
-            By entering or choosing to share such OTP, You provide Your clear
-            and affirmative consent for the processing of Your Personal Data for
-            the purposes described in this section and elsewhere in this Privacy
-            Policy.
-          </Para>
-          <Para>
-            You may withdraw or modify Your consent at any time using the
-            controls available on the Platform or reaching out Our support team
-            at{" "}
-            <TypoLinks email="support@nestmoney.in">
-              support@nestmoney.in
-            </TypoLinks>
-            . Withdrawal of consent may result in limited access to certain Nest
-            features, without affecting processing carried out prior to such
-            withdrawal.
-          </Para>
-        </Indent>
-      </NamedSection>
-      <NamedSection sl="E" heading="Your Rights">
-        <Indent>
-          <Para>
-            Subject to applicable law, including the DPDPA, You have the right
-            to:
-          </Para>
-          <NamedSubSection sl="a">
-            <Bold>Withdraw</Bold> from a Nest or unlink Your profile from a
-            Nest;
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            <Bold>Correction</Bold> of inaccurate or outdated Personal Data;
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            <Bold>Consent Management</Bold> including withdrawal of consent for
-            specific Nest-related actions;
-          </NamedSubSection>
-          <NamedSubSection sl="d">
-            <Bold>Nomination</Bold> of a person to exercise Your rights in the
-            event of death or incapacity
-          </NamedSubSection>
-          <Para>
-            Further information on Your rights, and how to exercise them, is
-            provided in the relevant sections of this Privacy Policy.
-          </Para>
-        </Indent>
-      </NamedSection>
-      <NamedSection sl="F" heading="Grievance Redressal">
-        <Indent>
-          <Para>
-            If You have any questions or grievances relating to the processing
-            of Your Personal Data through the Nest feature, You may contact Our
-            designated Grievance Officer at:
-          </Para>
-          <Para>
-            <Bold>Email:</Bold>{" "}
-            <TypoLinks email="grievance@nestmoney.in">
-              grievance@nestmoney.in
-            </TypoLinks>
-          </Para>
-          <Para>
-            If You do not receive a response within the period prescribed under
-            applicable law, You may approach the Data Protection Board of India
-            in the manner notified by it.
-          </Para>
-        </Indent>
-      </NamedSection>
     </main>
   );
 };
