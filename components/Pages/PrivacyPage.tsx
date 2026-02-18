@@ -10,12 +10,14 @@ import Link from "next/link";
 
 const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto text-justify flex flex-col gap-12">
+    <main className="min-h-screen my-12 site-container mx-auto text-justify flex flex-col gap-12">
+      
       {showHeader && (
-        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] mb-10 rounded-tl-[24px] rounded-br-[24px]">
+        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Privacy Policy</h1>
         </header>
       )}
+
       <div className="flex flex-col gap-8">
         <Para>
           Nest Money values the trust You place in Us and respect Your privacy,
@@ -177,6 +179,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </NamedSection>
         </div>
       </NumberedSection>
+
       <NumberedSection sl={2} heading="Our role in processing personal data">
         <Indent>
           <Para>
@@ -206,6 +209,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={3} heading="How do we use your data ?">
         <Indent>
           <Para>
@@ -213,11 +217,12 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             accordance with applicable law and only on one of the following
             lawful bases:
           </Para>
+
           <NamedSubSection sl="a">
             <Bold> Consent : </Bold>
             We process Your data based on Your free, specific, informed, and
             unambiguous consent, obtained through a clear affirmative action
-            (such as a toggle or checkbox). You have the right to withdraw this
+            (such as a toggle, checkbox or button). You have the right to withdraw this
             consent at any time through Our privacy settings or contacting Our
             support centre at{" "}
             <TypoLinks email="support@nestmoney.in">
@@ -227,6 +232,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             or withdraw Your consent through any registered Consent Manager
             authorized by the Data Protection Board of India.
           </NamedSubSection>
+
           <NamedSubSection sl="b">
             <Bold> Legitimate Uses : </Bold>
             We may process Your data without seeking fresh consent only in
@@ -245,6 +251,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               cybersecurity of Our Platform, etc.
             </NamedSubSection>
           </NamedSubSection>
+
           <NamedSubSection sl="c">
             <Bold> Other Lawful Basis : </Bold>
             We process Your data based on Your free, specific, informed, and
@@ -259,7 +266,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             or withdraw Your consent through any registered Consent Manager
             authorized by the Data Protection Board of India.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             <Bold>Consent & Withdrawal Mechanism : </Bold> Where mandated by
             law, We obtain Your consent through clear, affirmative, and granular
             actions for distinct purposes. You have the right to withdraw Your
@@ -271,6 +279,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             unless such processing is otherwise required or authorized under
             applicable law.
           </Para>
+          
           <Para>
             In case of the Nest feature of the Platform, where a User invites a
             family member to join the Nest by creation of an account, such
@@ -281,7 +290,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             purpose and scope of processing. No processing of such data shall
             occur unless and until such consent is provided.
           </Para>
-          <Para Nobreak>
+
+          <Para Nobreak className="mt-4">
             We use the Personal Data collected from You strictly for the
             following purposes:
           </Para>
@@ -317,16 +327,19 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             that may be of interest to You, only where You have provided
             separate consent.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             While We may also process Your Personal Data for other legitimate
             business cases with a valid lawful basis under DPDPA. We ensure to
             take appropriate steps to minimize the processing to the extent
             possible, making it less intrusive to Your privacy.
           </Para>
+
           <Para>
             The primary bases relied upon for the use of Personal Data are
             summarised below:
           </Para>
+
           <PrivacyTable />
           <Para>
             We also use technical and usage information that We collect about
@@ -359,12 +372,14 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             to improve the algorithms, marketing efforts and enhance the overall
             service levels and offerings.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             Nest Money may use technical and usage information for the
             above-mentioned purposes as well as to monitor the Platform and
             provide a better online experience to the Users.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             <Bold> Processing of Credit Information:</Bold> Where Nest Money
             facilitates access to credit reports or credit score analysis, such
             processing shall be undertaken strictly in accordance with the
@@ -378,13 +393,15 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             earlier. Upon expiry of such period the consent data will be purged
             by Nest Money.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             <Bold> Processing of Financial and Payment Data:</Bold> We process
             payment data in compliance with all applicable legal and regulatory
             frameworks. All payment-related data is stored and processed within
             India.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             <Bold>Information in the Nest Safe:</Bold> We provide secure
             document storage services solely for the purpose of safekeeping and
             retrieval by the User. Uploaded documents are encrypted and the
@@ -411,12 +428,14 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={4} heading="How do we share your personal data?">
         <Indent>
           <Para>
             We shall not share the Personal Data We collect about You except as
             mentioned here:
           </Para>
+
           <NamedSubSection sl="a">
             As a matter of policy, We do not sell or rent information about You
             and We do not disclose information about You in a manner
@@ -441,6 +460,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               permitted by law.
             </NamedSubSection>
           </NamedSubSection>
+
           <NamedSubSection sl="b">
             With third parties such as Axis Bank, Razorpay, Setu, and Experian,
             strictly on a need-to-know basis and solely for the purpose of
@@ -466,13 +486,15 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             change in ownership or uses of Your Personal Data, as well as any
             choices You may have regarding Your Personal Data.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             Notwithstanding anything to the contrary in this Policy, We may
             preserve or disclose Your Personal Data if We believe that it is
             reasonably necessary to comply with a law, regulation or legal
             request; to protect the safety of any person; to address fraud,
             security or technical issues; or to protect Our rights or property.
           </Para>
+
           <Para>
             However, nothing in this Policy is intended to limit any legal
             defenses or objections that You may have against a third party,
@@ -480,10 +502,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={5}
-        heading="Where and how long do we retain your information?"
-      >
+
+      <NumberedSection sl={5} heading="Where and how long do we retain your information?">
         <Indent>
           <Para>
             To the extent required by law, Nest Money primarily stores and
@@ -497,13 +517,11 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             prevent fraud or future abuse or if required by law such as in the
             event of the pendency of any legal/regulatory proceeding or receipt
             of any legal and/or regulatory direction to that effect or for other
-            lawfully authorized legitimate purposes.
-          </Para>
-          <Para>
-            Once the Personal Data has reached its retention period, it shall be
+            lawfully authorized legitimate purposes. Once the Personal Data has reached its retention period, it shall be
             deleted in compliance with applicable laws.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             Following termination or deactivation of Your account, We may (but
             are under no obligation to) retain Your information for legitimate
             interests such as part of analytical projects where We anonymize
@@ -514,10 +532,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={6}
-        heading="How to Ensure Your Information Is Accurate and Up-to-Date"
-      >
+
+      <NumberedSection sl={6} heading="How to Ensure Your Information Is Accurate and Up-to-Date">
         <Indent>
           <Para>
             We take reasonable precautions to ensure that the Personal Data We
@@ -535,20 +551,23 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </NamedSubSection>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={7} heading="How do we ensure your data is secure?">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             We give high priority to safeguarding the confidentiality of Your
             data including Your personally identifiable information. We employ
             administrative, physical and electronic measures designed to protect
             Your information from unauthorized access.
           </Para>
+
           <Para>
             We implement a ‘Privacy by Design’ and ‘Security by Design’ culture
             across its systems and processed to make sure privacy of Your data
             is not compromised at any stage. We implement encryption where
             appropriate.
           </Para>
+
           <Para>
             In view of the nature of data processed, including financial,
             transactional and credit-related data, Nest Money maintains robust
@@ -559,12 +578,14 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Protection Impact Assessments and independent security reviews to
             evaluate and mitigate risks arising from processing activities.
           </Para>
+
           <Para>
             We use commercially reasonable physical, managerial, and technical
             safeguards to preserve the integrity and security of all information
             collected through or in connection with the Platform. Our employees
             are trained and required to safeguard Your information.
           </Para>
+
           <Para>
             To protect Your privacy and security, We take reasonable steps (such
             as requesting a unique password) to verify Your identity before
@@ -574,6 +595,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             communications with Nest Money. You shall promptly intimate us in
             case of any actual or suspected compromise to Your Personal Data.
           </Para>
+
           <Para>
             Although We shall always use reasonable efforts to secure network
             communications and the Platform, We cannot guarantee that the
@@ -583,6 +605,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Using unsecured wi-fi or other unprotected networks to use the
             Service is never recommended.
           </Para>
+
           <Para>
             Please do not send any Personal Data to Nest Money through any
             channels other than those intimated by Us. If You have reason to
@@ -596,10 +619,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={8}
-        heading="How do we use cookies and similar technologies"
-      >
+
+      <NumberedSection sl={8} heading="How do we use cookies and similar technologies" >
         <Indent>
           <Para>
             We use cookies and similar technologies to ensure the secure and
@@ -632,10 +653,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </NamedSubSection>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={9}
-        heading="WHAT IS OUR POLICY ON THIRD PARTY SERVICES"
-      >
+
+      <NumberedSection sl={9} heading="WHAT IS OUR POLICY ON THIRD PARTY SERVICES">
         <Indent>
           <Para>
             We may provide access to services provided by third-party including
@@ -653,15 +672,14 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={10}
-        heading="WHAT ARE YOUR RIGHTS OVER YOUR PERSONAL DATA"
-      >
+
+      <NumberedSection sl={10} heading="WHAT ARE YOUR RIGHTS OVER YOUR PERSONAL DATA">
         <Indent>
           <Para>
             With respect to Your Personal Data that We have access to, You have
             the right to:
           </Para>
+
           <NamedSubSection sl="a">
             <Bold>request access to Information :</Bold> You have the right to
             obtain from Nest Money a summary of the Personal Data being
@@ -669,6 +687,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             identities of all Data Fiduciaries and Data Processors with whom
             such Personal Data has been shared, subject to applicable law.
           </NamedSubSection>
+
           <NamedSubSection sl="b">
             <Bold>request correction and updation :</Bold> You have the right to
             request correction of inaccurate Personal Data and completion or
@@ -676,6 +695,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             You, though We may need to verify the accuracy of the new data You
             provide to Us before making such corrections.
           </NamedSubSection>
+
           <NamedSubSection sl="c">
             <Bold>request request erasure :</Bold> of Your personal data to seek
             deletion or removal of personal data where there is no good reason
@@ -690,6 +710,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             request of erasure for specific legal reasons, You shall be
             notified, at the time of Your request.
           </NamedSubSection>
+
           <NamedSubSection sl="d">
             <Bold>withdraw consent :</Bold> at any time through the Platform or
             by contacting Our support team, the designated grievance redressal
@@ -700,6 +721,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             We will advise You if this is the case at the time You withdraw Your
             consent
           </NamedSubSection>
+
           <NamedSubSection sl="e">
             <Bold>nominate :</Bold> You have the right to nominate one or more
             individuals to exercise Your rights under the DPDPA in the event of
@@ -727,7 +749,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             lodge a complaint with the Data Protection Board of India through
             its digital portal.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             You can exercise Your rights specified herein above by contacting
             Our support section at{" "}
             <TypoLinks email="support@nestmoney.in">
@@ -737,6 +760,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={11} heading="PRIVACY OF CHILDREN">
         <Indent>
           <Para>
@@ -752,6 +776,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={12} heading="DATA BREACH NOTIFICATION & RESPONSE">
         <Indent>
           <Para>
@@ -774,6 +799,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </NamedSubSection>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={13} heading="NOTIFICATION PROCEDURES">
         <Indent>
           <Para>
@@ -792,8 +818,9 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={14} heading="PHISHING OR FALSE EMAILS">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             Safeguarding information to help protect You from identity theft or
             “Phishing” is a top priority at Nest Money. We do not and shall not,
@@ -802,6 +829,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             or unsolicited e-mail, telephone or any other forms of
             communication.
           </Para>
+
           <Para>
             If You receive an unsolicited email or other forms of communication
             that appears to be from Us or one of Our members that requests
@@ -819,8 +847,9 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={15} heading="CHANGES TO OUR PRIVACY POLICY">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             With the changes in the Platform or due to change in applicable
             laws, We may be required, to add, remove, change or modify portions
@@ -846,6 +875,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={16} heading="BREACH OF PRIVACY POLICY">
         <Indent>
           <Para>
@@ -856,6 +886,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={17} heading="NO RESERVATIONS">
         <Indent>
           <Para>
@@ -866,8 +897,9 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={18} heading="NO CONFLICT">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             This Privacy Policy constitutes a part of the{" "}
             <Link href="/terms" className="text-primary-blue pl-1">
@@ -892,44 +924,34 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={19}
-        heading="GRIEVANCE REDRESSAL AND DATA PROTECTION"
-      >
-        <Indent>
+
+      <NumberedSection sl={19} heading="GRIEVANCE REDRESSAL AND DATA PROTECTION">
+        <Indent className="flex flex-col gap-4">
           <Para>
             Nest Money has designated a specific officer for grievance redressal
             to oversee its data protection and privacy practices, including
             grievance handling, in line with evolving regulatory expectations.
           </Para>
-          <Para>
-            This Privacy Policy operates subject to applicable sectoral laws and
-            regulatory directions, including but not limited to guidelines,
-            circulars and instructions, as may be applicable from time to time.
-          </Para>
+
           <Para>
             You may contact Our designated officer regarding any concerns,
-            requests for rights or grievances at:
-          </Para>
-          <Para>Name: Supreeth T.S.</Para>
-          <Para>
+            requests for rights or grievances at:<br />
+            Name: Supreeth T S<br />
             Email:{" "}
-            <TypoLinks email="grievance@nestmoney.in">
-              grievance@nestmoney.in
-            </TypoLinks>
-          </Para>
+            <TypoLinks email="grievance@nestmoney.in"> grievance@nestmoney.in </TypoLinks>
+            </Para>
+
           <Para>
             Timeline & Escalation: We shall acknowledge Your grievance at the
             earliest and provide a final resolution within such timeline
-            prescribed by law
-          </Para>
-          <Para>
-            If You are not satisfied with Our resolution, You have the right to
+            prescribed by law. If You are not satisfied with Our resolution, You have the right to
             escalate Your complaint to the Data Protection Board of India
-            through its official digital portal
+            through its official digital portal.
           </Para>
+
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={20} heading="CONTACT US">
         <Indent>
           <Para>
@@ -944,28 +966,22 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={21}
-        heading="HOW IS YOUR PERSONAL DATA HANDLED IN THE NEST"
-        id="nest"
-        className="scroll-mt-5"
-      >
-        <Indent>
+
+      <NumberedSection sl={21} heading="HOW IS YOUR PERSONAL DATA HANDLED IN THE NEST" id="nest" className="scroll-mt-5">
+        <Indent className="flex flex-col gap-4">
           <Para>
             This section explains how Personal Data is processed when You
             create, join, or use the Nest feature on the Platform. This notice
             is intended to provide a high-level, feature-specific overview to
             help You make an informed decision before providing Your consent.
           </Para>
+
           <Para>
             Detailed information regarding data retention, security safeguards,
             lawful processing grounds and Your rights under applicable law is
             set out in other sections of this Privacy Policy and applies equally
             to Personal Data processed through the Nest feature, unless stated
-            otherwise.
-          </Para>
-          <Para>
-            Detailed information about the Nest and its functionalities, is
+            otherwise. Detailed information about the Nest and its functionalities, is
             available in Our{" "}
             <Link href="/terms" className="text-primary-blue pl-1">
               Terms of Use.
@@ -998,6 +1014,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               </NamedSubSection>
             </>
           </NamedSection>
+
           <NamedSection heading="How and Why Do We Process This Data?">
             <>
               <Para>
@@ -1033,6 +1050,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               </Para>
             </>
           </NamedSection>
+
           <NamedSection heading="Data Visibility and Actions Within a Nest">
             <>
               <Para>
@@ -1057,6 +1075,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               </NamedSubSection>
             </>
           </NamedSection>
+
           <NamedSection heading="Consent and Consent Management">
             <>
               <Para>
@@ -1085,6 +1104,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               </Para>
             </>
           </NamedSection>
+
           <NamedSection heading="Your Rights">
             <>
               <Para>
@@ -1112,26 +1132,19 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               </Para>
             </>
           </NamedSection>
+
           <NamedSection heading="Grievance Redressal">
-            <>
               <Para>
                 If You have any questions or grievances relating to the
                 processing of Your Personal Data through the Nest feature, You
-                may contact Our designated Grievance Officer at:
-              </Para>
-              <Para>
-                <Bold>Email:</Bold>{" "}
-                <TypoLinks email="grievance@nestmoney.in">
-                  grievance@nestmoney.in
-                </TypoLinks>
-              </Para>
-              <Para>
+                may contact Our designated Grievance Officer at
+                <TypoLinks email="grievance@nestmoney.in"> grievance@nestmoney.in</TypoLinks>. 
                 If You do not receive a response within the period prescribed
                 under applicable law, You may approach the Data Protection Board
                 of India in the manner notified by it.
               </Para>
-            </>
           </NamedSection>
+
         </Indent>
       </NumberedSection>
     </main>
