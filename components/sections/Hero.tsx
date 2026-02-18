@@ -52,6 +52,7 @@ const Hero = () => {
             autoPlay
             loop
             muted
+            preload="auto"
             playsInline
             aria-label="Nest Money app preview"
             className="hidden md:block my-3"
@@ -62,6 +63,7 @@ const Hero = () => {
             autoPlay
             loop
             muted
+            preload="auto"
             playsInline
             className="md:hidden pt-[64px]"
             aria-label="Nest Money app preview"
