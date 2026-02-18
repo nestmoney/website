@@ -48,6 +48,7 @@ const Hero = () => {
         <figure>
           <video
             src="/heroAnime.mp4"
+            poster="/heroAnimePlaceholder.png"
             autoPlay
             loop
             muted
@@ -57,6 +58,7 @@ const Hero = () => {
           />
           <video
             src="/heroAnimeMob.mp4"
+            poster="/heroAnimeMobPlaceholder.png"
             autoPlay
             loop
             muted
