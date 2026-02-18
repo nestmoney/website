@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nestmoney.in"), //important change to real domain
 
   title: {
-    default: "Nest Money | Family Finance App",
+    default: "Nest Money | The family finance app",
     template: "%s | Nest Money",
   },
 
