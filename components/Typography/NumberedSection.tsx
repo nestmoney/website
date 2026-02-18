@@ -19,7 +19,7 @@ const NumberedSection = ({
   return (
     <div
       id={id}
-      className={`flex flex-col heading-legal ${className} space-y-4`}
+      className={`flex flex-col heading-legal ${className} space-y-4 mb-4`}
     >
       <div className="flex">
         <span className="mr-[15px]">{sl}.</span>

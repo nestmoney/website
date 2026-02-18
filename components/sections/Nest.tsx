@@ -59,7 +59,7 @@ const Nest = () => {
 
                   w-[200px] xl:w-[260px]"
           >
-            <video
+            {/* <video
               autoPlay
               muted
               loop
@@ -67,7 +67,13 @@ const Nest = () => {
               className="w-full h-auto object-cover"
             >
               <source src="/nest-video-dummy.mp4" type="video/mp4" />
-            </video>
+            </video> */}
+            <Image
+              src="/nest-dummy-img.jpeg"
+              width={260}
+              height={260}
+              alt="Nest Image"
+            />
           </div>
         </figure>
       </div>

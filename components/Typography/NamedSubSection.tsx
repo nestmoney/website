@@ -10,8 +10,8 @@ const NamedSubSection = ({
   className?: string;
 }) => {
   return (
-    <div className={`flex text-legal ${className} my-4 `}>
-      <span className="mr-3">({sl}) </span>
+    <div className={`flex text-legal ${className}  `}>
+      <span className=" w-[30px] shrink-0 ">({sl}) </span>
       <section>{children}</section>
     </div>
   );

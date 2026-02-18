@@ -30,7 +30,7 @@ const Download = () => {
           width={20}
           height={20}
           alt=""
-          className="mx-1"
+          className="mx-2"
           aria-hidden="true"
         />
         for Indian families

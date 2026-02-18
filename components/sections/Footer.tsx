@@ -2,31 +2,32 @@ import Image from "next/image";
 import { Links } from "../updatable";
 import Link from "next/link";
 const socials = [
-  { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
-  { src: "/facebook.svg", alt: "Facebook", href: Links.facebook },
-  { src: "/x.svg", alt: "X", href: Links.x },
   { src: "/linkedin.svg", alt: "LinkedIn", href: Links.linkedin },
+  { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
+  { src: "/x.svg", alt: "X", href: Links.x },
 ];
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary w-full pt-12 md:pt-16 pb-28 text-secondary-text flex justify-center text-[12px] md:text-[14px]"
-    id="links">
+    <footer
+      className="bg-secondary w-full pt-12 md:pt-16 pb-28 text-secondary-text flex justify-center text-[12px] md:text-[14px]"
+      id="links"
+    >
       <div className="site-container mx-auto flex md:flex-row justify-between w-full flex-col gap-8">
         {/* Left */}
         <address className="not-italic space-y-2 text-left">
-          <p className="font-semibold">Contact Us</p>
-          <p>hello@nestmoney.in</p>
+          <p className="font-semibold">Contact us</p>
+          <p>support@nestmoney.in</p>
         </address>
 
         {/* Center */}
         <nav className="space-y-2 " aria-label="Footer">
           <p className="font-semibold">Links</p>
           <p>
-            <Link href="/terms">Terms of Use</Link>
+            <Link href="/privacy">Privacy Policy</Link>
           </p>
           <p>
-            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Use</Link>
           </p>
         </nav>
 
