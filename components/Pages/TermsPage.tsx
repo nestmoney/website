@@ -8,72 +8,77 @@ import TypoLinks from "@/components/Typography/TypoLinks";
 import Link from "next/link";
 const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto text-justify ">
+    <main className="min-h-screen py-[75px] site-container mx-auto text-justify space-y-6">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] mb-10 rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>
         </header>
       )}
-      <Para>
-        Welcome to Nest Money! The Nest Money Mobile Application, the website
-        www.nestmoney.in, chatbots, notifications or any other medium used by
-        Nest Money to provide its Services to You (hereinafter referred to as
-        the <Bold>&ldquo;Platform&rdquo;</Bold>) is owned, maintained, operated
-        and managed by Legentree Technologies Private Limited (hereafter
-        referred in this document as <Bold>“Nest Money”/ “We”/ “Us”</Bold>). Any
-        access of the Platform or use of the services, offered by Nest Money
-        through the Platform, is subject to your unconditional acceptance of
-        these terms of use (<Bold>“Terms”</Bold>). These Terms will apply to You
-        the user (<Bold>“You”</Bold> or <Bold>“User”</Bold>).
-      </Para>
-      <Para>
-        We recommend You to read these terms very carefully. By continuing to
-        access and/or use the Platform, You agree to comply with the Terms. IF
-        YOU DO NOT WISH TO BE BOUND BY THESE TERMS OR IF YOU CANNOT REMAIN IN
-        COMPLIANCE WITH SUCH TERMS, PLEASE DO NOT ACCESS THE PLATFORM OR USE ANY
-        OF THE SERVICES AND IMMEDIATELY CEASE SUCH ACCESS AND USE.
-      </Para>
-      <Para>
-        The Platform is an online platform, which will facilitate services
-        including but not limited to BBPS bill payments, Mobile Recharges,
-        credit report analysis, document locker facilities etc., for its Users (
-        <Bold>“Users”</Bold>). The Services are limited to automated,
-        user-initiated tools and informational outputs based on data provided by
-        Users or authorised third-party sources. Nest Money hereby grants You, a
-        limited, non-exclusive, non-transferable, royalty free license to use
-        the Platform for the purposes of availing Our Services.
-      </Para>
-      <Para>
-        Nest Money is not a credit bureau, account aggregator or information
-        utility. Nest Money does not provide personalised financial, investment,
-        lending or credit advice, does not make recommendations, and does not
-        act as a SEBI-registered investment adviser, broker, lender or credit
-        intermediary and any outputs are generated through automated,
-        user-initiated tools based on user-provided inputs. Any analysis or
-        information made available through the Platform is of a general and
-        informational nature only.
-      </Para>
-      <Para>
-        Users acknowledge that they remain solely responsible for evaluating any
-        information obtained through the Platform and for any financial
-        decisions taken by them. To the extent permitted by applicable law, Nest
-        Money shall not be responsible for losses arising from decisions made
-        independently by Users based on such information.
-      </Para>
-      <Para>
-        We may at any time revise these Terms or add any additional terms that
-        apply to a Service to reflect changes to Our Services or change in any
-        applicable laws, or for other specific reasons. We strongly suggest that
-        You review the Terms regularly. The most up to date version of the Terms
-        will always be available for Your review under the &quot;Terms of
-        Use&quot; link that appears in the Platform. We will provide notice of
-        any changes to the Terms on this page and any Service specific changes
-        will be notified in the relevant page of the applicable Service. Changes
-        will not apply retroactively. Unless We specifically mention otherwise
-        in a notice, changes will become effective immediately upon being
-        posted. If You do not agree to the modified Terms for a Service, please
-        discontinue Your use of that Service.
-      </Para>
+      <div>
+        <Para>
+          Welcome to Nest Money! The Nest Money Mobile Application, the website
+          www.nestmoney.in, chatbots, notifications or any other medium used by
+          Nest Money to provide its Services to You (hereinafter referred to as
+          the <Bold>&ldquo;Platform&rdquo;</Bold>) is owned, maintained,
+          operated and managed by Legentree Technologies Private Limited
+          (hereafter referred in this document as{" "}
+          <Bold>“Nest Money”/ “We”/ “Us”</Bold>). Any access of the Platform or
+          use of the services, offered by Nest Money through the Platform, is
+          subject to your unconditional acceptance of these terms of use (
+          <Bold>“Terms”</Bold>). These Terms will apply to You the user (
+          <Bold>“You”</Bold> or <Bold>“User”</Bold>).
+        </Para>
+        <Para>
+          We recommend You to read these terms very carefully. By continuing to
+          access and/or use the Platform, You agree to comply with the Terms. IF
+          YOU DO NOT WISH TO BE BOUND BY THESE TERMS OR IF YOU CANNOT REMAIN IN
+          COMPLIANCE WITH SUCH TERMS, PLEASE DO NOT ACCESS THE PLATFORM OR USE
+          ANY OF THE SERVICES AND IMMEDIATELY CEASE SUCH ACCESS AND USE.
+        </Para>
+        <Para>
+          The Platform is an online platform, which will facilitate services
+          including but not limited to BBPS bill payments, Mobile Recharges,
+          credit report analysis, document locker facilities etc., for its Users
+          (<Bold>“Users”</Bold>). The Services are limited to automated,
+          user-initiated tools and informational outputs based on data provided
+          by Users or authorised third-party sources. Nest Money hereby grants
+          You, a limited, non-exclusive, non-transferable, royalty free license
+          to use the Platform for the purposes of availing Our Services.
+        </Para>
+        <Para>
+          Nest Money is not a credit bureau, account aggregator or information
+          utility. Nest Money does not provide personalised financial,
+          investment, lending or credit advice, does not make recommendations,
+          and does not act as a SEBI-registered investment adviser, broker,
+          lender or credit intermediary and any outputs are generated through
+          automated, user-initiated tools based on user-provided inputs. Any
+          analysis or information made available through the Platform is of a
+          general and informational nature only.
+        </Para>
+        <Para>
+          Users acknowledge that they remain solely responsible for evaluating
+          any information obtained through the Platform and for any financial
+          decisions taken by them. To the extent permitted by applicable law,
+          Nest Money shall not be responsible for losses arising from decisions
+          made independently by Users based on such information.
+        </Para>
+        <Para>
+          We may at any time revise these Terms or add any additional terms that
+          apply to a Service to reflect changes to Our Services or change in any
+          applicable laws, or for other specific reasons. We strongly suggest
+          that You review the Terms regularly. The most up to date version of
+          the Terms will always be available for Your review under the
+          &quot;Terms of Use&quot; link that appears in the Platform. We will
+          provide notice of any changes to the Terms on this page and any
+          Service specific changes will be notified in the relevant page of the
+          applicable Service. Changes will not apply retroactively. Unless We
+          specifically mention otherwise in a notice, changes will become
+          effective immediately upon being posted. If You do not agree to the
+          modified Terms for a Service, please discontinue Your use of that
+          Service.
+        </Para> 
+      </div>
+      <div className="mb-8"></div>
       <NumberedSection sl={1} heading="ELIGIBILITY OF USERS">
         <Indent>
           <Para>
@@ -244,7 +249,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
       </NumberedSection>
       <NumberedSection sl={4} heading="USAGE RESTRICTIONS">
         <Indent>
-          <p className="heading-legal mb-3">
+          <p className="heading-legal my-2 ">
             Account Responsibility and Compliance
           </p>
           <Para>
@@ -255,7 +260,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             electronic commerce, consumer protection, cybersecurity, data
             protection and privacy.
           </Para>
-          <p className="heading-legal mb-3">Prohibited Content</p>
+          <p className="heading-legal my-2">Prohibited Content</p>
           <Para>
             You shall not upload, transmit, store or otherwise make available
             any content through the Platform that :
@@ -291,7 +296,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             advertisements, contests, pyramid schemes or solicitations unrelated
             to the Services.
           </NamedSubSection>
-          <p className="heading-legal mb-3">Prohibited Use of the Platform</p>
+          <p className="heading-legal my-2">Prohibited Use of the Platform</p>
           <Para>
             You shall not use the Platform or the Services in any manner that:
           </Para>

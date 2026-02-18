@@ -9,7 +9,7 @@ const Para = ({ children, Nobreak: addBreak = false }: ParaProps) => {
   return (
     <section className="text-legal">
       {children}
-      {!addBreak && <div className="mb-5" />}
+      {!addBreak && <div className="mb-2" />}
     </section>
   );
 };
