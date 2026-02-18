@@ -19,10 +19,10 @@ const NumberedSection = ({
   return (
     <div id={id} className={`flex flex-col heading-legal ${className} `}>
       <div className="flex">
-        <span className="w-[30px] shrink-0 ">{sl}.</span>
+        <span className="w-[36px] shrink-0 ">{sl}.</span>
         <p className="mb-4 ">{heading ? toTitleCase(heading) : ""}</p>
       </div>
-      <section className="ml-[30px]">{children}</section>
+      <section className="ml-[36px]">{children}</section>
     </div>
   );
 };

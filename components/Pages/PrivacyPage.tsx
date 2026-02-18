@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-    <main className="min-h-screen my-12 site-container mx-auto text-justify flex flex-col gap-12">
+    <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12">
       
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">

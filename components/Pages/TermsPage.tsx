@@ -6,15 +6,18 @@ import Para from "@/components/Typography/Para";
 import TypoLinks from "@/components/Typography/TypoLinks";
 
 import Link from "next/link";
+import NamedSection from "../Typography/NamedSection";
 const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-    <main className="min-h-screen py-[75px] site-container mx-auto text-justify ">
+
+    <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12">
       {showHeader && (
-        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] mb-10 rounded-tl-[24px] rounded-br-[24px]">
+        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>
         </header>
       )}
-      <div>
+
+      <div className="flex flex-col gap-8">
         <Para>
           Welcome to Nest Money! The Nest Money Mobile Application, the website
           www.nestmoney.in, chatbots, notifications or any other medium used by
@@ -28,6 +31,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Bold>“Terms”</Bold>). These Terms will apply to You the user (
           <Bold>“You”</Bold> or <Bold>“User”</Bold>).
         </Para>
+
         <Para>
           We recommend You to read these terms very carefully. By continuing to
           access and/or use the Platform, You agree to comply with the Terms. IF
@@ -35,6 +39,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           COMPLIANCE WITH SUCH TERMS, PLEASE DO NOT ACCESS THE PLATFORM OR USE
           ANY OF THE SERVICES AND IMMEDIATELY CEASE SUCH ACCESS AND USE.
         </Para>
+
         <Para>
           The Platform is an online platform, which will facilitate services
           including but not limited to BBPS bill payments, Mobile Recharges,
@@ -45,6 +50,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           You, a limited, non-exclusive, non-transferable, royalty free license
           to use the Platform for the purposes of availing Our Services.
         </Para>
+
         <Para>
           Nest Money is not a credit bureau, account aggregator or information
           utility. Nest Money does not provide personalised financial,
@@ -55,6 +61,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           analysis or information made available through the Platform is of a
           general and informational nature only.
         </Para>
+
         <Para>
           Users acknowledge that they remain solely responsible for evaluating
           any information obtained through the Platform and for any financial
@@ -62,6 +69,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           Nest Money shall not be responsible for losses arising from decisions
           made independently by Users based on such information.
         </Para>
+
         <Para>
           We may at any time revise these Terms or add any additional terms that
           apply to a Service to reflect changes to Our Services or change in any
@@ -78,7 +86,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           Service.
         </Para>
       </div>
-      <div className="mb-8"></div>
+
       <NumberedSection sl={1} heading="ELIGIBILITY OF USERS">
         <Indent>
           <Para>
@@ -91,15 +99,18 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             are an entity, that You are legally constituted as per the
             applicable laws of the country of Your registration; and
           </NamedSubSection>
+
           <NamedSubSection sl="b">
             You are legally capable of entering into a binding contract under
             the applicable laws; and
           </NamedSubSection>
+
           <NamedSubSection sl="c">
             You are not in any way prohibited by the applicable law in the
             jurisdiction in which You are currently located to agree to and
             abide by these Terms; and
           </NamedSubSection>
+
           <NamedSubSection sl="d">
             You are not a citizen or resident of, or located in, a country or
             region that is subject to any sovereign country sanctions or
@@ -107,6 +118,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </NamedSubSection>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={2} heading="REGISTRATION">
         <Indent>
           <Para>
@@ -118,21 +130,24 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             (“Registration Data”) as displayed on the Platform and specifically
             agree to these Terms.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             Upon acceptance, these Terms shall become legally effective and
             binding on You, together with any amendments made by Nest Money from
             time to time and published on the Platform. You acknowledge that
             these Terms constitute a valid and enforceable agreement
             notwithstanding that they are executed electronically.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             For the purposes of these Terms, “Acceptance” means Your clear
             affirmative action indicating agreement, including by clicking the
             “Accept” button on the registration page, or by accessing or using
             the Platform or any of the Services, or by any other conduct that
             demonstrates Your intention to be bound by these Terms.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             You agree to provide true, accurate and complete information as
             prompted by the registration form and all forms You access on the
             Platform, and to update this information to maintain its
@@ -143,7 +158,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Policy. The Platform currently does not charge any membership fee or
             subscription charges for becoming a registered User.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             When creating or using an Account, ensure that You do not:
           </Para>
           <NamedSubSection sl="a">
@@ -167,7 +183,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Use a username that is the e-mail address of any other person or
             entity.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             As part of the registration process, a User shall be required to
             provide their mobile phone number and verify the same by entering a
             one-time password (“OTP”) sent by Nest Money for authentication.
@@ -178,13 +195,15 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             unique user identification account (“User ID”) and shall become a
             registered user of the Platform.
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             You shall not transfer or sell Your Nest Money Account and User ID
             to another party. You accept and agree that Nest Money will assume
             that any person using the Platform with Your User ID and login
             credentials is You or is authorized to act for You.
           </Para>
-          <Para>By becoming a registered User, You agree to</Para>
+          
+          <Para className="mt-4">By becoming a registered User, You agree to</Para>
           <NamedSubSection sl="i">
             maintain the confidentiality of Your Account login information;
           </NamedSubSection>
@@ -209,7 +228,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             will not be liable for any loss or damage arising from Your failure
             to comply with any of the Terms.
           </NamedSubSection>
-          <Para>
+
+          <Para className="mt-4">
             You agree to immediately notify Us of any unauthorized use, or
             suspected unauthorized use of Your Account or any other breach of
             security. We reserve the right to promptly disable Your User ID and
@@ -226,10 +246,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={3}
-        heading="Termination or Deactivation of Your Account"
-      >
+
+      <NumberedSection sl={3} heading="Termination or Deactivation of Your Account">
         <Indent>
           <Para>
             If a User wishes to terminate their use of Services or deactivate
@@ -247,12 +265,11 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={4} heading="USAGE RESTRICTIONS">
-        <Indent>
-          <p className="heading-legal  ">
-            Account Responsibility and Compliance
-          </p>
-          <Para>
+        <div className="flex flex-col gap-4">
+           <NamedSection heading="Account Responsibility and Compliance">
+            <Para>
             You are solely responsible for all activities carried out through
             Your account and User ID. You agree to use the Platform and the
             Services in compliance with all applicable laws, regulations and
@@ -260,12 +277,13 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             electronic commerce, consumer protection, cybersecurity, data
             protection and privacy.
           </Para>
-          <p className="heading-legal ">Prohibited Content</p>
-          <Para>
-            You shall not upload, transmit, store or otherwise make available
-            any content through the Platform that :
-          </Para>
-          <NamedSubSection sl="a">
+           </NamedSection>
+
+
+           <NamedSection heading="Prohibited Content">
+            <Para> You shall not upload, transmit, store or otherwise make available any content through the Platform that :
+            </Para>
+            <NamedSubSection sl="a">
             is unlawful, offensive, obscene, abusive, defamatory, libellous,
             fraudulent or misleading;
           </NamedSubSection>
@@ -296,7 +314,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             advertisements, contests, pyramid schemes or solicitations unrelated
             to the Services.
           </NamedSubSection>
-          <p className="heading-legal ">Prohibited Use of the Platform</p>
+           </NamedSection>
+           
+           
+           <NamedSection heading="Prohibited Use of the Platform">
           <Para>
             You shall not use the Platform or the Services in any manner that:
           </Para>
@@ -333,7 +354,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             deletes, alters or interferes with content or data belonging to
             another user without lawful authority.
           </NamedSubSection>
-          <p className="heading-legal mb-3">Security Violations</p>
+          </NamedSection>
+
+
+           <NamedSection heading="Security Violations">
           <Para>
             Any attempt to compromise the security of the Platform, including
             unauthorised access, data interference, service disruption or misuse
@@ -343,10 +367,12 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             with law enforcement or regulatory authorities where required by
             law.
           </Para>
-        </Indent>
+          </NamedSection>
+          </div>
       </NumberedSection>
+
       <NumberedSection sl={5} heading="NO MISUSE OF PLATFORM">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             You agree and undertake that the Services offered through the
             Platform are for the direct use of the Users only and are not
@@ -358,6 +384,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Nest Money to initiate appropriate legal action against such User in
             addition to restricting their rights to access or use the Platform.
           </Para>
+
           <Para>
             If You have reason to believe that another User has not followed or
             complied with their obligations in these Terms, or You have a
@@ -373,6 +400,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             action which We deem appropriate to resolve or rectify the subject
             matter of such complaints
           </Para>
+
           <Para>
             In the event that Nest Money, in its sole and absolute discretion,
             considers that there has been a breach or threatened breach of any
@@ -385,8 +413,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={6} heading="ALTERING THE SERVICES AND TERMINATION">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             In effort to serve Our customers better, We are constantly changing
             and improving Our Services. We may add or remove functionalities or
@@ -397,12 +426,14 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             suspension or non-availability of the Services and/or the Platform
             (whether wholly or partly).
           </Para>
+
           <Para>
             We believe that You own Your data and preserving Your access to such
             data is important. If We discontinue a Service, where reasonably
             possible, We will give You reasonable advance notice and a chance to
             get information out of that Service.
           </Para>
+
           <Para>
             We may suspend or terminate Your use of Platform or terminate Your
             access to the Platform, in Our sole discretion without any liability
@@ -415,6 +446,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               Privacy Policy
             </Link>
           </Para>
+
+          <div>
           <Para>
             Irrespective of other remedies We have available, We may suspend or
             terminate Your Account and refuse to provide any or all Services to
@@ -436,6 +469,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Once terminated, You must not continue to use the Platform under the
             same Account or register under a new Account.
           </NamedSubSection>
+          </div>
+
           <Para>
             YOU AGREE THAT NEST MONEY WILL NOT BE LIABLE TO YOU OR ANY OTHER
             PARTY FOR ANY LAWFUL TERMINATION OF YOUR ACCESS TO THE PLATFORM OR
@@ -450,8 +485,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={7} heading="DISCLAIMER OF WARRANTIES">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             The Platform and the Services is provided by Nest Money on an
             &quot;AS IS&quot; and &quot;as available&quot; basis. We make no
@@ -478,10 +514,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Para>
             WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, NEST MONEY AND ITS
             AFFILIATES, SUPPLIERS, SERVICE PROVIDERS, AFFILIATES AND AGENTS, DO
-            NOT WARRANT AND EXPRESSLY DISCLAIM THAT:
-          </Para>
-          <NamedSubSection sl="i">
-            YOUR USE OF THE PLATFORM AND/OR SERVICES AND ACCESS TO AND USE OF
+            NOT WARRANT AND EXPRESSLY DISCLAIM THAT: YOUR USE OF THE PLATFORM AND/OR SERVICES AND ACCESS TO AND USE OF
             ALL OF THE TOOLS AND FEATURES THEREON WILL BE UNINTERRUPTED, OR
             TIMELY, ERROR-FREE OR THAT ANY SOFTWARE, SERVICES, PLATFORM OR
             SERVER(S) ON WHICH THE SERVICES AND PLATFORM ARE HOSTED ARE FREE OF
@@ -494,7 +527,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             YOU USE TO ACCESS THE PLATFORM OR SERVICES, OR ANY OTHER LOSS THAT
             RESULTS FROM ACCESSING THE PLATFORM. NO ORAL OR WRITTEN INFORMATION
             OR ADVICE GIVEN BY OUR REPRESENTATIVE SHALL CREATE A WARRANTY.
-          </NamedSubSection>
+          </Para>
           <Para>
             {" "}
             None of the content posted on the Platform are intended to amount to
@@ -505,8 +538,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={8} heading="INTELLECTUAL PROPERTY RIGHTS">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             All right, title and interest in and to the Platform are owned by
             Nest Money. All content and materials contained in the Platform,
@@ -533,6 +567,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             but is not limited to software licenses, End User Agreements and
             free/open-source software licenses, as applicable.
           </Para>
+
+          <div>
           <Para>You understand and acknowledge that</Para>
           <NamedSubSection sl="i">
             the software, code, proprietary methods, and systems used to provide
@@ -572,6 +608,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             distribution, data mining, data extraction, monitoring, or copying
             using any automated or manual process.
           </NamedSubSection>
+          </div>
 
           <Para>
             Except as specifically set forth above, nothing in these Terms
@@ -580,6 +617,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             intellectual property rights of Nest Money or any third party. All
             rights not expressly licensed are reserved.
           </Para>
+
+          <div>
           <Para>
             You retain ownership of all User Content You submit, post, display,
             or otherwise make available on the Platform or Services. You hereby
@@ -611,8 +650,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             </Link>
             .
           </NamedSubSection>
-          <p className="heading-legal mb-3">Intimation about Infringements</p>
-          <Para>
+          </div>
+          
+          <NamedSection heading="Intimation about Infringements">
+            <Para>
             If You learn of any unlawful material or activity on the Platform,
             or any material or activity that breaches this notice, please inform
             Us. We respect the intellectual property rights of others and expect
@@ -623,6 +664,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             copyright infringement, please provide Us with the following
             information:
           </Para>
+
           <NamedSubSection sl="i">
             provide a physical or electronic signature of the copyright owner or
             a person authorized to act on their behalf;
@@ -654,6 +696,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             notification is accurate and that You are authorized to act on
             behalf of the copyright owner.
           </NamedSubSection>
+
+          </NamedSection>
+
           <Para>
             We have the right to remove the Content alleged to be infringing
             without prior notice, at Our sole discretion, and without liability
@@ -662,11 +707,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={9}
-        heading="THIRD-PARTY SERVICES AND INTEGRATED DATA FLOWS"
-      >
-        <Indent>
+
+      <NumberedSection sl={9} heading="THIRD-PARTY SERVICES AND INTEGRATED DATA FLOWS">
+        <Indent className="flex flex-col gap-4">
           <Para>
             The Platform facilitates access to services provided by third-party
             billers, card issuers, and document providers (“Third-Party
@@ -726,8 +769,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={10} heading="USER CONTENT">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             Any and all content posted on the Platform by a User including but
             not limited to all information, content, data, materials, documents,
@@ -766,6 +810,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={11} heading="DATA USE AND DISCLOSURE">
         <Indent>
           <Para>
@@ -782,8 +827,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={12} heading="PRIVACY AND DATA HANDLING">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             By using the Services, You acknowledge that We may process and store
             the information shared by You solely for the purpose of delivering
@@ -805,6 +851,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             . Please note that withdrawing consent for essential data processing
             may result in the immediate termination of certain Services.
           </Para>
+
+          <div>
           <Para>Subject to Your consent, Nest Money may</Para>
           <NamedSubSection sl="i">
             collect and analyse usage data to understand User behaviour, improve
@@ -814,8 +862,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             send You promotional communications, product updates, and offers
             through electronic means.
           </NamedSubSection>
-          <Para>You may withdraw such consent at any time.</Para>
+          </div>
+
           <Para>
+            You may withdraw such consent at any time.
             Where retention of information is required for compliance with
             legal, regulatory, accounting, audit, fraud prevention or
             dispute-resolution obligations, such information may be retained for
@@ -826,6 +876,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={13} heading="DEVICE PERMISSIONS">
         <Indent>
           <Para>
@@ -839,8 +890,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={14} heading="ACCESSIBILITY AND INCLUSIVE ACCESS">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             Nest Money is committed to providing inclusive and accessible access
             to the Platform for all users, including persons with disabilities,
@@ -870,6 +922,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={15} heading="INDEMNIFICATION">
         <Indent>
           <Para>
@@ -883,7 +936,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             other Users.
           </Para>
 
-          <Para>
+          <Para className="mt-4">
             You shall further defend, indemnify and hold harmless Nest Money and
             its officers, directors, shareholders, and employees, from and
             against all claims and expenses, including but not limited to
@@ -906,6 +959,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </NamedSubSection>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={16} heading="LIMITATION OF LIABILITY">
         <Indent>
           <Para>
@@ -960,7 +1014,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             DAMAGE OR LOSSES.
           </NamedSubSection>
 
-          <Para>
+          <Para className="mt-4">
             IN NO EVENT SHALL NEST MONEY’S TOTAL CUMULATIVE LIABILITY TO YOU FOR
             ANY AND ALL DAMAGES, LOSSES, LIABILITIES, EXPENSES, AND CAUSES OF
             ACTION (WHETHER ARISING UNDER CONTRACT OR OTHERWISE), ARISING FROM
@@ -970,6 +1024,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={17} heading="FORCE MAJEURE">
         <Indent>
           <Para>
@@ -985,6 +1040,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={18} heading="GRIEVANCE REDRESSAL MECHANISM">
         <Indent>
           <Para>
@@ -996,7 +1052,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             . We shall acknowledge Your grievance and make reasonable efforts to
             resolve it within a reasonable period
           </Para>
-          <Para>
+
+          <Para className="mt-4">
             <Bold>Tier 2 – Designated Grievance Officer:</Bold> If Your
             grievance is not resolved to Your satisfaction, You may escalate the
             matter to Our designated grievance officer:
@@ -1019,8 +1076,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={19} heading="DISPUTE RESOLUTION">
-        <Indent>
+        <Indent className="flex flex-col gap-4">
           <Para>
             Without prejudice to the grievance redressal mechanism set out
             above, any dispute arising out of or in connection with these Terms
@@ -1065,6 +1123,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={20} heading="COMPLIANCE WITH LAWS">
         <Indent>
           <Para>
@@ -1084,6 +1143,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={21} heading="WAIVER">
         <Indent>
           <Para>
@@ -1098,6 +1158,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={22} heading="SEVERABILITY">
         <Indent>
           <Para>
@@ -1109,6 +1170,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={23} heading="ASSIGNMENT">
         <Indent>
           <Para>
@@ -1121,6 +1183,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
+
       <NumberedSection sl={24} heading="ASSIGNMENT">
         <Indent>
           <Para>
@@ -1133,7 +1196,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection sl={24} heading="NOTICES">
+
+      <NumberedSection sl={25} heading="NOTICES">
         <Indent>
           <Para>
             By using the Platform and Services, You accept that communication
@@ -1146,7 +1210,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection sl={25} heading="NO THIRD PARTY BENEFICIARIES">
+
+      <NumberedSection sl={26} heading="NO THIRD PARTY BENEFICIARIES">
         <Indent>
           <Para>
             Nothing in these Terms shall give, directly or indirectly, any third
@@ -1156,7 +1221,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection sl={26} heading="GOVERNING LAW AND JURISDICTION">
+
+      <NumberedSection sl={27} heading="GOVERNING LAW AND JURISDICTION">
         <Indent>
           <Para>
             These Terms shall be governed by the Indian Laws and the internal
@@ -1170,7 +1236,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection sl={27} heading="CONTACT US">
+
+      <NumberedSection sl={28} heading="CONTACT US">
         <Indent>
           <Para>
             For any further clarification of these Terms or any other matter
@@ -1179,8 +1246,11 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               support@nestmoney.in
             </TypoLinks>
           </Para>
-          <p className="heading-legal mb-3">ADDITIONAL TERMS FOR THE “NEST”</p>
-          <Indent>
+        </Indent>
+      </NumberedSection>
+
+      <NumberedSection sl={29} heading="ADDITIONAL TERMS FOR THE “NEST”">
+          <Indent className="flex flex-col gap-4">
             <Para>
               For the purposes of these Additional terms applicable to the Nest
               feature available on the Platform (“<Bold>Nest Terms</Bold>”):
@@ -1204,9 +1274,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               strictly limited to the Nest Members of that Nest and are not
               accessible to Users outside the Nest.
             </Para>
-          </Indent>
-          <p className="heading-legal mb-3">Adding and Managing Nest Members</p>
-          <Indent>
+
+          <NamedSection heading="Adding and Managing Nest Members">
+          <Indent className="flex flex-col gap-4">
+            <div>
             <Para>
               Any User may initiate an invitation by providing limited contact
               details of another family member. A User may add other family
@@ -1214,9 +1285,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             </Para>
             <NamedSubSection sl="i">verification of identity;</NamedSubSection>
             <NamedSubSection sl="ii">OTP-based consent;</NamedSubSection>
-            <NamedSubSection sl="iii">
-              acceptance of these Nest Terms.
-            </NamedSubSection>
+            <NamedSubSection sl="iii">acceptance of these Nest Terms.</NamedSubSection>
+            </div>
+
             <Para>
               Where a User invites another family member to the Nest, such
               family member shall be required to provide their own consent for
@@ -1226,6 +1297,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               purpose and scope of processing. No processing of such data shall
               occur unless and until such consent is provided.
             </Para>
+
             <Para>
               Each Nest functions as a common shared space for all Nest Members,
               and participation is voluntary. A Nest Member may be removed or
@@ -1234,7 +1306,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               required by law.
             </Para>
           </Indent>
-          <p className="heading-legal mb-3">Actions Permitted Within a Nest</p>
+          </NamedSection>
+
+          <NamedSection heading="Actions Permitted Within a Nest">
           <Indent>
             <Para>
               Subject to explicit consent, applicable laws and Platform
@@ -1265,7 +1339,6 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             <Para>
               <Bold>Payments and Bills:</Bold> Each Nest Member can:
             </Para>
-
             <Para>
               <Bold> Credit Report related actions: </Bold>Initiate credit score
               checks or credit report access for themselves or for another Nest
@@ -1295,9 +1368,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               .
             </Para>
           </Indent>
-          <p className="heading-legal mb-3">
-            Consent and Authority Between Nest Members
-          </p>
+          </NamedSection>
+
+
+          <NamedSection heading="Consent and Authority Between Nest Members">
           <Indent>
             <Para>
               By joining a Nest, each Nest Member acknowledges and agrees that:
@@ -1305,57 +1379,52 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             <NamedSubSection sl="i">
               other Nest Members may view certain Personal Data;
             </NamedSubSection>
-
             <NamedSubSection sl="ii">
               other Nest Members may perform permitted actions on their behalf;
             </NamedSubSection>
-
             <NamedSubSection sl="iii">
               such actions are undertaken solely within the Nest and based on
               consent.
             </NamedSubSection>
 
-            <Para>Consent may be:</Para>
+            <Para className="mt-4">Consent may be:</Para>
             <NamedSubSection sl="i">feature-specific;</NamedSubSection>
-
             <NamedSubSection sl="ii">
               action-specific (e.g., credit report access);
             </NamedSubSection>
-
             <NamedSubSection sl="iii">
               time-bound or revocable through Platform controls.
             </NamedSubSection>
-          </Indent>
-          <Para>
+
+            <Para className="mt-4">
             All personal data of Nest Members will be handled by Nest Money
             strictly in accordance with Our{" "}
             <Link href={"/privacy"} className="text-primary-blue">
               Privacy Policy
             </Link>
-            .
-          </Para>
-          <Para>
-            Withdrawal of consent may limit or disable certain Nest
+            . Withdrawal of consent may limit or disable certain Nest
             functionalities without affecting the legality of processing carried
             out prior to withdrawal.
           </Para>
-          <p className="heading-legal mb-3">
-            User Responsibility and Risk Allocation
-          </p>
-          <Indent>
+          </Indent>
+          </NamedSection>
+
+          <NamedSection heading="User Responsibility and Risk Allocation">
+          <Indent className="flex flex-col gap-4">
+            <div>
             <Para>Each Nest Member is responsible for:</Para>
             <NamedSubSection sl="i">
               ensuring the accuracy of data shared;
             </NamedSubSection>
-
             <NamedSubSection sl="ii">
               granting consent only to trusted Nest Members;
             </NamedSubSection>
-
             <NamedSubSection sl="iii">
               monitoring Nest activity affecting their data or financial
               obligations.
             </NamedSubSection>
+            </div>
+
             <Para>
               Nest Money does not act as an agent or fiduciary between Nest
               Members and is not responsible for disputes, misuse of authority,
@@ -1363,13 +1432,14 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               credentials or consent of another Nest Member
             </Para>
           </Indent>
+          </NamedSection>
         </Indent>
       </NumberedSection>
-      <NumberedSection sl={28} heading="ADDITONAL TERMS - BBPS BILL PAYMENT">
-        <Indent>
-          <p className="heading-legal mb-3">
-            Roles and Responsibilities under BBPS
-          </p>
+
+      <NumberedSection sl={30} heading="ADDITONAL TERMS - BBPS BILL PAYMENT">
+        <Indent className="flex flex-col gap-4">
+
+          <NamedSection heading="Roles and Responsibilities under BBPS">
           <NamedSubSection sl="a">
             Role of NPCI (BBPCU): The Bharat Bill Payment Central Unit (BBPCU),
             operated by NPCI, establishes the standards, rules and operating
@@ -1377,7 +1447,6 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Payment System (BBPS) and oversees the network-level settlement and
             dispute resolution mechanisms.
           </NamedSubSection>
-
           <NamedSubSection sl="b">
             Role of Nest Money: Nest Money acts as a BBPS participant and
             provides a digital interface to enable Users to view bills and
@@ -1386,7 +1455,6 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Platform and provides a customer grievance redressal mechanism in
             accordance with applicable NPCI and regulatory requirements.
           </NamedSubSection>
-
           <NamedSubSection sl="c">
             Limitation of Role: Nest Money acts solely as a facilitator for bill
             payments and does not provide the underlying utility or billing
@@ -1395,10 +1463,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             Biller or for delays arising from the Biller’s systems or BBPS
             network operations.
           </NamedSubSection>
-
-          <p className="heading-legal mb-3">
-            Payment Processing, Delays and Refunds
-          </p>
+          </NamedSection>
+          
+          
+          <NamedSection heading="Payment Processing, Delays and Refunds">
           <Indent>
             <Para>
               <Bold>Consent Scope:</Bold> Any authorisation or consent provided
@@ -1409,6 +1477,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               unless You have provided explicit authorisation for such actions
               through the Platform.
             </Para>
+
             <Para>
               <Bold>Payment Processing and User Inputs:</Bold> Nest Money shall
               not be responsible for any incorrect, incomplete, or inaccurate
@@ -1418,6 +1487,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               biller information and payment amounts, prior to confirming any
               transaction.
             </Para>
+
             <Para>
               <Bold> Settlement Timelines:</Bold> The time taken for the credit
               of payments may vary depending on the User’s bank, card issuer,
@@ -1427,6 +1497,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               specific timelines for third-party systems but shall initiate all
               processing requests promptly upon User authorisation.
             </Para>
+
             <Para>
               <Bold>Failed Transactions and Automated Reversals:</Bold> In
               accordance with applicable RBI directions on turnaround time (TAT)
@@ -1438,12 +1509,12 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               coordination with its PSP or Sponsor Bank) shall initiate an
               automatic reversal.
             </NamedSubSection>
-
             <NamedSubSection sl="b">
               Timelines: Reversals shall be processed in accordance with the
               turnaround time prescribed by applicable RBI circulars for the
               relevant payment instrument.
             </NamedSubSection>
+
             <Para>
               <Bold>Late Fees and Charges:</Bold>ponsible for penalties or
               charges levied by third-party billers or card issuers due to
@@ -1452,6 +1523,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               technical failure or gross negligence within Nest Money’s internal
               systems.
             </Para>
+
             <Para>
               <Bold>Refunds:</Bold> In the event of failed or duplicate
               transactions or resolved disputed transactions, Users may be
@@ -1464,6 +1536,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               technical issues etc. All refunds will be credited exclusively to
               the original source account used for the transaction.
             </Para>
+
             <Para>
               <Bold> Erroneous Credits and Reversals:</Bold> In the event that a
               payment is erroneously processed and credited to a User’s account,
@@ -1473,13 +1546,12 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               transaction details.
             </Para>
           </Indent>
+          </NamedSection>
         </Indent>
       </NumberedSection>
-      <NumberedSection
-        sl={29}
-        heading="ADDITIONAL TERMS – CREDIT REPORT ANALYSIS"
-      >
-        <Indent>
+
+      <NumberedSection sl={31} heading="ADDITIONAL TERMS – CREDIT REPORT ANALYSIS">
+        <Indent className="flex flex-col gap-4">
           <Para>
             By onboarding, You provide explicit, specific, and informed consent
             to Nest Money to act as Your authorised representative to request
@@ -1551,8 +1623,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-      <NumberedSection sl={30} heading="ADDITIONAL TERMS – NEST SAFE">
-        <Indent>
+
+      <NumberedSection sl={32} heading="ADDITIONAL TERMS – NEST SAFE">
+        <Indent className="flex flex-col gap-4">
           <Para>
             We provide secure document storage services solely for the purpose
             of safekeeping and retrieval by the User. “Nest Safe” means the
