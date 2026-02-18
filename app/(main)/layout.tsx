@@ -78,6 +78,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} scroll-smooth`}>
+      <head>
+        <link rel="preload" as="image" href="/heroAnimePlaceholder.png" />
+        <link rel="preload" as="image" href="/heroAnimeMobPlaceholder.png" />
+        <link rel="preload" as="video" href="/heroAnime.mp4" type="video/mp4" />
+        <link
+          rel="preload"
+          as="video"
+          href="/heroAnimeMob.mp4"
+          type="video/mp4"
+        />
+      </head>
       <body className="font-sans antialiased bg-white text-secondary">
         <Navbar />
         {children}

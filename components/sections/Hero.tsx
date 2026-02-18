@@ -45,28 +45,27 @@ const Hero = () => {
           <DownloadBtn />
         </header>
 
-        <figure>
+        <figure className="w-full">
           <video
             src="/heroAnime.mp4"
             poster="/heroAnimePlaceholder.png"
             autoPlay
             loop
             muted
-            preload="auto"
             playsInline
-            aria-label="Nest Money app preview"
-            className="hidden md:block my-3"
+            preload="auto"
+            className="hidden md:block w-full h-full object-cover"
           />
+
           <video
             src="/heroAnimeMob.mp4"
             poster="/heroAnimeMobPlaceholder.png"
             autoPlay
             loop
             muted
-            preload="auto"
             playsInline
-            className="md:hidden pt-[64px]"
-            aria-label="Nest Money app preview"
+            preload="auto"
+            className="md:hidden w-full h-full object-cover"
           />
         </figure>
       </div>
