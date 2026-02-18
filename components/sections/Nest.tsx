@@ -35,7 +35,7 @@ const Nest = () => {
             </h2>
           </header>
 
-          <div className="text-[12px] md:text-[16px] lg:text-[20px] xl:text-[22px] space-y-[30px] w-[320px] md:w-[581px] lg:w-[574px] xl:w-[684px] font-normal">
+          <div className="text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] space-y-[30px] w-[320px] md:w-[581px] lg:w-[574px] xl:w-[684px] font-normal">
             <p>
               <span className="text-primary-blue font-bold">Nest</span> is a
               shared space for your family, where everyone can see finances, pay
