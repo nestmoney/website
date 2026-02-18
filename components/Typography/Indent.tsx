@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
 const Indent = ({ children }: { children: ReactNode }) => {
-  return <section className="pl-[15px] py-3">{children}</section>;
+  return <section className="pl-[20px]">{children}</section>;
 };
 export default Indent;

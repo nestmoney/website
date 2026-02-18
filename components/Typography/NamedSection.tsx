@@ -3,13 +3,13 @@ import { ReactNode } from "react";
 const toTitleCase = (text: string) =>
   text.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
 
-const NumberedSection = ({
+const NamedSection = ({
   sl,
   children,
   className = "",
   heading,
 }: {
-  sl: number;
+  sl: string;
   children: ReactNode;
   heading?: string;
   className?: string;
@@ -25,4 +25,4 @@ const NumberedSection = ({
   );
 };
 
-export default NumberedSection;
+export default NamedSection;

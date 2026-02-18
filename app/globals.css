@@ -20,3 +20,7 @@
 .text-legal {
   @apply font-normal text-[12px] leading-[150%] lg:text-[14px] lg:leading-[140%];
 }
+
+.text-responsive {
+  @apply text-[12px] lg:text-[14px];
+}
