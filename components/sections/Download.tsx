@@ -21,7 +21,7 @@ const Download = () => {
             className="w-[260px] md:w-[400px] lg:w-[600px]"
           />
         </figure>
-        <DownloadBtn />
+        <DownloadBtn isFooter/>
       </div>
       <p className="flex text-[12px] md:text-[19px]">
         Crafted with

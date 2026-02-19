@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Links } from "./updatable";
 
-const DownloadBtn = () => {
+type DownloadBtnProps = {
+  isFooter?: boolean;
+};
+
+const DownloadBtn = ({ isFooter = false }: DownloadBtnProps) => {
   const [device, setDevice] = useState<"desktop" | "android" | "ios">(
     "desktop",
   );
@@ -19,9 +23,15 @@ const DownloadBtn = () => {
     <nav className="flex space-x-[16px]" aria-label="Download options">
       {/* If no links available */}
       {!Links.playStore && !Links.appStore && (
-        <p className="font-medium rounded-md md:text-[14px] text-[10px] text-center text-white bg-secondary p-2 ">
-          Launching Soon
-        </p>
+        <p
+        className={`font-medium rounded-md text-center py-2 px-4 md:text-[16px] text-[10px]
+          ${
+            isFooter
+            ? "bg-secondary text-white"
+            : "bg-secondary text-white"
+            }`}
+            > Launching Soon
+          </p>
       )}
 
       {/* Play Store */}
