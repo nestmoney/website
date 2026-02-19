@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @utility site-container {
-  @apply max-w-[320px] md:max-w-[700px] lg:max-w-[960px] xl:max-w-[1200px];
+  @apply max-w-full md:max-w-[700px] lg:max-w-[960px] xl:max-w-[1200px];
 }
 
 @theme {

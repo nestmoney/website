@@ -10,10 +10,10 @@ const socials = [
 const Footer = () => {
   return (
     <footer
-      className="bg-secondary w-full pt-12 md:pt-16 pb-28 text-secondary-text flex justify-center text-[12px] md:text-[14px]"
+      className="bg-secondary  pt-12 md:pt-16 pb-28 text-secondary-text flex justify-center text-[12px] md:text-[14px] "
       id="links"
     >
-      <div className="site-container mx-auto flex md:flex-row justify-between w-full flex-col gap-8">
+      <div className="site-container mx-auto flex md:flex-row justify-between flex-col gap-8 w-[320px] md:w-full mx-auto">
         {/* Left */}
         <address className="not-italic space-y-2 text-left">
           <p className="font-semibold">Contact us</p>

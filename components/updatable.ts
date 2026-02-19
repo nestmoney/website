@@ -1,6 +1,6 @@
 export const Links = {
-  appStore: "",
-  playStore: "",
+  appStore: "https://apps.apple.com/",
+  playStore: "https://play.google.com/store",
   instagram: "",
   linkedin: "",
   facebook: "",

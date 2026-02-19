@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section className="space-y-10 mb-[64px] md:mb-[128px] xl:mb-[160px]">
+    <section className="space-y-10 mb-[64px] md:mb-[128px] xl:mb-[160px] w-[320px] md:w-full mx-auto">
       <section
         id="features"
         className="scroll-mt-[80px] space-y-10 lg:space-y-0"
@@ -58,7 +58,7 @@ const Features = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="pt-10 md:pt-0 lg:pt-0 space-y-10 lg:space-y-0">
         <h2
           className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 

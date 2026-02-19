@@ -9,8 +9,7 @@ import Link from "next/link";
 import NamedSection from "../Typography/NamedSection";
 const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
-
-    <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12">
+    <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px]">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>
@@ -202,8 +201,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             that any person using the Platform with Your User ID and login
             credentials is You or is authorized to act for You.
           </Para>
-          
-          <Para className="mt-4">By becoming a registered User, You agree to</Para>
+
+          <Para className="mt-4">
+            By becoming a registered User, You agree to
+          </Para>
           <NamedSubSection sl="i">
             maintain the confidentiality of Your Account login information;
           </NamedSubSection>
@@ -247,7 +248,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
         </Indent>
       </NumberedSection>
 
-      <NumberedSection sl={3} heading="Termination or Deactivation of Your Account">
+      <NumberedSection
+        sl={3}
+        heading="Termination or Deactivation of Your Account"
+      >
         <Indent>
           <Para>
             If a User wishes to terminate their use of Services or deactivate
@@ -268,107 +272,108 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
 
       <NumberedSection sl={4} heading="USAGE RESTRICTIONS">
         <div className="flex flex-col gap-4">
-           <NamedSection heading="Account Responsibility and Compliance">
+          <NamedSection heading="Account Responsibility and Compliance">
             <Para>
-            You are solely responsible for all activities carried out through
-            Your account and User ID. You agree to use the Platform and the
-            Services in compliance with all applicable laws, regulations and
-            governmental directions, including laws relating to payments,
-            electronic commerce, consumer protection, cybersecurity, data
-            protection and privacy.
-          </Para>
-           </NamedSection>
+              You are solely responsible for all activities carried out through
+              Your account and User ID. You agree to use the Platform and the
+              Services in compliance with all applicable laws, regulations and
+              governmental directions, including laws relating to payments,
+              electronic commerce, consumer protection, cybersecurity, data
+              protection and privacy.
+            </Para>
+          </NamedSection>
 
-
-           <NamedSection heading="Prohibited Content">
-            <Para> You shall not upload, transmit, store or otherwise make available any content through the Platform that :
+          <NamedSection heading="Prohibited Content">
+            <Para>
+              {" "}
+              You shall not upload, transmit, store or otherwise make available
+              any content through the Platform that :
             </Para>
             <NamedSubSection sl="a">
-            is unlawful, offensive, obscene, abusive, defamatory, libellous,
-            fraudulent or misleading;
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            promotes hatred, discrimination, violence or harm against any
-            individual or group;
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            harasses, threatens or advocates harassment of another person;
-          </NamedSubSection>
-          <NamedSubSection sl="d">
-            contains pornographic or sexually explicit material;
-          </NamedSubSection>
-          <NamedSubSection sl="e">
-            infringes the intellectual property, privacy or other legal rights
-            of any third party;
-          </NamedSubSection>
-          <NamedSubSection sl="f">
-            promotes or facilitates illegal activities or provides instructions
-            for the commission of unlawful acts;
-          </NamedSubSection>
-          <NamedSubSection sl="g">
-            contains false, inaccurate or deceptive information that You know or
-            reasonably ought to know to be misleading; or
-          </NamedSubSection>
-          <NamedSubSection sl="h">
-            relates to unauthorised commercial activities, promotions,
-            advertisements, contests, pyramid schemes or solicitations unrelated
-            to the Services.
-          </NamedSubSection>
-           </NamedSection>
-           
-           
-           <NamedSection heading="Prohibited Use of the Platform">
-          <Para>
-            You shall not use the Platform or the Services in any manner that:
-          </Para>
-          <NamedSubSection sl="a">
-            impersonates any person, entity or authority, or falsely represents
-            an affiliation;
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            distributes unsolicited or unauthorised communications, including
-            spam or mass solicitations;
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            interferes with, disrupts, degrades or impairs the operation,
-            security or integrity of the Platform, systems or networks;
-          </NamedSubSection>
-          <NamedSubSection sl="d">
-            introduces malware or any code intended to damage, disrupt,
-            intercept or gain unauthorised access to systems or data;
-          </NamedSubSection>
-          <NamedSubSection sl="e">
-            accesses or attempts to access accounts, data, systems or networks
-            without authorisation, including through probing, scanning or
-            testing vulnerabilities without permission;
-          </NamedSubSection>
-          <NamedSubSection sl="f">
-            circumvents or attempts to circumvent security features or access
-            controls of the Platform;
-          </NamedSubSection>
-          <NamedSubSection sl="g">
-            monitors, intercepts, scrapes, crawls or collects data from the
-            Platform using automated means without Our prior written consent; or
-          </NamedSubSection>
-          <NamedSubSection sl="h">
-            deletes, alters or interferes with content or data belonging to
-            another user without lawful authority.
-          </NamedSubSection>
+              is unlawful, offensive, obscene, abusive, defamatory, libellous,
+              fraudulent or misleading;
+            </NamedSubSection>
+            <NamedSubSection sl="b">
+              promotes hatred, discrimination, violence or harm against any
+              individual or group;
+            </NamedSubSection>
+            <NamedSubSection sl="c">
+              harasses, threatens or advocates harassment of another person;
+            </NamedSubSection>
+            <NamedSubSection sl="d">
+              contains pornographic or sexually explicit material;
+            </NamedSubSection>
+            <NamedSubSection sl="e">
+              infringes the intellectual property, privacy or other legal rights
+              of any third party;
+            </NamedSubSection>
+            <NamedSubSection sl="f">
+              promotes or facilitates illegal activities or provides
+              instructions for the commission of unlawful acts;
+            </NamedSubSection>
+            <NamedSubSection sl="g">
+              contains false, inaccurate or deceptive information that You know
+              or reasonably ought to know to be misleading; or
+            </NamedSubSection>
+            <NamedSubSection sl="h">
+              relates to unauthorised commercial activities, promotions,
+              advertisements, contests, pyramid schemes or solicitations
+              unrelated to the Services.
+            </NamedSubSection>
           </NamedSection>
 
-
-           <NamedSection heading="Security Violations">
-          <Para>
-            Any attempt to compromise the security of the Platform, including
-            unauthorised access, data interference, service disruption or misuse
-            of system resources, may result in suspension or termination of
-            access and may expose You to civil or criminal liability. Nest Money
-            reserves the right to investigate such activities and to cooperate
-            with law enforcement or regulatory authorities where required by
-            law.
-          </Para>
+          <NamedSection heading="Prohibited Use of the Platform">
+            <Para>
+              You shall not use the Platform or the Services in any manner that:
+            </Para>
+            <NamedSubSection sl="a">
+              impersonates any person, entity or authority, or falsely
+              represents an affiliation;
+            </NamedSubSection>
+            <NamedSubSection sl="b">
+              distributes unsolicited or unauthorised communications, including
+              spam or mass solicitations;
+            </NamedSubSection>
+            <NamedSubSection sl="c">
+              interferes with, disrupts, degrades or impairs the operation,
+              security or integrity of the Platform, systems or networks;
+            </NamedSubSection>
+            <NamedSubSection sl="d">
+              introduces malware or any code intended to damage, disrupt,
+              intercept or gain unauthorised access to systems or data;
+            </NamedSubSection>
+            <NamedSubSection sl="e">
+              accesses or attempts to access accounts, data, systems or networks
+              without authorisation, including through probing, scanning or
+              testing vulnerabilities without permission;
+            </NamedSubSection>
+            <NamedSubSection sl="f">
+              circumvents or attempts to circumvent security features or access
+              controls of the Platform;
+            </NamedSubSection>
+            <NamedSubSection sl="g">
+              monitors, intercepts, scrapes, crawls or collects data from the
+              Platform using automated means without Our prior written consent;
+              or
+            </NamedSubSection>
+            <NamedSubSection sl="h">
+              deletes, alters or interferes with content or data belonging to
+              another user without lawful authority.
+            </NamedSubSection>
           </NamedSection>
-          </div>
+
+          <NamedSection heading="Security Violations">
+            <Para>
+              Any attempt to compromise the security of the Platform, including
+              unauthorised access, data interference, service disruption or
+              misuse of system resources, may result in suspension or
+              termination of access and may expose You to civil or criminal
+              liability. Nest Money reserves the right to investigate such
+              activities and to cooperate with law enforcement or regulatory
+              authorities where required by law.
+            </Para>
+          </NamedSection>
+        </div>
       </NumberedSection>
 
       <NumberedSection sl={5} heading="NO MISUSE OF PLATFORM">
@@ -448,27 +453,27 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
 
           <div>
-          <Para>
-            Irrespective of other remedies We have available, We may suspend or
-            terminate Your Account and refuse to provide any or all Services to
-            You if:
-          </Para>
-          <NamedSubSection sl="i">
-            You breach the letter or spirit of any of these Terms;
-          </NamedSubSection>
-          <NamedSubSection sl="ii">
-            We are unable to verify or authenticate any information You provide
-            to Us;
-          </NamedSubSection>
-          <NamedSubSection sl="iii">
-            We believe, in Our sole discretion, that Your actions may cause harm
-            to Our Users (including You), to Us, or are contrary to the
-            interests of the Platform;
-          </NamedSubSection>
-          <NamedSubSection sl="iv">
-            Once terminated, You must not continue to use the Platform under the
-            same Account or register under a new Account.
-          </NamedSubSection>
+            <Para>
+              Irrespective of other remedies We have available, We may suspend
+              or terminate Your Account and refuse to provide any or all
+              Services to You if:
+            </Para>
+            <NamedSubSection sl="i">
+              You breach the letter or spirit of any of these Terms;
+            </NamedSubSection>
+            <NamedSubSection sl="ii">
+              We are unable to verify or authenticate any information You
+              provide to Us;
+            </NamedSubSection>
+            <NamedSubSection sl="iii">
+              We believe, in Our sole discretion, that Your actions may cause
+              harm to Our Users (including You), to Us, or are contrary to the
+              interests of the Platform;
+            </NamedSubSection>
+            <NamedSubSection sl="iv">
+              Once terminated, You must not continue to use the Platform under
+              the same Account or register under a new Account.
+            </NamedSubSection>
           </div>
 
           <Para>
@@ -514,19 +519,20 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Para>
             WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, NEST MONEY AND ITS
             AFFILIATES, SUPPLIERS, SERVICE PROVIDERS, AFFILIATES AND AGENTS, DO
-            NOT WARRANT AND EXPRESSLY DISCLAIM THAT: YOUR USE OF THE PLATFORM AND/OR SERVICES AND ACCESS TO AND USE OF
-            ALL OF THE TOOLS AND FEATURES THEREON WILL BE UNINTERRUPTED, OR
-            TIMELY, ERROR-FREE OR THAT ANY SOFTWARE, SERVICES, PLATFORM OR
-            SERVER(S) ON WHICH THE SERVICES AND PLATFORM ARE HOSTED ARE FREE OF
-            VIRUSES OR OTHER HARMFUL COMPONENTS. YOUR USE OF THE PLATFORM AND
-            THE SERVICES AND ANY CONTENT PROVIDED ON OR THROUGH THE PLATFORM AND
-            SERVICES AND ANY RECEIPT OR DOWNLOAD OF CONTENT OR INFORMATION FROM
-            PLATFORM ARE ENTIRELY AT YOUR OWN RISK, AND YOU WILL BE SOLELY
-            RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY, DATA OR PERSON,
-            INCLUDING, BUT NOT LIMITED TO, YOUR COMPUTER SYSTEM AND ANY DEVICE
-            YOU USE TO ACCESS THE PLATFORM OR SERVICES, OR ANY OTHER LOSS THAT
-            RESULTS FROM ACCESSING THE PLATFORM. NO ORAL OR WRITTEN INFORMATION
-            OR ADVICE GIVEN BY OUR REPRESENTATIVE SHALL CREATE A WARRANTY.
+            NOT WARRANT AND EXPRESSLY DISCLAIM THAT: YOUR USE OF THE PLATFORM
+            AND/OR SERVICES AND ACCESS TO AND USE OF ALL OF THE TOOLS AND
+            FEATURES THEREON WILL BE UNINTERRUPTED, OR TIMELY, ERROR-FREE OR
+            THAT ANY SOFTWARE, SERVICES, PLATFORM OR SERVER(S) ON WHICH THE
+            SERVICES AND PLATFORM ARE HOSTED ARE FREE OF VIRUSES OR OTHER
+            HARMFUL COMPONENTS. YOUR USE OF THE PLATFORM AND THE SERVICES AND
+            ANY CONTENT PROVIDED ON OR THROUGH THE PLATFORM AND SERVICES AND ANY
+            RECEIPT OR DOWNLOAD OF CONTENT OR INFORMATION FROM PLATFORM ARE
+            ENTIRELY AT YOUR OWN RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR
+            ANY DAMAGE TO YOUR PROPERTY, DATA OR PERSON, INCLUDING, BUT NOT
+            LIMITED TO, YOUR COMPUTER SYSTEM AND ANY DEVICE YOU USE TO ACCESS
+            THE PLATFORM OR SERVICES, OR ANY OTHER LOSS THAT RESULTS FROM
+            ACCESSING THE PLATFORM. NO ORAL OR WRITTEN INFORMATION OR ADVICE
+            GIVEN BY OUR REPRESENTATIVE SHALL CREATE A WARRANTY.
           </Para>
           <Para>
             {" "}
@@ -569,45 +575,45 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
 
           <div>
-          <Para>You understand and acknowledge that</Para>
-          <NamedSubSection sl="i">
-            the software, code, proprietary methods, and systems used to provide
-            the Platform or Services constitute the intellectual property of
-            Nest Money and may not be copied, modified, reproduced, republished,
-            posted, or transmitted;
-          </NamedSubSection>
+            <Para>You understand and acknowledge that</Para>
+            <NamedSubSection sl="i">
+              the software, code, proprietary methods, and systems used to
+              provide the Platform or Services constitute the intellectual
+              property of Nest Money and may not be copied, modified,
+              reproduced, republished, posted, or transmitted;
+            </NamedSubSection>
 
-          <NamedSubSection sl="ii">
-            the content on the Platform, including text, graphics, and other
-            materials, is protected and may not be copied, modified, reproduced,
-            republished, posted, or transmitted without prior written
-            permission;
-          </NamedSubSection>
+            <NamedSubSection sl="ii">
+              the content on the Platform, including text, graphics, and other
+              materials, is protected and may not be copied, modified,
+              reproduced, republished, posted, or transmitted without prior
+              written permission;
+            </NamedSubSection>
 
-          <NamedSubSection sl="iii">
-            the names, logos, trade names, service marks, and other materials
-            displayed on the Platform or in the Services are trademarks of Nest
-            Money and must not be used without authorization;
-          </NamedSubSection>
+            <NamedSubSection sl="iii">
+              the names, logos, trade names, service marks, and other materials
+              displayed on the Platform or in the Services are trademarks of
+              Nest Money and must not be used without authorization;
+            </NamedSubSection>
 
-          <NamedSubSection sl="iv">
-            no content on the Platform may be sold, offered for sale,
-            redistributed, or commercially exploited without Our prior written
-            permission;
-          </NamedSubSection>
+            <NamedSubSection sl="iv">
+              no content on the Platform may be sold, offered for sale,
+              redistributed, or commercially exploited without Our prior written
+              permission;
+            </NamedSubSection>
 
-          <NamedSubSection sl="v">
-            nothing in these Terms grants You any right to receive, access, or
-            use Our Intellectual Property except as generally permitted through
-            the Platform in accordance with these Terms;
-          </NamedSubSection>
+            <NamedSubSection sl="v">
+              nothing in these Terms grants You any right to receive, access, or
+              use Our Intellectual Property except as generally permitted
+              through the Platform in accordance with these Terms;
+            </NamedSubSection>
 
-          <NamedSubSection sl="vi">
-            You must not use any materials from the Platform in an unauthorized
-            manner, including reproduction, republication, modification,
-            distribution, data mining, data extraction, monitoring, or copying
-            using any automated or manual process.
-          </NamedSubSection>
+            <NamedSubSection sl="vi">
+              You must not use any materials from the Platform in an
+              unauthorized manner, including reproduction, republication,
+              modification, distribution, data mining, data extraction,
+              monitoring, or copying using any automated or manual process.
+            </NamedSubSection>
           </div>
 
           <Para>
@@ -619,84 +625,83 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
 
           <div>
-          <Para>
-            You retain ownership of all User Content You submit, post, display,
-            or otherwise make available on the Platform or Services. You hereby
-            grant Nest Money a non-exclusive, royalty free, perpetual,
-            irrevocable, worldwide, transferable license (with the right to
-            sublicense) to
-          </Para>
-          <NamedSubSection sl="i">
-            make User Content available on the Platform;
-          </NamedSubSection>
+            <Para>
+              You retain ownership of all User Content You submit, post,
+              display, or otherwise make available on the Platform or Services.
+              You hereby grant Nest Money a non-exclusive, royalty free,
+              perpetual, irrevocable, worldwide, transferable license (with the
+              right to sublicense) to
+            </Para>
+            <NamedSubSection sl="i">
+              make User Content available on the Platform;
+            </NamedSubSection>
 
-          <NamedSubSection sl="ii">
-            use, copy, reproduce, process, adapt, modify, create derivative
-            works of, transmit, host, display, and distribute such User Content
-            in any media or distribution methods as necessary to provide the
-            Services in accordance with these Terms;
-          </NamedSubSection>
+            <NamedSubSection sl="ii">
+              use, copy, reproduce, process, adapt, modify, create derivative
+              works of, transmit, host, display, and distribute such User
+              Content in any media or distribution methods as necessary to
+              provide the Services in accordance with these Terms;
+            </NamedSubSection>
 
-          <NamedSubSection sl="iii">
-            use such User Content for Our promotional and marketing purposes in
-            accordance with applicable policies;
-          </NamedSubSection>
+            <NamedSubSection sl="iii">
+              use such User Content for Our promotional and marketing purposes
+              in accordance with applicable policies;
+            </NamedSubSection>
 
-          <NamedSubSection sl="iv">
-            process any Personal Data or financial information contained in the
-            User Content strictly in accordance with Our{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
-            .
-          </NamedSubSection>
+            <NamedSubSection sl="iv">
+              process any Personal Data or financial information contained in
+              the User Content strictly in accordance with Our{" "}
+              <Link href={"/privacy"} className="text-primary-blue">
+                Privacy Policy
+              </Link>
+              .
+            </NamedSubSection>
           </div>
-          
+
           <NamedSection heading="Intimation about Infringements">
             <Para>
-            If You learn of any unlawful material or activity on the Platform,
-            or any material or activity that breaches this notice, please inform
-            Us. We respect the intellectual property rights of others and expect
-            Users of the Services to do the same. We will respond to notices of
-            alleged copyright infringement that comply with applicable law and
-            are promptly and properly provided to us. If You have a reason to
-            believe that Your Content has been copied in a way that constitutes
-            copyright infringement, please provide Us with the following
-            information:
-          </Para>
+              If You learn of any unlawful material or activity on the Platform,
+              or any material or activity that breaches this notice, please
+              inform Us. We respect the intellectual property rights of others
+              and expect Users of the Services to do the same. We will respond
+              to notices of alleged copyright infringement that comply with
+              applicable law and are promptly and properly provided to us. If
+              You have a reason to believe that Your Content has been copied in
+              a way that constitutes copyright infringement, please provide Us
+              with the following information:
+            </Para>
 
-          <NamedSubSection sl="i">
-            provide a physical or electronic signature of the copyright owner or
-            a person authorized to act on their behalf;
-          </NamedSubSection>
+            <NamedSubSection sl="i">
+              provide a physical or electronic signature of the copyright owner
+              or a person authorized to act on their behalf;
+            </NamedSubSection>
 
-          <NamedSubSection sl="ii">
-            identify the copyrighted work claimed to have been infringed;
-          </NamedSubSection>
+            <NamedSubSection sl="ii">
+              identify the copyrighted work claimed to have been infringed;
+            </NamedSubSection>
 
-          <NamedSubSection sl="iii">
-            identify the material that is claimed to be infringing or the
-            subject of infringing activity, and provide sufficient information
-            to allow Us to locate the material;
-          </NamedSubSection>
+            <NamedSubSection sl="iii">
+              identify the material that is claimed to be infringing or the
+              subject of infringing activity, and provide sufficient information
+              to allow Us to locate the material;
+            </NamedSubSection>
 
-          <NamedSubSection sl="iv">
-            provide Your contact information, including Your address, telephone
-            number, and email address;
-          </NamedSubSection>
+            <NamedSubSection sl="iv">
+              provide Your contact information, including Your address,
+              telephone number, and email address;
+            </NamedSubSection>
 
-          <NamedSubSection sl="v">
-            include a statement that You have a good faith belief that the use
-            of the material is not authorized by the copyright owner, its agent,
-            or the law;
-          </NamedSubSection>
+            <NamedSubSection sl="v">
+              include a statement that You have a good faith belief that the use
+              of the material is not authorized by the copyright owner, its
+              agent, or the law;
+            </NamedSubSection>
 
-          <NamedSubSection sl="vi">
-            include a statement that the information provided in the
-            notification is accurate and that You are authorized to act on
-            behalf of the copyright owner.
-          </NamedSubSection>
-
+            <NamedSubSection sl="vi">
+              include a statement that the information provided in the
+              notification is accurate and that You are authorized to act on
+              behalf of the copyright owner.
+            </NamedSubSection>
           </NamedSection>
 
           <Para>
@@ -708,7 +713,10 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
         </Indent>
       </NumberedSection>
 
-      <NumberedSection sl={9} heading="THIRD-PARTY SERVICES AND INTEGRATED DATA FLOWS">
+      <NumberedSection
+        sl={9}
+        heading="THIRD-PARTY SERVICES AND INTEGRATED DATA FLOWS"
+      >
         <Indent className="flex flex-col gap-4">
           <Para>
             The Platform facilitates access to services provided by third-party
@@ -853,26 +861,26 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
 
           <div>
-          <Para>Subject to Your consent, Nest Money may</Para>
-          <NamedSubSection sl="i">
-            collect and analyse usage data to understand User behaviour, improve
-            Services, and personalise features on the Platform;
-          </NamedSubSection>
-          <NamedSubSection sl="ii">
-            send You promotional communications, product updates, and offers
-            through electronic means.
-          </NamedSubSection>
+            <Para>Subject to Your consent, Nest Money may</Para>
+            <NamedSubSection sl="i">
+              collect and analyse usage data to understand User behaviour,
+              improve Services, and personalise features on the Platform;
+            </NamedSubSection>
+            <NamedSubSection sl="ii">
+              send You promotional communications, product updates, and offers
+              through electronic means.
+            </NamedSubSection>
           </div>
 
           <Para>
-            You may withdraw such consent at any time.
-            Where retention of information is required for compliance with
-            legal, regulatory, accounting, audit, fraud prevention or
-            dispute-resolution obligations, such information may be retained for
-            the period mandated or permitted under applicable law,
-            notwithstanding termination or any request for deletion. Upon expiry
-            of applicable retention periods, such data shall be securely deleted
-            or anonymised in accordance with Our data retention practices.
+            You may withdraw such consent at any time. Where retention of
+            information is required for compliance with legal, regulatory,
+            accounting, audit, fraud prevention or dispute-resolution
+            obligations, such information may be retained for the period
+            mandated or permitted under applicable law, notwithstanding
+            termination or any request for deletion. Upon expiry of applicable
+            retention periods, such data shall be securely deleted or anonymised
+            in accordance with Our data retention practices.
           </Para>
         </Indent>
       </NumberedSection>
@@ -1250,307 +1258,318 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
       </NumberedSection>
 
       <NumberedSection sl={29} heading="ADDITIONAL TERMS FOR THE “NEST”">
-          <Indent className="flex flex-col gap-4">
-            <Para>
-              For the purposes of these Additional terms applicable to the Nest
-              feature available on the Platform (“<Bold>Nest Terms</Bold>”):
-            </Para>
-            <Para>
-              <Bold>“Nest”</Bold> means a shared digital space created on the
-              Platform by a User, enabling multiple family members (“Nest
-              Members”) to access and use shared features and perform permitted
-              actions for themselves and, where authorised, for other Nest
-              Members.
-            </Para>
-            <Para>
-              <Bold>“Nest Member”</Bold> means a User who has been validly added
-              to a Nest and whose participation has been confirmed in accordance
-              with the Platform’s authentication and consent mechanisms.
-            </Para>
-            <Para>
-              The Nest is designed as a restricted, closed user group,
-              accessible only to Nest Members validly added to the same Nest.
-              All actions, visibility, and data access under the Nest are
-              strictly limited to the Nest Members of that Nest and are not
-              accessible to Users outside the Nest.
-            </Para>
+        <Indent className="flex flex-col gap-4">
+          <Para>
+            For the purposes of these Additional terms applicable to the Nest
+            feature available on the Platform (“<Bold>Nest Terms</Bold>”):
+          </Para>
+          <Para>
+            <Bold>“Nest”</Bold> means a shared digital space created on the
+            Platform by a User, enabling multiple family members (“Nest
+            Members”) to access and use shared features and perform permitted
+            actions for themselves and, where authorised, for other Nest
+            Members.
+          </Para>
+          <Para>
+            <Bold>“Nest Member”</Bold> means a User who has been validly added
+            to a Nest and whose participation has been confirmed in accordance
+            with the Platform’s authentication and consent mechanisms.
+          </Para>
+          <Para>
+            The Nest is designed as a restricted, closed user group, accessible
+            only to Nest Members validly added to the same Nest. All actions,
+            visibility, and data access under the Nest are strictly limited to
+            the Nest Members of that Nest and are not accessible to Users
+            outside the Nest.
+          </Para>
 
           <NamedSection heading="Adding and Managing Nest Members">
-          <Indent className="flex flex-col gap-4">
-            <div>
-            <Para>
-              Any User may initiate an invitation by providing limited contact
-              details of another family member. A User may add other family
-              members as Nest Members to their Nest, subject to:
-            </Para>
-            <NamedSubSection sl="i">verification of identity;</NamedSubSection>
-            <NamedSubSection sl="ii">OTP-based consent;</NamedSubSection>
-            <NamedSubSection sl="iii">acceptance of these Nest Terms.</NamedSubSection>
-            </div>
+            <Indent className="flex flex-col gap-4">
+              <div>
+                <Para>
+                  Any User may initiate an invitation by providing limited
+                  contact details of another family member. A User may add other
+                  family members as Nest Members to their Nest, subject to:
+                </Para>
+                <NamedSubSection sl="i">
+                  verification of identity;
+                </NamedSubSection>
+                <NamedSubSection sl="ii">OTP-based consent;</NamedSubSection>
+                <NamedSubSection sl="iii">
+                  acceptance of these Nest Terms.
+                </NamedSubSection>
+              </div>
 
-            <Para>
-              Where a User invites another family member to the Nest, such
-              family member shall be required to provide their own consent for
-              processing of their Personal Data. Consent shall be obtained
-              directly from the family member through an OTP-based confirmation
-              sent to their registered mobile number, along with notice of the
-              purpose and scope of processing. No processing of such data shall
-              occur unless and until such consent is provided.
-            </Para>
+              <Para>
+                Where a User invites another family member to the Nest, such
+                family member shall be required to provide their own consent for
+                processing of their Personal Data. Consent shall be obtained
+                directly from the family member through an OTP-based
+                confirmation sent to their registered mobile number, along with
+                notice of the purpose and scope of processing. No processing of
+                such data shall occur unless and until such consent is provided.
+              </Para>
 
-            <Para>
-              Each Nest functions as a common shared space for all Nest Members,
-              and participation is voluntary. A Nest Member may be removed or
-              may exit the Nest in accordance with Platform settings; however,
-              certain transaction or regulatory records may be retained as
-              required by law.
-            </Para>
-          </Indent>
+              <Para>
+                Each Nest functions as a common shared space for all Nest
+                Members, and participation is voluntary. A Nest Member may be
+                removed or may exit the Nest in accordance with Platform
+                settings; however, certain transaction or regulatory records may
+                be retained as required by law.
+              </Para>
+            </Indent>
           </NamedSection>
 
           <NamedSection heading="Actions Permitted Within a Nest">
-          <Indent>
-            <Para>
-              Subject to explicit consent, applicable laws and Platform
-              controls, each Nest Member may perform the following actions:
-            </Para>
-            <Para>
-              <Bold>Profile and Account Management:</Bold> Each Nest Member can:
-            </Para>
-            <NamedSubSection sl="i">
-              Create, update, or manage their own profile.
-            </NamedSubSection>
-            <NamedSubSection sl="ii">
-              Create or manage a Nest-linked profile or account for another Nest
-              Member, where such Nest Member has provided valid consent.
-            </NamedSubSection>
-            <NamedSubSection sl="iii">
-              Change or update profile pictures and related identifiers within
-              the Nest. Note that financial data is personal to each Nest Member
-              and other members of a Nest will not be able to modify such data.
-            </NamedSubSection>
-            <Para>
-              <Bold>Visibility of Nest Member Data</Bold>: View Personal Data
-              including Credit Report Information, Bill Payment Details and
-              account-related information of other Nest Members within the same
-              Nest, except for documents stored in the Nest Safe, unless
-              expressly shared.
-            </Para>
-            <Para>
-              <Bold>Payments and Bills:</Bold> Each Nest Member can:
-            </Para>
-            <Para>
-              <Bold> Credit Report related actions: </Bold>Initiate credit score
-              checks or credit report access for themselves or for another Nest
-              Member, only where the concerned Nest Member has provided explicit
-              consent, including OTP-based confirmation where required.
-            </Para>
-            <Para>
-              <Bold>Nest Safe:</Bold> Nest Members can Upload documents to the
-              Nest Safe. Nest members can also share specific documents with
-              selected Nest Members within the Nest.
-            </Para>
-            <Para>
-              Documents remain private by default and are not visible to other
-              Nest Members unless actively shared.
-            </Para>
-            <Para>
-              <Bold>Additional features: </Bold>
-              Nest Money may, in compliance with applicable laws and regulatory
-              requirements, introduce additional Nest related features or
-              services for Nest Members from time to time. Use of such features
-              shall be subject to applicable terms, disclosures, and User
-              consents, where required, and shall be governed by the Platform’s
-              Terms of Use and{" "}
-              <Link href={"/privacy"} className="text-primary-blue">
-                Privacy Policy
-              </Link>
-              .
-            </Para>
-          </Indent>
+            <Indent>
+              <Para>
+                Subject to explicit consent, applicable laws and Platform
+                controls, each Nest Member may perform the following actions:
+              </Para>
+              <Para>
+                <Bold>Profile and Account Management:</Bold> Each Nest Member
+                can:
+              </Para>
+              <NamedSubSection sl="i">
+                Create, update, or manage their own profile.
+              </NamedSubSection>
+              <NamedSubSection sl="ii">
+                Create or manage a Nest-linked profile or account for another
+                Nest Member, where such Nest Member has provided valid consent.
+              </NamedSubSection>
+              <NamedSubSection sl="iii">
+                Change or update profile pictures and related identifiers within
+                the Nest. Note that financial data is personal to each Nest
+                Member and other members of a Nest will not be able to modify
+                such data.
+              </NamedSubSection>
+              <Para>
+                <Bold>Visibility of Nest Member Data</Bold>: View Personal Data
+                including Credit Report Information, Bill Payment Details and
+                account-related information of other Nest Members within the
+                same Nest, except for documents stored in the Nest Safe, unless
+                expressly shared.
+              </Para>
+              <Para>
+                <Bold>Payments and Bills:</Bold> Each Nest Member can:
+              </Para>
+              <Para>
+                <Bold> Credit Report related actions: </Bold>Initiate credit
+                score checks or credit report access for themselves or for
+                another Nest Member, only where the concerned Nest Member has
+                provided explicit consent, including OTP-based confirmation
+                where required.
+              </Para>
+              <Para>
+                <Bold>Nest Safe:</Bold> Nest Members can Upload documents to the
+                Nest Safe. Nest members can also share specific documents with
+                selected Nest Members within the Nest.
+              </Para>
+              <Para>
+                Documents remain private by default and are not visible to other
+                Nest Members unless actively shared.
+              </Para>
+              <Para>
+                <Bold>Additional features: </Bold>
+                Nest Money may, in compliance with applicable laws and
+                regulatory requirements, introduce additional Nest related
+                features or services for Nest Members from time to time. Use of
+                such features shall be subject to applicable terms, disclosures,
+                and User consents, where required, and shall be governed by the
+                Platform’s Terms of Use and{" "}
+                <Link href={"/privacy"} className="text-primary-blue">
+                  Privacy Policy
+                </Link>
+                .
+              </Para>
+            </Indent>
           </NamedSection>
 
-
           <NamedSection heading="Consent and Authority Between Nest Members">
-          <Indent>
-            <Para>
-              By joining a Nest, each Nest Member acknowledges and agrees that:
-            </Para>
-            <NamedSubSection sl="i">
-              other Nest Members may view certain Personal Data;
-            </NamedSubSection>
-            <NamedSubSection sl="ii">
-              other Nest Members may perform permitted actions on their behalf;
-            </NamedSubSection>
-            <NamedSubSection sl="iii">
-              such actions are undertaken solely within the Nest and based on
-              consent.
-            </NamedSubSection>
+            <Indent>
+              <Para>
+                By joining a Nest, each Nest Member acknowledges and agrees
+                that:
+              </Para>
+              <NamedSubSection sl="i">
+                other Nest Members may view certain Personal Data;
+              </NamedSubSection>
+              <NamedSubSection sl="ii">
+                other Nest Members may perform permitted actions on their
+                behalf;
+              </NamedSubSection>
+              <NamedSubSection sl="iii">
+                such actions are undertaken solely within the Nest and based on
+                consent.
+              </NamedSubSection>
 
-            <Para className="mt-4">Consent may be:</Para>
-            <NamedSubSection sl="i">feature-specific;</NamedSubSection>
-            <NamedSubSection sl="ii">
-              action-specific (e.g., credit report access);
-            </NamedSubSection>
-            <NamedSubSection sl="iii">
-              time-bound or revocable through Platform controls.
-            </NamedSubSection>
+              <Para className="mt-4">Consent may be:</Para>
+              <NamedSubSection sl="i">feature-specific;</NamedSubSection>
+              <NamedSubSection sl="ii">
+                action-specific (e.g., credit report access);
+              </NamedSubSection>
+              <NamedSubSection sl="iii">
+                time-bound or revocable through Platform controls.
+              </NamedSubSection>
 
-            <Para className="mt-4">
-            All personal data of Nest Members will be handled by Nest Money
-            strictly in accordance with Our{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
-            . Withdrawal of consent may limit or disable certain Nest
-            functionalities without affecting the legality of processing carried
-            out prior to withdrawal.
-          </Para>
-          </Indent>
+              <Para className="mt-4">
+                All personal data of Nest Members will be handled by Nest Money
+                strictly in accordance with Our{" "}
+                <Link href={"/privacy"} className="text-primary-blue">
+                  Privacy Policy
+                </Link>
+                . Withdrawal of consent may limit or disable certain Nest
+                functionalities without affecting the legality of processing
+                carried out prior to withdrawal.
+              </Para>
+            </Indent>
           </NamedSection>
 
           <NamedSection heading="User Responsibility and Risk Allocation">
-          <Indent className="flex flex-col gap-4">
-            <div>
-            <Para>Each Nest Member is responsible for:</Para>
-            <NamedSubSection sl="i">
-              ensuring the accuracy of data shared;
-            </NamedSubSection>
-            <NamedSubSection sl="ii">
-              granting consent only to trusted Nest Members;
-            </NamedSubSection>
-            <NamedSubSection sl="iii">
-              monitoring Nest activity affecting their data or financial
-              obligations.
-            </NamedSubSection>
-            </div>
+            <Indent className="flex flex-col gap-4">
+              <div>
+                <Para>Each Nest Member is responsible for:</Para>
+                <NamedSubSection sl="i">
+                  ensuring the accuracy of data shared;
+                </NamedSubSection>
+                <NamedSubSection sl="ii">
+                  granting consent only to trusted Nest Members;
+                </NamedSubSection>
+                <NamedSubSection sl="iii">
+                  monitoring Nest activity affecting their data or financial
+                  obligations.
+                </NamedSubSection>
+              </div>
 
-            <Para>
-              Nest Money does not act as an agent or fiduciary between Nest
-              Members and is not responsible for disputes, misuse of authority,
-              or unauthorised actions taken by a Nest Member using valid
-              credentials or consent of another Nest Member
-            </Para>
-          </Indent>
+              <Para>
+                Nest Money does not act as an agent or fiduciary between Nest
+                Members and is not responsible for disputes, misuse of
+                authority, or unauthorised actions taken by a Nest Member using
+                valid credentials or consent of another Nest Member
+              </Para>
+            </Indent>
           </NamedSection>
         </Indent>
       </NumberedSection>
 
       <NumberedSection sl={30} heading="ADDITONAL TERMS - BBPS BILL PAYMENT">
         <Indent className="flex flex-col gap-4">
-
           <NamedSection heading="Roles and Responsibilities under BBPS">
-          <NamedSubSection sl="a">
-            Role of NPCI (BBPCU): The Bharat Bill Payment Central Unit (BBPCU),
-            operated by NPCI, establishes the standards, rules and operating
-            procedures for transactions conducted through the Bharat Bill
-            Payment System (BBPS) and oversees the network-level settlement and
-            dispute resolution mechanisms.
-          </NamedSubSection>
-          <NamedSubSection sl="b">
-            Role of Nest Money: Nest Money acts as a BBPS participant and
-            provides a digital interface to enable Users to view bills and
-            initiate payments through the BBPS network. Nest Money implements
-            reasonable technical and organisational measures to secure the
-            Platform and provides a customer grievance redressal mechanism in
-            accordance with applicable NPCI and regulatory requirements.
-          </NamedSubSection>
-          <NamedSubSection sl="c">
-            Limitation of Role: Nest Money acts solely as a facilitator for bill
-            payments and does not provide the underlying utility or billing
-            services. Nest Money is not responsible for the quality, accuracy,
-            availability or performance of services provided by the relevant
-            Biller or for delays arising from the Biller’s systems or BBPS
-            network operations.
-          </NamedSubSection>
-          </NamedSection>
-          
-          
-          <NamedSection heading="Payment Processing, Delays and Refunds">
-          <Indent>
-            <Para>
-              <Bold>Consent Scope:</Bold> Any authorisation or consent provided
-              by You in connection with a transaction or service shall be
-              limited to the specific purpose for which such consent was
-              obtained. Nest Money shall not assume Your consent for any future
-              transaction, recurring payment, or new data processing activity
-              unless You have provided explicit authorisation for such actions
-              through the Platform.
-            </Para>
-
-            <Para>
-              <Bold>Payment Processing and User Inputs:</Bold> Nest Money shall
-              not be responsible for any incorrect, incomplete, or inaccurate
-              information or inputs provided by the User at the time of
-              initiating a transaction on the Platform. Users are solely
-              responsible for verifying all payment-related details, including
-              biller information and payment amounts, prior to confirming any
-              transaction.
-            </Para>
-
-            <Para>
-              <Bold> Settlement Timelines:</Bold> The time taken for the credit
-              of payments may vary depending on the User’s bank, card issuer,
-              payment network, or BBPS participant. While many transactions may
-              be processed in near real-time, settlement may normally take
-              between 48 to 72 working hours. Nest Money does not guarantee
-              specific timelines for third-party systems but shall initiate all
-              processing requests promptly upon User authorisation.
-            </Para>
-
-            <Para>
-              <Bold>Failed Transactions and Automated Reversals:</Bold> In
-              accordance with applicable RBI directions on turnaround time (TAT)
-              for failed transactions:
-            </Para>
             <NamedSubSection sl="a">
-              Automatic Reversal: Where a User’s account is debited but the
-              transaction is not successfully completed, Nest Money (in
-              coordination with its PSP or Sponsor Bank) shall initiate an
-              automatic reversal.
+              Role of NPCI (BBPCU): The Bharat Bill Payment Central Unit
+              (BBPCU), operated by NPCI, establishes the standards, rules and
+              operating procedures for transactions conducted through the Bharat
+              Bill Payment System (BBPS) and oversees the network-level
+              settlement and dispute resolution mechanisms.
             </NamedSubSection>
             <NamedSubSection sl="b">
-              Timelines: Reversals shall be processed in accordance with the
-              turnaround time prescribed by applicable RBI circulars for the
-              relevant payment instrument.
+              Role of Nest Money: Nest Money acts as a BBPS participant and
+              provides a digital interface to enable Users to view bills and
+              initiate payments through the BBPS network. Nest Money implements
+              reasonable technical and organisational measures to secure the
+              Platform and provides a customer grievance redressal mechanism in
+              accordance with applicable NPCI and regulatory requirements.
             </NamedSubSection>
+            <NamedSubSection sl="c">
+              Limitation of Role: Nest Money acts solely as a facilitator for
+              bill payments and does not provide the underlying utility or
+              billing services. Nest Money is not responsible for the quality,
+              accuracy, availability or performance of services provided by the
+              relevant Biller or for delays arising from the Biller’s systems or
+              BBPS network operations.
+            </NamedSubSection>
+          </NamedSection>
 
-            <Para>
-              <Bold>Late Fees and Charges:</Bold>ponsible for penalties or
-              charges levied by third-party billers or card issuers due to
-              general network delays, and will be liable only for any late fees
-              or interest charges directly and solely resulting from a proven
-              technical failure or gross negligence within Nest Money’s internal
-              systems.
-            </Para>
+          <NamedSection heading="Payment Processing, Delays and Refunds">
+            <Indent>
+              <Para>
+                <Bold>Consent Scope:</Bold> Any authorisation or consent
+                provided by You in connection with a transaction or service
+                shall be limited to the specific purpose for which such consent
+                was obtained. Nest Money shall not assume Your consent for any
+                future transaction, recurring payment, or new data processing
+                activity unless You have provided explicit authorisation for
+                such actions through the Platform.
+              </Para>
 
-            <Para>
-              <Bold>Refunds:</Bold> In the event of failed or duplicate
-              transactions or resolved disputed transactions, Users may be
-              eligible for refunds, subject to the policies, procedures and
-              determination of the relevant third-party service provider through
-              which the transaction was processed. Nest Money shall use best
-              efforts to process all refunds shall be processed within 7 working
-              days; however, the refund timelines may be subject to the refund
-              policies and timelines of the third-party service provider,
-              technical issues etc. All refunds will be credited exclusively to
-              the original source account used for the transaction.
-            </Para>
+              <Para>
+                <Bold>Payment Processing and User Inputs:</Bold> Nest Money
+                shall not be responsible for any incorrect, incomplete, or
+                inaccurate information or inputs provided by the User at the
+                time of initiating a transaction on the Platform. Users are
+                solely responsible for verifying all payment-related details,
+                including biller information and payment amounts, prior to
+                confirming any transaction.
+              </Para>
 
-            <Para>
-              <Bold> Erroneous Credits and Reversals:</Bold> In the event that a
-              payment is erroneously processed and credited to a User’s account,
-              Nest Money reserves the right to initiate a reversal to correct
-              the error. Nest Money shall notify the User of such reversal
-              within a reasonable time, along with the reason and relevant
-              transaction details.
-            </Para>
-          </Indent>
+              <Para>
+                <Bold> Settlement Timelines:</Bold> The time taken for the
+                credit of payments may vary depending on the User’s bank, card
+                issuer, payment network, or BBPS participant. While many
+                transactions may be processed in near real-time, settlement may
+                normally take between 48 to 72 working hours. Nest Money does
+                not guarantee specific timelines for third-party systems but
+                shall initiate all processing requests promptly upon User
+                authorisation.
+              </Para>
+
+              <Para>
+                <Bold>Failed Transactions and Automated Reversals:</Bold> In
+                accordance with applicable RBI directions on turnaround time
+                (TAT) for failed transactions:
+              </Para>
+              <NamedSubSection sl="a">
+                Automatic Reversal: Where a User’s account is debited but the
+                transaction is not successfully completed, Nest Money (in
+                coordination with its PSP or Sponsor Bank) shall initiate an
+                automatic reversal.
+              </NamedSubSection>
+              <NamedSubSection sl="b">
+                Timelines: Reversals shall be processed in accordance with the
+                turnaround time prescribed by applicable RBI circulars for the
+                relevant payment instrument.
+              </NamedSubSection>
+
+              <Para>
+                <Bold>Late Fees and Charges:</Bold>ponsible for penalties or
+                charges levied by third-party billers or card issuers due to
+                general network delays, and will be liable only for any late
+                fees or interest charges directly and solely resulting from a
+                proven technical failure or gross negligence within Nest Money’s
+                internal systems.
+              </Para>
+
+              <Para>
+                <Bold>Refunds:</Bold> In the event of failed or duplicate
+                transactions or resolved disputed transactions, Users may be
+                eligible for refunds, subject to the policies, procedures and
+                determination of the relevant third-party service provider
+                through which the transaction was processed. Nest Money shall
+                use best efforts to process all refunds shall be processed
+                within 7 working days; however, the refund timelines may be
+                subject to the refund policies and timelines of the third-party
+                service provider, technical issues etc. All refunds will be
+                credited exclusively to the original source account used for the
+                transaction.
+              </Para>
+
+              <Para>
+                <Bold> Erroneous Credits and Reversals:</Bold> In the event that
+                a payment is erroneously processed and credited to a User’s
+                account, Nest Money reserves the right to initiate a reversal to
+                correct the error. Nest Money shall notify the User of such
+                reversal within a reasonable time, along with the reason and
+                relevant transaction details.
+              </Para>
+            </Indent>
           </NamedSection>
         </Indent>
       </NumberedSection>
 
-      <NumberedSection sl={31} heading="ADDITIONAL TERMS – CREDIT REPORT ANALYSIS">
+      <NumberedSection
+        sl={31}
+        heading="ADDITIONAL TERMS – CREDIT REPORT ANALYSIS"
+      >
         <Indent className="flex flex-col gap-4">
           <Para>
             By onboarding, You provide explicit, specific, and informed consent

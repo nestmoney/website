@@ -28,13 +28,19 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="relative z-50 bg-white">
+    <header className="relative z-50 bg-white w-full px-[20px] md:px-[0px] site-container mx-auto">
       <div ref={navRef} className="relative">
         {/* NAV */}
         <nav className="site-container mx-auto py-6 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" aria-label="Nest Money home">
-            <Image src="/logo.svg" alt="Nest Money" width={177} height={24} />
+            <Image
+              src="/logo.svg"
+              alt="Nest Money"
+              width={177}
+              height={24}
+              className="h-[20px] w-[150px] md:h-[24px] md:w-[177px]"
+            />
           </Link>
 
           {/* Desktop Links */}
@@ -68,7 +74,7 @@ const Navbar = () => {
             onClick={() => setOpen((prev) => !prev)}
             aria-label="Toggle navigation menu"
           >
-            <Menu />
+            <Menu className="size-[20px] md:size-[24px]" />
           </button>
         </nav>
 

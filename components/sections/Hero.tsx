@@ -7,7 +7,7 @@ import { Links } from "../updatable";
 const Hero = () => {
   return (
     <section
-      className=" mb-[64px] md:mb-[128px] xl:mb-[160px]"
+      className=" mb-[64px] md:mb-[128px] xl:mb-[160px] px-[10px] md:px-[0px]"
       aria-labelledby="hero-title"
     >
       {Links.playStore && Links.appStore && (
@@ -32,10 +32,10 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className=" flex flex-col items-center justify-between pt-5">
-        <header className="flex flex-col items-center space-y-5 md:space-y-0 mb-[64px] xl:mb-5">
+        <header className="flex flex-col items-center space-y-5 md:space-y-0 mb-[128px] xl:mb-8">
           <h1
             id="hero-title"
-            className="font-bold text-[24px] mt-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center"
+            className="font-bold  mt-[32px] text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center"
           >
             A home for your{" "}
             <span className="text-primary-blue">

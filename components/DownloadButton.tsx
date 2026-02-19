@@ -32,7 +32,7 @@ const DownloadBtn = () => {
             alt="Google Play"
             width={135}
             height={40}
-            className="w-[108px] md:w-[134px] h-auto"
+            className="w-[100px] md:w-[134px] h-auto"
           />
         </a>
       )}
@@ -45,7 +45,7 @@ const DownloadBtn = () => {
             alt="App Store"
             width={135}
             height={40}
-            className="w-[108px] md:w-[134px] h-auto"
+            className="w-[100px] md:w-[134px] h-auto"
           />
         </a>
       )}
