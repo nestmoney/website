@@ -2,9 +2,9 @@ import TermsPage from "@/components/Pages/TermsPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms Of Use | Nest Money",
+  title: "Terms of Use | Nest Money",
   description:
-    "Read the Nest Money terms of use and how we manage your information.",
+    "Learn about our terms of use and your responsibilities",
 };
 
 const page = () => {
