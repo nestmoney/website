@@ -7,6 +7,7 @@ import Para from "@/components/Typography/Para";
 import PrivacyTable from "@/components/Typography/Table";
 import TypoLinks from "@/components/Typography/TypoLinks";
 import Link from "next/link";
+import ScrollToSection from "../Typography/ScrollToSection";
 
 const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
@@ -987,7 +988,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           </Para>
         </Indent>
       </NumberedSection>
-
+      <ScrollToSection />
       <NumberedSection
         sl={21}
         heading="HOW IS YOUR PERSONAL DATA HANDLED IN THE NEST"
