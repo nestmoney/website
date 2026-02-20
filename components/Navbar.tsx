@@ -68,17 +68,17 @@ const Navbar = () => {
             </ul>
           )}
 
-          {/* Mobile Toggle */}
-          <button
-            className="md:hidden"
-            onClick={() => setOpen((prev) => !prev)}
-            aria-label="Toggle navigation menu"
-          >
-            <Menu className="size-[20px] md:size-[24px]" />
-          </button>
+          {!hideNavLinks && (
+            <button
+              className="md:hidden"
+              onClick={() => setOpen((prev) => !prev)}
+              aria-label="Toggle navigation menu"
+            >
+              <Menu className="size-[20px] md:size-[24px]" />
+            </button>
+          )}
         </nav>
 
-        {/* Mobile Menu */}
         {!hideNavLinks && (
           <div
             className={`md:hidden absolute top-full left-0 w-full bg-white shadow-md
