@@ -18,9 +18,7 @@ export const metadata: Metadata = {
     default: "Nest Money | The family finance app",
     template: "%s | Nest Money",
   },
-
-  description:
-    "Nest Money helps families manage shared expenses, track bills, and improve financial wellbeing in one simple app.",
+  description: "A home for your family finances",
 
   keywords: [
     "family finance app",
@@ -43,8 +41,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Nest Money | Family Finance App",
-    description:
-      "Track bills, manage shared finances, and improve family financial wellbeing with Nest Money.",
+    description: "A home for your family finances",
     url: "https://nestmoney.in", //important change to real domain
     siteName: "Nest Money",
     type: "website",
@@ -62,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Nest Money | Family Finance App",
-    description: "Manage shared expenses and bills with Nest Money.",
+    description: "A home for your family finances",
     images: ["/og-image.png"],
   },
 
@@ -105,8 +102,7 @@ export default function RootLayout({
               name: "Nest Money",
               applicationCategory: "FinanceApplication",
               operatingSystem: "Web",
-              description:
-                "Nest Money helps families manage shared finances and track bills.",
+              description: "A home for your family finances",
               url: "https://nestmoney.in", //important change to real domain
             }),
           }}
