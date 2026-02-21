@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nestmoney.in"),
 
   title: {
-    default: "Nest Money | The family finance app",
+    default: "Nest Money | India's family finance app",
     template: "%s | Nest Money",
   },
 
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Nest Money | The family finance app",
+    title: "Nest Money | India's family finance app",
     description:
       "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
     url: "https://nestmoney.in",
@@ -82,14 +82,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Nest Money The family finance app",
+        alt: "Nest Money | India's family finance app",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Nest Money | The family finance app",
+    title: "Nest Money | India's family finance app",
     description:
       "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
     images: ["/og-image.png"],
