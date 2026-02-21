@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nestmoney.in"),
 
   title: {
-    default: "Nest Money | Family Finance App India",
+    default: "Nest Money | The family finance app",
     template: "%s | Nest Money",
   },
 
@@ -23,14 +23,21 @@ export const metadata: Metadata = {
     "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
 
   keywords: [
-    "family finance app India",
+    "family finance",
+    "finance app",
+    "family finance app for India",
     "finance app for families",
-    "expense tracker India",
-    "bill tracker India",
-    "credit score tracker India",
+    "family",
+    "india's family finance app",
+    "indian families",
+    "bill track",
+    "credit score",
     "Nest Money",
-    "utility bill manager",
-    "credit card bill tracker",
+    "utility bills",
+    "electricity bill",
+    "utilities",
+    "credit card",
+    "credit card bills",
     "family expense tracker",
     "nest",
     "nest money",
@@ -63,7 +70,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Nest Money | Family Finance App India",
+    title: "Nest Money | The family finance app",
     description:
       "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
     url: "https://nestmoney.in",
@@ -75,14 +82,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Nest Money Family Finance App India",
+        alt: "Nest Money The family finance app",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Nest Money | Family Finance App India",
+    title: "Nest Money | The family finance app",
     description:
       "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
     images: ["/og-image.png"],
