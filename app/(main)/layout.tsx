@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Nest Money is a family finance app for Indian families to track expenses, manage utility and credit card bills, monitor credit scores, and securely store financial documents in one place.",
+    "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
 
   keywords: [
     "family finance app India",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nest Money | Family Finance App India",
     description:
-      "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing",
+      "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
     url: "https://nestmoney.in",
     siteName: "Nest Money",
     locale: "en_IN",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nest Money | Family Finance App India",
     description:
-      "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing",
+      "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
     images: ["/og-image.png"],
     creator: "@nestmoney",
   },
@@ -126,7 +126,7 @@ export default function RootLayout({
               applicationCategory: "FinanceApplication",
               operatingSystem: "Web",
               description:
-                "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing",
+                "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
               url: "https://nestmoney.in",
               image: "https://nestmoney.in/og-image.png",
               author: {
