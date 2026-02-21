@@ -12,29 +12,32 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nestmoney.in"), //important change to real domain
+  metadataBase: new URL("https://nestmoney.in"),
 
   title: {
-    default: "Nest Money | The family finance app",
+    default: "Nest Money | Family Finance App India",
     template: "%s | Nest Money",
   },
-  description: "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
+
+  description:
+    "Nest Money is a family finance app for Indian families to track expenses, manage utility and credit card bills, monitor credit scores, and securely store financial documents in one place.",
 
   keywords: [
-    "family finance",
+    "family finance app India",
+    "finance app for families",
+    "expense tracker India",
+    "bill tracker India",
+    "credit score tracker India",
+    "Nest Money",
+    "utility bill manager",
+    "credit card bill tracker",
+    "family expense tracker",
     "nest",
-    "nestmoney",
-    "indian families",
-    "credit cards",
-    "money",
-    "utility bills",
-    "credit card bills",
-    "electricity",
-    "insurance",
-    "loan repayment",
-    "digital locker",
-    "credit score",
-    "credit report",
+    "nest money",
+    "nestmoney in",
+    "nestmoney app",
+    " nest money",
+    "financial management app India",
   ],
 
   authors: [{ name: "Nest Money Team" }],
@@ -42,38 +45,48 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 
   icons: {
     icon: "/favicon.png",
   },
 
+  alternates: {
+    canonical: "https://nestmoney.in",
+  },
+
   openGraph: {
-    title: "Nest Money | Family Finance App",
-    description: "A home for your family finances",
-    url: "https://nestmoney.in", //important change to real domain
+    title: "Nest Money | Family Finance App India",
+    description:
+      "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing",
+    url: "https://nestmoney.in",
     siteName: "Nest Money",
+    locale: "en_IN",
     type: "website",
-    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Nest Money - Family Finance App",
+        alt: "Nest Money Family Finance App India",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Nest Money | Family Finance App",
-    description: "A home for your family finances",
+    title: "Nest Money | Family Finance App India",
+    description:
+      "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing",
     images: ["/og-image.png"],
-  },
-
-  alternates: {
-    canonical: "https://nestmoney.in", //important change to real domain
+    creator: "@nestmoney",
   },
 };
 
@@ -95,13 +108,14 @@ export default function RootLayout({
           type="video/mp4"
         />
       </head>
+
       <body className="font-sans antialiased bg-white text-secondary">
         <Navbar />
         {children}
         <Download />
         <Footer />
 
-        {/* Structured Data */}
+        {/* Structured Data for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -111,8 +125,19 @@ export default function RootLayout({
               name: "Nest Money",
               applicationCategory: "FinanceApplication",
               operatingSystem: "Web",
-              description: "A home for your family finances",
-              url: "https://nestmoney.in", //important change to real domain
+              description:
+                "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing",
+              url: "https://nestmoney.in",
+              image: "https://nestmoney.in/og-image.png",
+              author: {
+                "@type": "Organization",
+                name: "Nest Money",
+              },
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "INR",
+              },
             }),
           }}
         />
