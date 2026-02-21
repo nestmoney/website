@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://www.nestmoney.in/sitemap.xml',
+    sitemap: 'https://nestmoney.in/sitemap.xml',
   };
 }

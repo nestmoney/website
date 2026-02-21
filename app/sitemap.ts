@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 const sitemap = (): MetadataRoute.Sitemap => {
-  const baseUrl = 'https://www.nestmoney.in';
+  const baseUrl = 'https://nestmoney.in';
 
   return [
     {
