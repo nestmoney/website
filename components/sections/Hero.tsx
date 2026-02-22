@@ -10,23 +10,35 @@ const Hero = () => {
   const mobileRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const resumeVideo = () => {
-      const video =
-        window.innerWidth >= 768 ? desktopRef.current : mobileRef.current;
+    const getActiveVideo = () =>
+      window.innerWidth >= 768 ? desktopRef.current : mobileRef.current;
 
-      if (video && video.paused) {
-        video.play().catch(() => {});
+    const resumeVideo = () => {
+      // Must wait for visibility to be fully restored
+      if (document.visibilityState !== "visible") return;
+
+      const video = getActiveVideo();
+      if (!video) return;
+
+      if (video.paused) {
+        // Small delay is critical for iOS WebKit — play() called too early gets rejected
+        setTimeout(() => {
+          video.play().catch(() => {});
+        }, 200);
       }
     };
 
+    // visibilitychange is the most reliable across iOS
     document.addEventListener("visibilitychange", resumeVideo);
-    window.addEventListener("pageshow", resumeVideo);
-    window.addEventListener("focus", resumeVideo);
+
+    // pageshow handles bfcache restores (back/forward navigation)
+    window.addEventListener("pageshow", (e) => {
+      if (e.persisted) resumeVideo(); // only fire on bfcache restore
+    });
 
     return () => {
       document.removeEventListener("visibilitychange", resumeVideo);
       window.removeEventListener("pageshow", resumeVideo);
-      window.removeEventListener("focus", resumeVideo);
     };
   }, []);
 
