@@ -3,8 +3,33 @@
 import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
 import { Links } from "../updatable";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
+  const desktopRef = useRef<HTMLVideoElement>(null);
+  const mobileRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const resumeVideo = () => {
+      const video =
+        window.innerWidth >= 768 ? desktopRef.current : mobileRef.current;
+
+      if (video && video.paused) {
+        video.play().catch(() => {});
+      }
+    };
+
+    document.addEventListener("visibilitychange", resumeVideo);
+    window.addEventListener("pageshow", resumeVideo);
+    window.addEventListener("focus", resumeVideo);
+
+    return () => {
+      document.removeEventListener("visibilitychange", resumeVideo);
+      window.removeEventListener("pageshow", resumeVideo);
+      window.removeEventListener("focus", resumeVideo);
+    };
+  }, []);
+
   return (
     <section
       className=" mb-[64px] md:mb-[128px] xl:mb-[160px] px-[10px] md:px-[0px]"
@@ -47,6 +72,7 @@ const Hero = () => {
 
         <figure className="w-full">
           <video
+            ref={desktopRef}
             src="/heroAnime.mp4"
             poster="/heroAnimePlaceholder.png"
             autoPlay
@@ -58,6 +84,7 @@ const Hero = () => {
           />
 
           <video
+            ref={mobileRef}
             src="/heroAnimeMob.mp4"
             poster="/heroAnimeMobPlaceholder.png"
             autoPlay
