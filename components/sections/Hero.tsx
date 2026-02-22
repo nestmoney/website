@@ -14,31 +14,26 @@ const Hero = () => {
       window.innerWidth >= 768 ? desktopRef.current : mobileRef.current;
 
     const resumeVideo = () => {
-      // Must wait for visibility to be fully restored
       if (document.visibilityState !== "visible") return;
-
       const video = getActiveVideo();
       if (!video) return;
-
       if (video.paused) {
-        // Small delay is critical for iOS WebKit — play() called too early gets rejected
         setTimeout(() => {
           video.play().catch(() => {});
         }, 200);
       }
     };
 
-    // visibilitychange is the most reliable across iOS
-    document.addEventListener("visibilitychange", resumeVideo);
+    const handlePageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) resumeVideo();
+    };
 
-    // pageshow handles bfcache restores (back/forward navigation)
-    window.addEventListener("pageshow", (e) => {
-      if (e.persisted) resumeVideo(); // only fire on bfcache restore
-    });
+    document.addEventListener("visibilitychange", resumeVideo);
+    window.addEventListener("pageshow", handlePageShow);
 
     return () => {
       document.removeEventListener("visibilitychange", resumeVideo);
-      window.removeEventListener("pageshow", resumeVideo);
+      window.removeEventListener("pageshow", handlePageShow);
     };
   }, []);
 
