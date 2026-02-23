@@ -28,12 +28,12 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Bold>&ldquo;Privacy Policy&rdquo;</Bold> or{" "}
           <Bold>&ldquo;Policy&rdquo;</Bold>) to inform You about how Nest Money
           collects, stores, uses and otherwise processes Your data including
-          Your Personal Data through Nest Money website www.nestmoney.in, Nest
-          Money mobile Application, chatbots, notifications or any other medium
-          used by Nest Money to provide its Services to You (hereinafter
-          referred to as the <Bold>&ldquo;Platform&rdquo;</Bold>). The Platform
-          is owned, maintained, operated and managed by Legentree Technologies
-          Private Limited (hereafter referred in this document as{" "}
+          Your Personal Data through Nest Money website nestmoney.in, Nest Money
+          mobile Application, chatbots, notifications or any other medium used
+          by Nest Money to provide its Services to You (hereinafter referred to
+          as the <Bold>&ldquo;Platform&rdquo;</Bold>). The Platform is owned,
+          maintained, operated and managed by Legentree Technologies Private
+          Limited (hereafter referred in this document as{" "}
           <Bold>&ldquo;Nest Money&rdquo;</Bold>/ <Bold>&ldquo;We&rdquo;</Bold>/{" "}
           <Bold>&ldquo;Us&rdquo;</Bold>). The terms of this Privacy Policy shall
           apply to You (hereafter referred in this document as{" "}

@@ -19,16 +19,16 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
       <div className="flex flex-col gap-8">
         <Para>
           Welcome to Nest Money! The Nest Money Mobile Application, the website
-          www.nestmoney.in, chatbots, notifications or any other medium used by
-          Nest Money to provide its Services to You (hereinafter referred to as
-          the <Bold>&ldquo;Platform&rdquo;</Bold>) is owned, maintained,
-          operated and managed by Legentree Technologies Private Limited
-          (hereafter referred in this document as{" "}
-          <Bold>“Nest Money”/ “We”/ “Us”</Bold>). Any access of the Platform or
-          use of the services, offered by Nest Money through the Platform, is
-          subject to your unconditional acceptance of these terms of use (
-          <Bold>“Terms”</Bold>). These Terms will apply to You the user (
-          <Bold>“You”</Bold> or <Bold>“User”</Bold>).
+          nestmoney.in, chatbots, notifications or any other medium used by Nest
+          Money to provide its Services to You (hereinafter referred to as the{" "}
+          <Bold>&ldquo;Platform&rdquo;</Bold>) is owned, maintained, operated
+          and managed by Legentree Technologies Private Limited (hereafter
+          referred in this document as <Bold>“Nest Money”/ “We”/ “Us”</Bold>).
+          Any access of the Platform or use of the services, offered by Nest
+          Money through the Platform, is subject to your unconditional
+          acceptance of these terms of use (<Bold>“Terms”</Bold>). These Terms
+          will apply to You the user (<Bold>“You”</Bold> or <Bold>“User”</Bold>
+          ).
         </Para>
 
         <Para>
