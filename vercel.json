@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://www.nestmoney.in/:path*",
+      "destination": "https://nestmoney.in/:path*",
+      "permanent": true
+    }
+  ]
+}
