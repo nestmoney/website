@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "Nest Money is a family finance app for Indian families. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
 
   keywords: [
+    "nestmoney",
     "family finance",
     "finance app",
     "family finance app for India",
