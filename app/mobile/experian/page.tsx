@@ -1,13 +1,7 @@
-import type { Metadata } from "next";
 import NamedSection from "@/components/Typography/NamedSection";
 import NamedSubSection from "@/components/Typography/NamedSubSection";
 import Para from "@/components/Typography/Para";
 import Bold from "@/components/Typography/Bold";
-
-export const metadata: Metadata = {
-  title: "Terms of Use | Nest Money",
-  description: "Read the Nest Money terms of use and service conditions.",
-};
 
 const page = () => {
   return (
