@@ -11,31 +11,32 @@ const Nest = () => {
           <header className="mb-[16px] md:mb-[32px]">
             <Image
               src="/leftQuote.svg"
-              width={35}
-              height={35}
+              width={16}
+              height={16}
               alt=""
-              className="w-[23px] md:w-[34px] mb-2"
+              className="w-[16px] md:w-[24px] mb-2"
               aria-hidden="true"
             />
 
-            <h2 className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] font-bold leading-[110%]">
-              Financial awareness is the <br className="hidden md:block" />
-              foundation of a secure{" "}
+            <h2 className="text-[22px] md:text-[40px] lg:text-[40px] xl:text-[48px] font-bold leading-[110%]">
+              Financial awareness and <br className="hidden md:block" />
+              shared responsibility build<br className="hidden md:block" />
+              {" "}
               <span className="inline-flex items-end gap-1">
-                family
+              secure families
                 <Image
                   src="/rightQuote.svg"
-                  width={23}
-                  height={23}
+                  width={16}
+                  height={16}
                   alt=""
-                  className="-translate-y-[7px] ml-2 md:-translate-y-4 md:ml-2 w-[23px] md:w-[34px]"
+                  className="-translate-y-2 md:-translate-y-4 lg:-translate-y-4 xl:-translate-y-5 ml-1 md:ml-4 w-[16px] md:w-[24px]"
                   aria-hidden="true"
                 />
               </span>
             </h2>
           </header>
 
-          <div className="text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] space-y-[30px] w-[320px] md:w-[581px] lg:w-[574px] xl:w-[684px] font-normal">
+          <div className="text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] space-y-[30px] w-[320px] md:w-[540px] lg:w-[560px] xl:w-[680px] font-normal">
             <p>
               <span className="text-primary-blue font-bold">Nest</span> is a
               shared space for your family, where everyone can see finances, pay

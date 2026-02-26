@@ -8,13 +8,13 @@ const Features = () => {
         className="scroll-mt-[80px] space-y-10 lg:space-y-0"
       >
         <h2
-          className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
-      font-semibold text-primary-blue text-center mb-10 md:mb-10 xl:mb-10"
+          className="text-[24px] md:text-[40px] lg:text-[40px] xl:text-[48px]
+      font-semibold text-primary-blue text-center mb-[32px] md:mb-10"
         >
           Monthly essentials
         </h2>
 
-        <div className="space-y-10 lg:space-y-0">
+        <div className="space-y-[32px] lg:space-y-0">
           <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0 ">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
@@ -59,15 +59,15 @@ const Features = () => {
         </div>
       </section>
 
-      <section className="pt-10 md:pt-0 lg:pt-0 space-y-10 lg:space-y-0">
+      <section className="pt-[32px] md:pt-0 lg:pt-0">
         <h2
-          className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[42px] 
-      font-semibold text-primary-blue text-center mb-10 "
+          className="text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] 
+      font-semibold text-primary-blue text-center mb-[32px] md:mb-10"
         >
           Thoughtful offerings
         </h2>
 
-        <div className="space-y-10 lg:space-y-0">
+        <div className="space-y-[32px] lg:space-y-0">
           <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0 ">
             <Image
               className="w-[160px] md:w-[240px] lg:w-[320px] h-auto object-contain shrink-0"
