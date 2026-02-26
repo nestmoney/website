@@ -57,8 +57,7 @@ const Nest = () => {
         <figure className="flex items-end rounded-4xl">
           <div
             className="relative border-8 rounded-4xl overflow-hidden 
-
-                  w-[200px] xl:w-[260px]"
+                  w-[200px] md:w-[260px] xl:w-[300px]"
           >
             {/* <video
               autoPlay
@@ -74,6 +73,7 @@ const Nest = () => {
               width={260}
               height={260}
               alt="Nest Image"
+              className="w-[200px] md:w-[260px] xl:w-[300px]"
             />
           </div>
         </figure>
