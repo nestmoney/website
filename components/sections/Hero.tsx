@@ -44,16 +44,19 @@ const Hero = () => {
     >
       {Links.playStore && Links.appStore && (
         <aside
-          className="fixed bottom-2 right-2 z-50 hidden md:flex  bg-white 
-                   size-24 
-                   rounded-xl items-center justify-center
-                   transition-all duration-300 ease-out shadow-xl
-                   hover:scale-200 hover:shadow-md hover:-translate-10"
-          aria-label="Download QR code"
-        >
+  className="fixed bottom-[12px] right-[12px] z-50 hidden md:flex bg-white
+    size-26 rounded-xl 
+    items-center justify-center
+    transition-transform duration-300 ease-out
+    border-[3px] border-[#2b78ff33]
+    origin-bottom-right
+    hover:scale-200"
+  aria-label="Download QR code"
+>
+
           <div className="relative size-[95%] rounded-xl overflow-hidden">
             <Image
-              src="/Qr.png"
+              src="/qr_code.png"
               alt="Download QR code"
               fill
               className="object-contain size-full"
