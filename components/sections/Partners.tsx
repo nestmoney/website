@@ -9,7 +9,7 @@ const Partners = () => {
       <figure>
         <Image
           src="/india_image.png"
-          alt="India Image"
+          alt="India's family finance app"
           width={600}
           height={90}
           className="pb-[18px] md:pb-[34px]"
