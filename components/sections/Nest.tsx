@@ -14,7 +14,7 @@ const Nest = () => {
               width={16}
               height={16}
               alt=""
-              className="w-[16px] md:w-[24px] mb-2"
+              className="w-[16px] md:w-[24px] mb-2 md:mb-4"
               aria-hidden="true"
             />
 
