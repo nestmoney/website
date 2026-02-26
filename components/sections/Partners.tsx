@@ -3,7 +3,7 @@ import Image from "next/image";
 const Partners = () => {
   return (
     <section
-      className="flex flex-col justify-center items-center pt-[64px] md:pt-[32px] xl:pt-[40px] mb-[64px] md:mb-[128px] xl:mb-[160px] w-[320px] md:w-full mx-auto"
+      className="flex flex-col justify-center items-center pt-[64px] md:pt-[32px] xl:pt-0 mb-[64px] md:mb-[128px] w-[320px] md:w-full mx-auto"
       aria-labelledby="partners-title"
     >
       <figure>
