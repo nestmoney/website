@@ -1,10 +1,23 @@
 "use client";
-import Image from "next/image";
-import { useEffect, useRef } from "react";
 
-const Nest = () => {
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+const fadeLeft = {
+  hidden: { opacity: 0, x: -20 },
+  show: { opacity: 1, x: 0 },
+};
+
+const fadeRight = {
+  hidden: { opacity: 0, x: 20 },
+  show: { opacity: 1, x: 0 },
+};
+
+export default function NestSection() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
+  // Play only when in viewport
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -22,17 +35,24 @@ const Nest = () => {
 
     observer.observe(video);
 
-    return () => {
-      observer.unobserve(video);
-    };
+    return () => observer.unobserve(video);
   }, []);
+
   return (
     <section
       className="scroll-mt-[80px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
       id="nest"
     >
       <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
-        <div className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200] flex flex-col gap-6">
+        {/* LEFT CONTENT */}
+        <motion.div
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200px] flex flex-col gap-6"
+        >
           <header className="mb-[16px] md:mb-[32px]">
             <Image
               src="/leftQuote.svg"
@@ -68,29 +88,36 @@ const Nest = () => {
               each other&apos;s bills, keep track of financial wellbeing, and
               more
             </p>
+
             <p className="font-semibold italic">
               Like a WhatsApp group for family finances
             </p>
+
             <p>
               Boundaries? We&apos;ve got you covered.
-              <br /> You can create multiple nests to manage finances separately
-              with your spouse, parents or other family members
+              <br />
+              You can create multiple nests to manage finances separately with
+              your spouse, parents or other family members
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <video
-          autoPlay
+        {/* RIGHT VIDEO */}
+        <motion.video
           ref={videoRef}
+          variants={fadeRight}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           muted
           loop
           playsInline
           className="w-[200px] md:w-[260px] xl:w-[300px] rounded-4xl object-cover"
         >
           <source src="/mobile_app.mp4" type="video/mp4" />
-        </video>
+        </motion.video>
       </div>
     </section>
   );
-};
-export default Nest;
+}

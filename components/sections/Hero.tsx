@@ -4,6 +4,7 @@ import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
 import { Links } from "../updatable";
 import { useEffect, useRef } from "react";
+import { motion } from "motion/react";
 
 const Hero = () => {
   const desktopRef = useRef<HTMLVideoElement>(null);
@@ -67,7 +68,10 @@ const Hero = () => {
       {/* Main Content */}
       <div className=" flex flex-col items-center justify-between pt-5">
         <header className="flex flex-col items-center space-y-5 md:space-y-0 mb-[128px] xl:mb-8">
-          <h1
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             id="hero-title"
             className="font-bold  mt-[32px] text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center"
           >
@@ -75,7 +79,7 @@ const Hero = () => {
             <span className="text-primary-blue">
               <br className="md:hidden" /> family finances
             </span>
-          </h1>
+          </motion.h1>
           <DownloadBtn />
         </header>
 
