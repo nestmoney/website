@@ -1,6 +1,31 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 const Nest = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(video);
+
+    return () => {
+      observer.unobserve(video);
+    };
+  }, []);
   return (
     <section
       className="scroll-mt-[80px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
@@ -20,10 +45,10 @@ const Nest = () => {
 
             <h2 className="text-[22px] md:text-[40px] lg:text-[40px] xl:text-[48px] font-bold leading-[110%]">
               Financial awareness and <br className="hidden md:block" />
-              shared responsibility build<br className="hidden md:block" />
-              {" "}
+              shared responsibility build
+              <br className="hidden md:block" />{" "}
               <span className="inline-flex items-end gap-1">
-              secure families
+                secure families
                 <Image
                   src="/rightQuote.svg"
                   width={16}
@@ -55,13 +80,15 @@ const Nest = () => {
         </div>
 
         <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-[200px] md:w-[260px] xl:w-[300px] rounded-4xl object-cover">
+          autoPlay
+          ref={videoRef}
+          muted
+          loop
+          playsInline
+          className="w-[200px] md:w-[260px] xl:w-[300px] rounded-4xl object-cover"
+        >
           <source src="/mobile_app.mp4" type="video/mp4" />
-          </video>
+        </video>
       </div>
     </section>
   );
