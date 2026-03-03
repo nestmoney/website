@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
+import { SlidersVertical } from "lucide-react";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 16 },
@@ -96,7 +97,7 @@ const Features = () => {
           {/* Credit cards */}
           <div className="flex flex-col md:flex-row-reverse items-center justify-between md:gap-11">
             <motion.div
-              variants={slideLeft}
+              variants={slideRight}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -111,7 +112,7 @@ const Features = () => {
             </motion.div>
 
             <motion.div
-              variants={slideRight}
+              variants={slideLeft}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -181,7 +182,7 @@ const Features = () => {
           {/* Credit reports */}
           <div className="flex flex-col md:flex-row-reverse items-center justify-between md:gap-11">
             <motion.div
-              variants={slideLeft}
+              variants={slideRight}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -196,7 +197,7 @@ const Features = () => {
             </motion.div>
 
             <motion.div
-              variants={slideRight}
+              variants={slideLeft}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
