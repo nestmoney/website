@@ -21,7 +21,7 @@ const Download = () => {
             className="w-[260px] md:w-[400px] lg:w-[600px]"
           />
         </figure>
-        <DownloadBtn isFooter/>
+        <DownloadBtn isFooter />
       </div>
       <p className="flex text-[12px] md:text-[19px]">
         Crafted with
@@ -30,7 +30,7 @@ const Download = () => {
           width={20}
           height={20}
           alt=""
-          className="mx-2"
+          className="mx-2 animate-heartbeat"
           aria-hidden="true"
         />
         for Indian families

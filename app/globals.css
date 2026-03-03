@@ -27,3 +27,19 @@
 .text-responsive {
   @apply text-[12px] lg:text-[14px];
 }
+
+@theme {
+  --animate-heartbeat: heartbeat 1.6s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
