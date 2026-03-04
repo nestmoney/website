@@ -49,7 +49,7 @@ export default function NestSection() {
           variants={fadeLeft}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.55 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200px] flex flex-col gap-6"
         >
@@ -108,7 +108,7 @@ export default function NestSection() {
           variants={fadeRight}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.55 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           muted
           loop
