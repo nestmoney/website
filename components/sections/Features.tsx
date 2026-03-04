@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
-import { SlidersVertical } from "lucide-react";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 16 },
@@ -27,7 +26,17 @@ const slideLeft: Variants = {
     },
   },
 };
-
+const featureFadeUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 const slideRight: Variants = {
   hidden: { opacity: 0, x: 32 },
   visible: {
@@ -63,7 +72,7 @@ const Features = () => {
           {/* Utility bills */}
           <div className="flex flex-col md:flex-row items-center justify-between md:gap-11">
             <motion.div
-              variants={slideLeft}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -78,7 +87,7 @@ const Features = () => {
             </motion.div>
 
             <motion.div
-              variants={slideRight}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -97,7 +106,7 @@ const Features = () => {
           {/* Credit cards */}
           <div className="flex flex-col md:flex-row-reverse items-center justify-between md:gap-11">
             <motion.div
-              variants={slideRight}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -112,7 +121,7 @@ const Features = () => {
             </motion.div>
 
             <motion.div
-              variants={slideLeft}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -147,7 +156,7 @@ const Features = () => {
           {/* Nest safe */}
           <div className="flex flex-col md:flex-row items-center justify-between md:gap-11">
             <motion.div
-              variants={slideLeft}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -162,7 +171,7 @@ const Features = () => {
             </motion.div>
 
             <motion.div
-              variants={slideRight}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -182,7 +191,7 @@ const Features = () => {
           {/* Credit reports */}
           <div className="flex flex-col md:flex-row-reverse items-center justify-between md:gap-11">
             <motion.div
-              variants={slideRight}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -197,7 +206,7 @@ const Features = () => {
             </motion.div>
 
             <motion.div
-              variants={slideLeft}
+              variants={featureFadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
