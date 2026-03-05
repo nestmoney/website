@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 
   keywords: [
     "nestmoney",
+    "family finance app",
     "family finance",
     "finance app",
     "family finance app for India",
