@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
+    "Nest is a shared space for your family, where everyone can see finances, pay each other's bills, keep track of financial wellbeing, and more",
 
   keywords: [
     "nestmoney",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nest Money | India's family finance app",
     description:
-      "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
+      "Nest is a shared space for your family, where everyone can see finances, pay each other's bills, keep track of financial wellbeing, and more",
     url: "https://nestmoney.in",
     siteName: "Nest Money",
     locale: "en_IN",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nest Money | India's family finance app",
     description:
-      "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
+      "Nest is a shared space for your family, where everyone can see finances, pay each other's bills, keep track of financial wellbeing, and more",
     images: ["/og-image.png"],
     creator: "@nestmoney",
   },
@@ -138,7 +138,7 @@ export default function RootLayout({
               applicationCategory: "FinanceApplication",
               operatingSystem: "Web",
               description:
-                "A home for your family finances. Manage all your family's utility and credit card bills in one place. Share important documents securely with your family members, so it is accessible when needed. Track all ongoing loans in one place and monitor each other's credit reports to maintain your family's overall financial wellbeing.",
+                "Nest is a shared space for your family, where everyone can see finances, pay each other's bills, keep track of financial wellbeing, and more",
               url: "https://nestmoney.in",
               image: "https://nestmoney.in/og-image.png",
               author: {
