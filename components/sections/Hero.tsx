@@ -43,6 +43,9 @@ const Hero = () => {
       className=" mb-[64px] md:mb-[128px] xl:mb-[160px] px-[10px] md:px-[0px]"
       aria-labelledby="hero-title"
     >
+      <link rel="preload" as="image" href="/heroAnimePlaceholder.png" />
+      <link rel="preload" as="image" href="/heroAnimeMobPlaceholder.png" />
+      
       {Links.playStore && Links.appStore && (
         <aside
           className="fixed bottom-[12px] right-[12px] z-50 hidden md:flex bg-white
@@ -84,6 +87,7 @@ const Hero = () => {
         </header>
 
         <figure className="w-full">
+          <div className="hidden md:block w-full aspect-[2048/700]">
           <video
             ref={desktopRef}
             src="/heroAnime.mp4"
@@ -93,9 +97,11 @@ const Hero = () => {
             muted
             playsInline
             preload="auto"
-            className="hidden md:block w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
+          </div>
 
+         <div className="md:hidden w-full aspect-[1536/720]">
           <video
             ref={mobileRef}
             src="/heroAnimeMob.mp4"
@@ -105,8 +111,9 @@ const Hero = () => {
             muted
             playsInline
             preload="auto"
-            className="md:hidden w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
+          </div>
         </figure>
       </div>
     </section>
