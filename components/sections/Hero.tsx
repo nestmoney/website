@@ -45,7 +45,7 @@ const Hero = () => {
     >
       <link rel="preload" as="image" href="/heroAnimePlaceholder.png" />
       <link rel="preload" as="image" href="/heroAnimeMobPlaceholder.png" />
-      
+
       {Links.playStore && Links.appStore && (
         <aside
           className="fixed bottom-[12px] right-[12px] z-50 hidden md:flex bg-white
