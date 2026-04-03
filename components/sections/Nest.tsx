@@ -112,6 +112,7 @@ export default function NestSection() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           muted
           loop
+          poster="/mobile_app_placeholder.png"
           playsInline
           className="w-[200px] md:w-[260px] xl:w-[300px] rounded-4xl object-cover"
         >
