@@ -4,7 +4,7 @@ import Link from "next/link";
 const socials = [
   { src: "/linkedin.svg", alt: "LinkedIn", href: Links.linkedin },
   { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
-  { src: "/x.svg", alt: "X", href: Links.x },
+  //{ src: "/x.svg", alt: "X", href: Links.x },
 ];
 
 const Footer = () => {
