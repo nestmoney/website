@@ -4,7 +4,6 @@ import Image from "next/image";
 import DownloadBtn from "../DownloadButton";
 import { Links } from "../updatable";
 import { useEffect, useRef } from "react";
-import { motion } from "motion/react";
 
 const Hero = () => {
   const desktopRef = useRef<HTMLVideoElement>(null);
@@ -20,7 +19,7 @@ const Hero = () => {
       if (!video) return;
       if (video.paused) {
         setTimeout(() => {
-          video.play().catch(() => {});
+          video.play().catch(() => { });
         }, 200);
       }
     };
@@ -71,48 +70,44 @@ const Hero = () => {
       {/* Main Content */}
       <div className=" flex flex-col items-center justify-between pt-5">
         <header className="flex flex-col items-center space-y-5 md:space-y-0 mb-[128px] xl:mb-8">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <h1
             id="hero-title"
-            className="font-bold  mt-[32px] text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center"
-          >
+            className="font-bold mt-[32px] text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center">
             A home for your{" "}
             <span className="text-primary-blue">
               <br className="md:hidden" /> family finances
             </span>
-          </motion.h1>
+          </h1>
           <DownloadBtn />
         </header>
 
         <figure className="w-full">
           <div className="hidden md:block w-full aspect-[2048/700]">
-          <video
-            ref={desktopRef}
-            src="/heroAnime.mp4"
-            poster="/heroAnimePlaceholder.png"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-          />
+            <video
+              ref={desktopRef}
+              src="/heroAnime.mp4"
+              poster="/heroAnimePlaceholder.png"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+            />
           </div>
 
-         <div className="md:hidden w-full aspect-[1536/720]">
-          <video
-            ref={mobileRef}
-            src="/heroAnimeMob.mp4"
-            poster="/heroAnimeMobPlaceholder.png"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-          />
+          <div className="md:hidden w-full aspect-[1536/720]">
+            <video
+              ref={mobileRef}
+              src="/heroAnimeMob.mp4"
+              poster="/heroAnimeMobPlaceholder.png"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+            />
           </div>
         </figure>
       </div>

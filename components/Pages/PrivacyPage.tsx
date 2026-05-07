@@ -40,10 +40,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Bold>&ldquo;You&rdquo;</Bold> or <Bold>&ldquo;User&rdquo;</Bold>) as
           the user of the Platform. By visiting, downloading, using Nest Money
           Platform, and/or, providing Your information or availing Our Services,
-          You expressly agree to be bound by this Privacy Policy as well as Our
-          <Link href="/terms" className="text-primary-blue pl-1">
-            Terms of Use.
-          </Link>
+          You expressly agree to be bound by this Privacy Policy as well as Our Terms of Use.
         </Para>
         <Para>
           This Privacy Policy is published and shall be construed in accordance
@@ -150,11 +147,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
                   Such data may be collected at various stages of Your usage of
                   the Platform such as visiting the Platform, registering on the
                   Platform as a “User” or any other relationship that may be
-                  governed by Our{" "}
-                  <Link href="/terms" className="text-primary-blue pl-1">
-                    Terms of Use.
-                  </Link>{" "}
-                  or creating Your Nest Money user account.
+                  governed by Our Terms of Use. or creating Your Nest Money user account.
                 </NamedSubSection>
                 <NamedSubSection sl="b">
                   Personal Data Classification: While such information may be
@@ -301,29 +294,33 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             through BBPS and related payment systems;
           </NamedSubSection>
           <NamedSubSection sl="b">
+            facilitation of fixed deposit bookings through Blostem Fintech Private Limited (&quot;Blostem&quot;) and Banks/NBFCs,
+            including sharing of User data with Blostem’s platform for the purpose of pre-filling FD booking forms;
+          </NamedSubSection>
+          <NamedSubSection sl="c">
             access to and analysis of credit reports from authorised credit
             information companies;
           </NamedSubSection>
-          <NamedSubSection sl="c">
+          <NamedSubSection sl="d">
             secure storage of financial and identity documents uploaded by You;
           </NamedSubSection>
-          <NamedSubSection sl="d">
+          <NamedSubSection sl="e">
             customer authentication, KYC and fraud prevention;
           </NamedSubSection>
-          <NamedSubSection sl="e">
+          <NamedSubSection sl="f">
             regulatory compliance and record retention;
           </NamedSubSection>
-          <NamedSubSection sl="f">
+          <NamedSubSection sl="g">
             customer support, grievance handling and to meet legal obligations;
           </NamedSubSection>
-          <NamedSubSection sl="g">
+          <NamedSubSection sl="h">
             to resolve disputes; troubleshoot problems; technical support and
             fixing bugs; help promote a safe service
           </NamedSubSection>
-          <NamedSubSection sl="h">
+          <NamedSubSection sl="i">
             platform security, system monitoring and incident detection; and
           </NamedSubSection>
-          <NamedSubSection sl="i">
+          <NamedSubSection sl="j">
             marketing and administrative communications and other information
             that may be of interest to You, only where You have provided
             separate consent.
@@ -410,23 +407,37 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             delete stored documents at any time, subject to legal retention
             requirements.
           </Para>
-          <Para>
-            We may analyze Your information, Your interactions with the
-            Platform, usage patterns etc., to improve Our Services, enhance User
-            experience, to provide recommendations and to offer certain User
-            benefits.
-          </Para>
-          <Para>
-            Our settings may also allow You to adjust Your communications
-            preferences. If You opt out, You will still receive non-promotional
-            messages from Us about enquiring of any additional information that
-            We may require for performing Services through the Platform.
-          </Para>
-          <Para>
-            We may share Your information with the government or disaster
-            management agencies in case of emergencies or under the instructions
-            of the government authorities.
-          </Para>
+
+          <div className="flex flex-col gap-4">
+
+            <Para className="mt-4">
+              <Bold>Processing of Data for FD Booking:</Bold> Upon initiation of an FD booking,
+              depending on the issuer, Nest Money may share Mobile number, PAN, date of birth,
+              email, with Blostem strictly for the purpose of facilitating the booking.
+              FD-related data will be retained for such period as is required under applicable law and regulatory requirements governing financial records.
+            </Para>
+
+            <Para>
+              We may analyze Your information, Your interactions with the
+              Platform, usage patterns etc., to improve Our Services, enhance User
+              experience, to provide recommendations and to offer certain User
+              benefits.
+            </Para>
+
+            <Para>
+              Our settings may also allow You to adjust Your communications
+              preferences. If You opt out, You will still receive non-promotional
+              messages from Us about enquiring of any additional information that
+              We may require for performing Services through the Platform.
+            </Para>
+
+            <Para>
+              We may share Your information with the government or disaster
+              management agencies in case of emergencies or under the instructions
+              of the government authorities.
+            </Para>
+
+          </div>
         </Indent>
       </NumberedSection>
 
@@ -464,9 +475,9 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
 
           <NamedSubSection sl="b">
             With third parties such as Axis Bank, Razorpay, Setu, and Experian,
-            strictly on a need-to-know basis and solely for the purpose of
-            providing Services in relation to the Platform. You may review the
-            privacy policies of the respective third-party platforms.
+            Blostem the Banks/NBFCs on its network strictly on a need-to-know basis
+            and solely for the purpose of providing Services in relation to the Platform.
+            You may review the privacy policies of the respective third-party platforms.
           </NamedSubSection>
           <NamedSubSection sl="c">
             In addition to the above We may share information with cloud
@@ -677,8 +688,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             privacy policies that are dissimilar to this Platform and for which
             We are not accountable. Further, You may be required to download
             certain third-party applications for making use of certain
-            functionalities of the Services, which may be governed by terms of
-            use and privacy policy, which may be different from that of the
+            functionalities of the Services, which may be governed by Terms of
+            Use and Privacy Policy, which may be different from that of the
             Platform. We recommend that You review the privacy policy posted on
             any Third Party Service platform or applications, that You may
             access through the Platform or download in connection with the
@@ -918,11 +929,8 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
       <NumberedSection sl={18} heading="NO CONFLICT">
         <Indent className="flex flex-col gap-4">
           <Para>
-            This Privacy Policy constitutes a part of the{" "}
-            <Link href="/terms" className="text-primary-blue pl-1">
-              Terms of Use.
-            </Link>
-            . We have taken utmost care to avoid any inconsistency or conflict
+            This Privacy Policy constitutes a part of the Terms of Use.
+            We have taken utmost care to avoid any inconsistency or conflict
             of this policy with any other terms, agreements or guidelines
             available on Our Platform. In case there exists a conflict, We
             request You to kindly contact Us for the final provision and
@@ -957,7 +965,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             You may contact Our designated officer regarding any concerns,
             requests for rights or grievances at:
             <br />
-            Name: Supreeth T S<br />
+            Name: Supreeth TS<br />
             Email:{" "}
             <TypoLinks email="grievance@nestmoney.in">
               {" "}
@@ -1012,10 +1020,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             set out in other sections of this Privacy Policy and applies equally
             to Personal Data processed through the Nest feature, unless stated
             otherwise. Detailed information about the Nest and its
-            functionalities, is available in Our{" "}
-            <Link href="/terms" className="text-primary-blue pl-1">
-              Terms of Use.
-            </Link>
+            functionalities, is available in Our Terms of Use.
           </Para>
 
           <NamedSection heading="What Personal Data Do We Process?">
@@ -1090,16 +1095,18 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
                 certain Personal Data relating to You will be visible to other
                 Nest Members of the same Nest,
               </NamedSubSection>
-              <NamedSubSection sl="b">
-                other Nest Members may take permitted actions as indicated in
-                Our
-                <Link href="/terms" className="text-primary-blue pl-1">
-                  Terms of Use.
-                </Link>
-                , on Your behalf within the Nest, based on the permissions and
-                consents granted by You,
+              <NamedSubSection sl='b'>
+                certain investment data such as investment amount and date, maturity amount and date,
+                interest rate, tenure, gains, withdrawal amount and date (if applicable), and FD status
+                will be visible to other Nest Members of the same Nest. This visibility is read-only.
+                No Nest Member other than the individual investor may take any action with respect to another Nest Member’s FD Investment
               </NamedSubSection>
               <NamedSubSection sl="c">
+                other Nest Members may take permitted actions as indicated in
+                Our Terms of Use, on Your behalf within the Nest, based on the permissions and
+                consents granted by You,
+              </NamedSubSection>
+              <NamedSubSection sl="d">
                 Documents uploaded to the Nest Safe are visible to other Nest
                 Members only if You explicitly choose to share them.
               </NamedSubSection>

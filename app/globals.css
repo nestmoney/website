@@ -12,6 +12,10 @@
   --color-secondary-text: #737373;
   /* secondary */
   --font-sans: var(--font-poppins);
+
+  --color-lightblue: #F4F8FF;
+
+  --color-border: #737373;
 }
 
 /* Legal Heading */
