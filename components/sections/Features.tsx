@@ -4,11 +4,8 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section className="space-y-10 mb-[64px] md:mb-[128px] xl:mb-[160px] w-[320px] md:w-full mx-auto">
-      <section
-        id="features"
-        className="scroll-mt-[80px] space-y-10 lg:space-y-0"
-      >
+    <section id="features" className="space-y-10 lg:space-y-15 mb-[64px] md:mb-[128px] xl:mb-[160px] w-[320px] md:w-full mx-auto">
+      <section className="scroll-mt-[80px] space-y-10 lg:space-y-15">
 
         <div className="w-full flex items-center">
           <div className="flex-1 border-t-1 border-dashed border-border"></div>
@@ -30,7 +27,7 @@ const Features = () => {
               alt="home"
             />
 
-            <div className="xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
+            <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
                 src="/ic_utility.svg"
@@ -59,7 +56,7 @@ const Features = () => {
               alt="credit card"
             />
 
-            <div className="xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
+            <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
                 src="/ic_cc.svg"
@@ -81,7 +78,7 @@ const Features = () => {
         </div>
       </section>
 
-      <section className="pt-[32px] md:pt-0 lg:pt-0">
+      <section className="scroll-mt-[80px] space-y-10 lg:space-y-15">
         <div className="w-full flex items-center">
           <div className="flex-1 border-t-1 border-dashed border-border"></div>
           <h2
@@ -102,7 +99,7 @@ const Features = () => {
               alt="vault icon"
             />
 
-            <div className="xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
+            <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
                 src="/ic_safe.svg"
@@ -132,7 +129,7 @@ const Features = () => {
               alt="credit card"
             />
 
-            <div className="xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
+            <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
                 src="/ic_report.svg"
