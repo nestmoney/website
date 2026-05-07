@@ -72,7 +72,7 @@ export default function NestSection() {
             <p className="text-[24px] md:text-[26px] lg:text-[30px] xl:text-[32px] font-medium">
               <span className="text-primary-blue font-semibold">Nest</span> is a
               shared space for you and your family, where everyone can see finances, pay
-              each other&apos;s bills, invest together, keep track of financial wellbeing, and more...
+              each other&apos;s bills, invest together, and more...
             </p>
 
             {/* <p className="font-semibold italic">
