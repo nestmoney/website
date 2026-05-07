@@ -14,7 +14,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
     <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
       {showHeader && (
-        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
+        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Privacy Policy</h1>
         </header>
       )}
@@ -1003,9 +1003,7 @@ const PrivacyPage = ({ showHeader = true }: { showHeader?: boolean }) => {
       <NumberedSection
         sl={21}
         heading="HOW IS YOUR PERSONAL DATA HANDLED IN THE NEST"
-        id="nest"
-        className="scroll-mt-5"
-      >
+        id="nest">
         <Indent className="flex flex-col gap-4">
           <Para>
             This section explains how Personal Data is processed when You

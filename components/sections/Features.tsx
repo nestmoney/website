@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section id="features" className="space-y-10 lg:space-y-15 mb-[64px] md:mb-[128px] xl:mb-[160px] w-[320px] md:w-full mx-auto">
-      <section className="scroll-mt-[80px] space-y-10 lg:space-y-15">
+    <section id="features" className="scroll-mt-[70px] md:scroll-mt-[74px] space-y-10 lg:space-y-15 mb-[64px] md:mb-[128px] xl:mb-[160px] w-[320px] md:w-full mx-auto">
+      <section className="space-y-10 lg:space-y-15">
 
         <div className="w-full flex items-center">
           <div className="flex-1 border-t-1 border-dashed border-border"></div>

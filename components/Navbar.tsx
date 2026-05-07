@@ -47,7 +47,7 @@ const Navbar = () => {
             {/* Desktop Links */}
             {!hideNavLinks && (
               <ul className="hidden md:flex text-[18px] space-x-10 text-secondary">
-                {["nest", "features", "links"].map((item) => (
+                {["nest", "fixed deposit", "features", "links"].map((item) => (
                   <li key={item}>
                     <Link
                       href={`/#${item}`}
@@ -90,7 +90,7 @@ const Navbar = () => {
                 }`}
             >
               <ul className="flex flex-col w-full py-6 text-secondary text-[18px]">
-                {["nest", "features", "links"].map((item) => (
+                {["nest", "fixed deposit", "features", "links"].map((item) => (
                   <li key={item} className="w-full">
                     <Link
                       href={`/#${item}`}

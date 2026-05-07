@@ -28,7 +28,7 @@ export default function NestSection() {
   }, []);
 
   return (
-    <section className="scroll-mt-[80px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
+    <section className="scroll-mt-[70px] md:scroll-mt-[74px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
       id="nest">
 
       <div className="flex flex-col gap-12 lg:flex-row justify-between items-center">
@@ -92,11 +92,11 @@ export default function NestSection() {
           ref={videoRef}
           muted
           loop
-          poster="/mobile_app_placeholder.png"
+          poster="/mob_demo_placeholder.png"
           playsInline
-          className="w-[200px] md:w-[240px] lg:w-[300px] xl:w-[320px] object-cover"
+          className="w-[210px] md:w-[250px] lg:w-[320px] xl:w-[340px] object-cover"
         >
-          <source src="/mobile_app.mp4" type="video/mp4" />
+          <source src="/mob_demo.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
