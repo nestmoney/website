@@ -11,7 +11,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
     <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
       {showHeader && (
-        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex scroll-mt-[80px] pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
+        <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>
         </header>
       )}
@@ -42,8 +42,9 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
         <Para>
           The Platform is an online platform, which will facilitate services
           including but not limited to BBPS bill payments, Mobile Recharges,
-          credit report analysis, document locker facilities etc., for its Users
-          (<Bold>“Users”</Bold>). The Services are limited to automated,
+          credit report analysis, document locker facilities, facilitation of fixed
+          deposit bookings through regulated third-party entities etc., for its Users
+          (<Bold>Services</Bold>). The Services are limited to automated,
           user-initiated tools and informational outputs based on data provided
           by Users or authorised third-party sources. Nest Money hereby grants
           You, a limited, non-exclusive, non-transferable, royalty free license
@@ -236,10 +237,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             security. We reserve the right to promptly disable Your User ID and
             suspend Your access to the Services and/or the Platform in the event
             We have any reason to believe that You have breached any of the
-            provisions set out in these Terms including the{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>{" "}
+            provisions set out in these Terms including the Privacy Policy
             or that security of Your Account has been compromised. Our Services
             are not available to temporarily or indefinitely suspended members.
             We reserve the right, in Our sole discretion, to cancel unconfirmed
@@ -446,10 +444,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             retain or delete any data, messages, files and other information or
             content that You provided through the Platform, in compliance with
             applicable laws. Any personal data consequent to such suspension or
-            termination shall be handled in accordance with Our{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
+            termination shall be handled in accordance with Our Privacy Policy
           </Para>
 
           <div>
@@ -650,11 +645,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
 
             <NamedSubSection sl="iv">
               process any Personal Data or financial information contained in
-              the User Content strictly in accordance with Our{" "}
-              <Link href={"/privacy"} className="text-primary-blue">
-                Privacy Policy
-              </Link>
-              .
+              the User Content strictly in accordance with Our Privacy Policy.
             </NamedSubSection>
           </div>
 
@@ -754,7 +745,8 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Para>
             Nest Money shall not be liable for any late fees, penalties, or
             service disruptions caused by a third party’s failure to update or
-            process information after successful transmission
+            process information after successful transmission or for any delay in FD
+            confirmation, failure to issue FD receipt, FD interest rate disputes.
           </Para>
           <Para>
             Nest Money endeavours to ensure that all redirections to Third-Party
@@ -827,11 +819,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             information where required by law, regulation or legal process, or
             to Our service providers and partners solely for the purpose of
             providing and improving the Services. Any processing of Personal
-            Data shall be governed by Our{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
-            .
+            Data shall be governed by Our Privacy Policy.
           </Para>
         </Indent>
       </NumberedSection>
@@ -841,22 +829,11 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Para>
             By using the Services, You acknowledge that We may process and store
             the information shared by You solely for the purpose of delivering
-            the Services, in accordance with the{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
-            . Your personal data rights—including the Right to Access,
-            Correction, Erasure, and Nomination—are managed as detailed in Our{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
-            . Any request to exercise these rights, or grievances related to
+            the Services, in accordance with the Privacy Policy. Your personal data rights—including the Right to Access,
+            Correction, Erasure, and Nomination—are managed as detailed in Our
+            Privacy Policy. Any request to exercise these rights, or grievances related to
             data processing, should be directed to the contact details provided
-            in the{" "}
-            <Link href={"/privacy"} className="text-primary-blue">
-              Privacy Policy
-            </Link>
-            . Please note that withdrawing consent for essential data processing
+            in the Privacy Policy. Please note that withdrawing consent for essential data processing
             may result in the immediate termination of certain Services.
           </Para>
 
@@ -1021,6 +998,13 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
             OTHERWISE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH
             DAMAGE OR LOSSES.
           </NamedSubSection>
+
+          <Para className="mt-4">
+            NEST MONEY’S LIABILITY IN RELATION TO THE FD PRODUCT IS LIMITED TO OUR
+            ROLE AS A TECHNOLOGY INTERFACE AND DISTRIBUTING PLATFORM AND THAT ALL CLAIMS RELATING TO FD PRINCIPAL,
+            INTEREST, MATURITY PROCEEDS, OR PREMATURE WITHDRAWAL AMOUNTS MUST BE ADDRESSED
+            DIRECTLY TO THE RELEVANT BANK/NBFC.
+          </Para>
 
           <Para className="mt-4">
             IN NO EVENT SHALL NEST MONEY’S TOTAL CUMULATIVE LIABILITY TO YOU FOR
@@ -1345,7 +1329,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
               </NamedSubSection>
               <Para>
                 <Bold>Visibility of Nest Member Data</Bold>: View Personal Data
-                including Credit Report Information, Bill Payment Details and
+                including Credit Report Information, Bill Payment Details, FD investment data and
                 account-related information of other Nest Members within the
                 same Nest, except for documents stored in the Nest Safe, unless
                 expressly shared.
@@ -1370,17 +1354,18 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
                 Nest Members unless actively shared.
               </Para>
               <Para>
+                <Bold>FD Investments:</Bold> Each Nest Member can access FD booking services.
+                FD investment details of a Nest Member will be visible to other Nest Members,
+                but no action can be taken by any Nest Member with respect to another Nest member's FD investment.
+              </Para>
+              <Para>
                 <Bold>Additional features: </Bold>
                 Nest Money may, in compliance with applicable laws and
                 regulatory requirements, introduce additional Nest related
                 features or services for Nest Members from time to time. Use of
                 such features shall be subject to applicable terms, disclosures,
                 and User consents, where required, and shall be governed by the
-                Platform’s Terms of Use and{" "}
-                <Link href={"/privacy"} className="text-primary-blue">
-                  Privacy Policy
-                </Link>
-                .
+                Platform’s Terms of Use and Privacy Policy.
               </Para>
             </Indent>
           </NamedSection>
@@ -1414,11 +1399,7 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
 
               <Para className="mt-4">
                 All personal data of Nest Members will be handled by Nest Money
-                strictly in accordance with Our{" "}
-                <Link href={"/privacy"} className="text-primary-blue">
-                  Privacy Policy
-                </Link>
-                . Withdrawal of consent may limit or disable certain Nest
+                strictly in accordance with Our Privacy Policy. Withdrawal of consent may limit or disable certain Nest
                 functionalities without affecting the legality of processing
                 carried out prior to withdrawal.
               </Para>
@@ -1710,6 +1691,79 @@ const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
           <Para>
             Users are responsible for exporting and retrieving their documents
             prior to Account termination or deletion.
+          </Para>
+        </Indent>
+      </NumberedSection>
+
+      <NumberedSection sl={33} heading="ADDITIONAL TERMS – FIXED DEPOSIT" id="fd">
+        <Indent className="flex flex-col gap-4">
+          <Para>
+            We provide you access to Fixed Deposit (&quot;FD&quot;) products offered by banks and non-banking financial
+            companies (&quot;Banks/NBFCs&quot;) through Blostem Fintech Private Limited (&quot;Blostem&quot;). Nest Money acts solely as a technology interface and distribution platform.
+            We do not accept deposits, hold user funds, or bear any liability as a deposit-taking institution.
+          </Para>
+          <Para>
+            We earn a commission on FD bookings made through our Platform. This does not affect the terms of
+            your FD.
+          </Para>
+          <Para>
+            By proceeding with an FD booking, you consent to sharing your mobile number, PAN, date of birth,
+            and email address with Blostem solely to pre-fill your booking form. Depending on the
+            issuer, your Aadhaar number and bank account details may also be processed by Blostem and/or the
+            Banks/NBFCs for identity and bank account verification as part of their KYC process. In all cases, data shared is limited to the minimum required by the relevant issuer for the booking and
+            KYC process.
+          </Para>
+          <Para>
+            Your entire FD booking, including KYC and execution of the deposit contract, happens within Blostem's
+            platform. Your payments go directly to the Bank/NBFC through their own payment gateway. No funds
+            pass through our systems at any stage.
+          </Para>
+          <Para>
+            We do not provide any investment advice, recommendation, or suitability assessment in relation to FD
+            products. You are solely responsible for assessing the suitability, terms, and credit risk of any FD before
+            booking.
+          </Para>
+          <Para>
+            Your FD contract is directly with the relevant Bank/NBFC only. Nest Money is not a party to your FD
+            agreement. The interest rate, tenure, premature withdrawal conditions, maturity terms, and renewal
+            terms are governed solely by the Bank/NBFC's product terms, and we make no representation in
+            relation to the same.
+          </Para>
+          <Para>
+            Your FD maturity date is set by the Bank/NBFC at the time of booking. You are responsible for tracking
+            your FD maturity date through the investment dashboard on our Platform or directly with the
+            Bank/NBFC. We are not liable for any loss arising from your failure to act on or before your FD maturity
+            date.
+          </Para>
+          <Para>
+            Any renewal of your FD on or after maturity must be initiated by you directly, through the Platform or
+            with the relevant Bank/NBFC in accordance with their terms. We are not responsible for auto-renewals,
+            renewal terms, or the interest rate applicable to any renewed FD, all of which are determined solely by
+            the Bank/NBFC.
+          </Para>
+          <Para>
+            Premature withdrawal of an FD may be initiated through the Platform or, where available, directly
+            through the relevant Bank's own portal or investment dashboard. Nest Money is not responsible for the
+            processing of any premature withdrawal initiated outside the Platform, nor for any penalties, interest adjustments, or delays arising from such withdrawal. All premature withdrawal terms are determined
+            solely by the relevant Bank/NBFC.
+          </Para>
+          <Para>
+            Each Nest Member may view FD-related details of other investing Nest Members, including investment
+            amount and date, maturity amount and date, interest rate, tenure, returns, withdrawal details (if any),
+            and FD status. If you prefer not to share such visibility, you may invest through a separate individual
+            Nest.
+          </Para>
+          <Para>
+            No Nest Member, other than the concerned investor, shall be permitted to initiate, modify, withdraw,
+            renew, or otherwise deal with another Nest Member’s FD.
+          </Para>
+          <Para>
+            For any FD-related grievance, contact us at
+            <TypoLinks email="support@nestmoney.in">
+              support@nestmoney.in
+            </TypoLinks> or through the Platform. We will
+            escalate unresolved grievances to Blostem and/or the relevant Bank/NBFC and update you on the
+            outcome. Resolution timelines depend on the Bank/NBFC concerned, for which we are not liable.
           </Para>
         </Indent>
       </NumberedSection>

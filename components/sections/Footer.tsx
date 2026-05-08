@@ -10,7 +10,7 @@ const socials = [
 const Footer = () => {
   return (
     <footer
-      className="bg-secondary  pt-12 md:pt-16 pb-30 text-secondary-text flex justify-center text-[12px] md:text-[14px] "
+      className="bg-secondary pt-12 md:pt-16 pb-30 text-secondary-text flex justify-center text-[12px] md:text-[14px] "
       id="links"
     >
       <div className="site-container mx-auto flex md:flex-row justify-between flex-col gap-8 w-[320px] md:w-full mx-auto">

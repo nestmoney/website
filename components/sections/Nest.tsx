@@ -1,18 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
-
-const fadeLeft = {
-  hidden: { opacity: 0, x: -20 },
-  show: { opacity: 1, x: 0 },
-};
-
-const fadeRight = {
-  hidden: { opacity: 0, x: 20 },
-  show: { opacity: 1, x: 0 },
-};
 
 export default function NestSection() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -39,21 +28,13 @@ export default function NestSection() {
   }, []);
 
   return (
-    <section
-      className="scroll-mt-[80px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
-      id="nest"
-    >
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
+    <section className="scroll-mt-[70px] md:scroll-mt-[74px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
+      id="nest">
+
+      <div className="flex flex-col gap-12 lg:flex-row justify-between items-center">
         {/* LEFT CONTENT */}
-        <motion.div
-          variants={fadeLeft}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.38 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200px] flex flex-col gap-6"
-        >
-          <header className="mb-[16px] md:mb-[32px]">
+        <div className="text-center lg:text-left w-[320px] md:w-[700px] lg:w-[960px] xl:w-[1200px] flex flex-col gap-6">
+          {/* <header className="mb-[16px] md:mb-[32px]">
             <Image
               src="/leftQuote.svg"
               width={16}
@@ -79,45 +60,44 @@ export default function NestSection() {
                 />
               </span>
             </h2>
-          </header>
+          </header> */}
 
-          <div className="text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] space-y-[30px] w-[320px] md:w-[540px] lg:w-[560px] xl:w-[680px] font-normal">
-            <p>
-              <span className="text-primary-blue font-bold">Nest</span> is a
-              shared space for your family, where everyone can see finances, pay
-              each other&apos;s bills, keep track of financial wellbeing, and
-              more
+          <div className="text-center lg:text-left text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px]
+          space-y-[30px] lg:space-y-[40px] w-[320px] md:w-[540px] lg:w-[560px] xl:w-[680px] font-normal
+          mx-auto lg:mx-0">
+            <p className="font-bold text-[32px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
+              What is a <span className="text-primary-blue font-bold">Nest</span> ?
             </p>
 
-            <p className="font-semibold italic">
+            <p className="text-[24px] md:text-[26px] lg:text-[30px] xl:text-[32px] font-medium">
+              <span className="text-primary-blue font-semibold">Nest</span> is a
+              shared space for you and your family, where everyone can see finances, pay
+              each other&apos;s bills, invest together, and more...
+            </p>
+
+            {/* <p className="font-semibold italic">
               Like a WhatsApp group for family finances
-            </p>
+            </p> */}
 
             <p>
-              Boundaries? We&apos;ve got you covered.
+              <span className="font-medium">Boundaries? We&apos;ve got you covered!</span>
               <br />
-              You can create multiple nests to manage finances separately with
-              your spouse, parents or other family members
+              You can manage finances in different nests, whether it's just you or shared with your spouse, parents, or other family members.
             </p>
           </div>
-        </motion.div>
+        </div>
 
         {/* RIGHT VIDEO */}
-        <motion.video
+        <video
           ref={videoRef}
-          variants={fadeRight}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.38 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           muted
           loop
-          poster="/mobile_app_placeholder.png"
+          poster="/mob_demo_placeholder.png"
           playsInline
-          className="w-[200px] md:w-[260px] xl:w-[300px] rounded-4xl object-cover"
+          className="w-[210px] md:w-[250px] lg:w-[320px] xl:w-[340px] object-cover"
         >
-          <source src="/mobile_app.mp4" type="video/mp4" />
-        </motion.video>
+          <source src="/mob_demo.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
   );

@@ -6,15 +6,19 @@ const sitemap = (): MetadataRoute.Sitemap => {
   return [
     {
       url: `${baseUrl}`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-05-08"),
+    },
+    {
+      url: `${baseUrl}/#fixed%20deposit`,
+      lastModified: new Date("2026-05-08"),
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-05-08"),
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-05-08"),
     },
   ];
 };

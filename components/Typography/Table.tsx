@@ -13,7 +13,7 @@ const data: TableRow[] = [
   {
     category: "KYC data",
     purpose:
-      "Identity verification, compliance, Bill Payments, Credit reports access",
+      "Identity verification, compliance, Bill Payments, Credit reports access, FD facilitation",
     lawfulBasis: "Legal obligation",
   },
   {
