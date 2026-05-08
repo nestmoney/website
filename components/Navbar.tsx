@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 
 const NewBadge = () => (
-  <span className="relative inline-flex items-center overflow-hidden rounded bg-green px-3 py-1 text-[14px] font-medium tracking-wide text-white leading-none">
+  <span className="relative inline-flex items-center overflow-hidden rounded bg-green px-2 py-1 text-[12px] font-medium tracking-wide text-white leading-none">
     New
     {/* Shine sweep — animates `left` so the beam travels clean left→right */}
     <span
