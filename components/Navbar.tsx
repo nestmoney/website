@@ -6,23 +6,47 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
+const NewBadge = () => (
+  <span className="relative inline-flex items-center overflow-hidden rounded bg-green px-3 py-1 text-[14px] font-medium tracking-wide text-white leading-none">
+    New
+    {/* Shine sweep — animates `left` so the beam travels clean left→right */}
+    <span
+      className="pointer-events-none absolute inset-y-0"
+      style={{
+        left: "-75%",
+        width: "50%",
+        background:
+          "linear-gradient(105deg, transparent 0%, rgba(255,255,255,0.65) 50%, transparent 100%)",
+        transform: "skewX(-15deg)",
+        animation: "shine 1.5s ease-in-out infinite",
+      }}
+    />
+    <style>{`
+      @keyframes shine {
+        0%   { left: -75%; }
+        60%  { left: 125%; }
+        100% { left: 125%; }
+      }
+    `}</style>
+  </span>
+);
+
+const NAV_ITEMS = ["nest", "fixed deposit", "features", "links"] as const;
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
-  // Hide nav links on terms or privacy pages
   const hideNavLinks =
     pathname.includes("terms") || pathname.includes("privacy");
 
-  // Close when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -47,7 +71,7 @@ const Navbar = () => {
             {/* Desktop Links */}
             {!hideNavLinks && (
               <ul className="hidden md:flex text-[18px] space-x-10 text-secondary">
-                {["nest", "fixed deposit", "features", "links"].map((item) => (
+                {NAV_ITEMS.map((item) => (
                   <li key={item}>
                     <Link
                       href={`/#${item}`}
@@ -57,17 +81,13 @@ const Navbar = () => {
                         const el = document.getElementById(item);
                         if (el) el.scrollIntoView({ behavior: "smooth" });
                       }}
-                      className="relative flex items-center gap-1 after:absolute after:left-0 after:-bottom-1
-                    after:h-[2px] after:w-0 after:bg-secondary
-                    after:transition-all after:duration-300
-                    hover:after:w-full"
+                      className="relative flex items-center gap-1.5 after:absolute after:left-0 after:-bottom-1
+                        after:h-[2px] after:w-0 after:bg-secondary
+                        after:transition-all after:duration-300
+                        hover:after:w-full"
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
-                      {item === "fixed deposit" && (
-                        <span className="inline-flex items-center rounded bg-green-100 px-2 py-1 text-[14px] font-semibold tracking-wide text-green-700 leading-none">
-                          New
-                        </span>
-                      )}
+                      {item === "fixed deposit" && <NewBadge />}
                     </Link>
                   </li>
                 ))}
@@ -88,14 +108,15 @@ const Navbar = () => {
           {!hideNavLinks && (
             <div
               className={`md:hidden absolute top-full left-0 w-full bg-white shadow-md
-            transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
-            ${open
-                  ? "translate-y-0 opacity-100 scale-100"
-                  : "-translate-y-6 opacity-0 scale-95 pointer-events-none"
+                transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+                ${
+                  open
+                    ? "translate-y-0 opacity-100 scale-100"
+                    : "-translate-y-6 opacity-0 scale-95 pointer-events-none"
                 }`}
             >
               <ul className="flex flex-col w-full py-6 text-secondary text-[18px]">
-                {["nest", "fixed deposit", "features", "links"].map((item) => (
+                {NAV_ITEMS.map((item) => (
                   <li key={item} className="w-full">
                     <Link
                       href={`/#${item}`}
@@ -106,14 +127,10 @@ const Navbar = () => {
                         if (el) el.scrollIntoView({ behavior: "smooth" });
                         setOpen(false);
                       }}
-                      className="flex items-center justify-center gap-1 w-full py-4 hover:bg-gray-100 transition-colors"
+                      className="flex items-center justify-center gap-1.5 w-full py-4 hover:bg-gray-100 transition-colors"
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
-                      {item === "fixed deposit" && (
-                        <span className="inline-flex items-center rounded bg-green-100 px-2 py-1 text-[14px] font-semibold tracking-wide text-green-700 leading-none">
-                          New
-                        </span>
-                      )}
+                      {item === "fixed deposit" && <NewBadge />}
                     </Link>
                   </li>
                 ))}
