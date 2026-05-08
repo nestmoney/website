@@ -57,12 +57,17 @@ const Navbar = () => {
                         const el = document.getElementById(item);
                         if (el) el.scrollIntoView({ behavior: "smooth" });
                       }}
-                      className="relative after:absolute after:left-0 after:-bottom-1
+                      className="relative flex items-center gap-1 after:absolute after:left-0 after:-bottom-1
                     after:h-[2px] after:w-0 after:bg-secondary
                     after:transition-all after:duration-300
                     hover:after:w-full"
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
+                      {item === "fixed deposit" && (
+                        <span className="inline-flex items-center rounded bg-green-100 px-2 py-1 text-[14px] font-semibold tracking-wide text-green-700 leading-none">
+                          New
+                        </span>
+                      )}
                     </Link>
                   </li>
                 ))}
@@ -101,9 +106,14 @@ const Navbar = () => {
                         if (el) el.scrollIntoView({ behavior: "smooth" });
                         setOpen(false);
                       }}
-                      className="block w-full text-center py-4 hover:bg-gray-100 transition-colors"
+                      className="flex items-center justify-center gap-1 w-full py-4 hover:bg-gray-100 transition-colors"
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
+                      {item === "fixed deposit" && (
+                        <span className="inline-flex items-center rounded bg-green-100 px-2 py-1 text-[14px] font-semibold tracking-wide text-green-700 leading-none">
+                          New
+                        </span>
+                      )}
                     </Link>
                   </li>
                 ))}
