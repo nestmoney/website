@@ -11,7 +11,7 @@ const page = () => {
         alt="Nestcoin"
         width={1000}
         height={200}
-        className="w-full h-auto"
+        className="w-full h-auto pt-4"
       />
 
 
