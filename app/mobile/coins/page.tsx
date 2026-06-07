@@ -7,11 +7,11 @@ const page = () => {
   return (
     <section className="site-container mx-auto w-full max-w-[640px] px-[20px] flex flex-col gap-8">
       <Image
-        src="/nest_coin.png"
+        src="/nestcoins.png"
         alt="Nestcoin"
         width={1000}
         height={1000}
-        className="w-full h-auto"
+        className="w-full h-auto min-h-[200px]"
       />
 
 
