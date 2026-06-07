@@ -39,7 +39,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const hideNavLinks =
-    pathname.includes("terms") || pathname.includes("privacy");
+    pathname.includes("terms") || pathname.includes("privacy") || pathname.includes("coins");
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
