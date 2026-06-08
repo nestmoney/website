@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <section className="site-container mx-auto w-full max-w-[640px] px-[20px] flex flex-col gap-8">
+    <section className="pb-12 site-container mx-auto w-full max-w-[640px] px-[20px] flex flex-col gap-8">
       <Image
         src="/nestcoins.png"
         alt="Nestcoin"
