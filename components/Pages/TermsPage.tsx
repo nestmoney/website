@@ -7,9 +7,9 @@ import TypoLinks from "@/components/Typography/TypoLinks";
 
 import Link from "next/link";
 import NamedSection from "../Typography/NamedSection";
-const TermsPage = ({ showHeader = true }: { showHeader?: boolean }) => {
+const TermsPage = ({ showHeader = true, hideTopPadding = false }: { showHeader?: boolean, hideTopPadding?: boolean }) => {
   return (
-    <main className="min-h-screen py-12 site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
+    <main className="min-h-screen ${hideTopPadding ? 'pb-12' : 'py-12'} site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>

@@ -47,6 +47,10 @@ const page = () => {
       </NamedSection>
 
       <p className="text-xs text-secondary-text">
+        Nest coins are earned on successfully completed transactions on the platform. Nest coins are not credited on transactions that fail, reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
+      </p>
+
+      <p className="text-xs text-secondary-text">
         Refer to our{" "}
         <Link href="/mobile/terms#coins" className="font-medium text-primary-blue">
           Terms of Use
