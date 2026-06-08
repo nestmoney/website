@@ -37,7 +37,7 @@ const page = () => {
           1% of the transaction value, on every bill payment
         </NamedSubSection>
         <NamedSubSection sl="2">
-          1% of the FD booking value, up to a maximum of 250 nest coins
+          1% of the FD booking value, up to 250 nest coins
         </NamedSubSection>
         <NamedSubSection sl="3">
           250 nest coins on successfully creating a nest
