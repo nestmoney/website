@@ -14,12 +14,12 @@ const page = () => {
         className="w-full h-auto pt-4"
       />
 
-      <h3 className="text-center items-center text-[18px] font-semibold text-primary-blue">
+      <h3 className="text-center items-center text-[18px] font-semibold text-secondary">
         Nest coins{' '}
         <span className="text-primary-blue">
           never
         </span>
-        {' '}expire
+        {' '}expire!
       </h3>
 
 
