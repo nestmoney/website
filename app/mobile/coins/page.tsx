@@ -14,15 +14,6 @@ const page = () => {
         className="w-full h-auto pt-4"
       />
 
-      <h3 className="text-center items-center text-[18px] font-semibold text-secondary">
-        Nest coins{' '}
-        <span className="text-primary-blue">
-          never
-        </span>
-        {' '}expire!
-      </h3>
-
-
       <div className="text-center items-center flex flex-col gap-2">
         <h3 className="text-[18px] font-semibold text-primary-blue">
           Earn together, redeem together
@@ -32,6 +23,14 @@ const page = () => {
           Nest coins are credited to the nest and are accessible to all members of that nest. So every coin earned gets used
         </p>
       </div>
+
+      <h3 className="text-center items-center text-[18px] font-semibold text-secondary">
+        Nest coins{' '}
+        <span className="text-primary-blue">
+          never
+        </span>
+        {' '}expire!
+      </h3>
 
       <NamedSection heading="Earn Nest coins">
         <NamedSubSection sl="1">
