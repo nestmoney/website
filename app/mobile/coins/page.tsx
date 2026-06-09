@@ -12,6 +12,7 @@ const page = () => {
         alt="Nestcoin"
         width={1280}
         height={568}
+        priority
         className="w-full h-auto pt-4"
       />
 
