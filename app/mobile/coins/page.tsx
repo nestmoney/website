@@ -2,6 +2,7 @@ import NamedSection from "@/components/Typography/NamedSection";
 import NamedSubSection from "@/components/Typography/NamedSubSection";
 import Link from "next/link";
 import Image from "next/image";
+import Bold from "@/components/Typography/Bold";
 
 const page = () => {
   return (
@@ -40,10 +41,10 @@ const page = () => {
           1% of the FD booking value as nest coins, up to 250
         </NamedSubSection>
         <NamedSubSection sl="3">
-          250 nest coins on successfully creating a nest
+          500 nest coins on successfully creating a nest
         </NamedSubSection>
         <NamedSubSection sl="4">
-          250 nest coins when a member joins your nest. Add or invite your family to earn more
+          500 nest coins when a family member joins your nest. Add or invite your family to earn more
         </NamedSubSection>
       </NamedSection>
 
@@ -54,7 +55,7 @@ const page = () => {
       </NamedSection>
 
       <p className="text-xs text-secondary-text">
-        Nest coins are earned on successfully completed transactions on the platform. Nest coins are not credited on transactions that fail, reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
+        <Bold>Note:</Bold> Nest coins are earned on successfully completed transactions on the platform. Nest coins are not credited on transactions that fail, reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
       </p>
 
       <p className="text-xs text-secondary-text">
