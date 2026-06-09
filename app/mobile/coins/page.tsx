@@ -55,7 +55,7 @@ const page = () => {
       </NamedSection>
 
       <p className="text-xs text-secondary-text">
-        <Bold>Note:</Bold> Nest coins are earned on successfully completed transactions on the platform. Nest coins are not credited on transactions that fail, reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
+        <Bold>Note:</Bold> Nest coins are earned on successfully completed transactions on the platform. Nest coins are not credited on transactions that fail, are reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
       </p>
 
       <p className="text-xs text-secondary-text">
