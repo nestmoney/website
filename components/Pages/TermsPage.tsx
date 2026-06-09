@@ -9,7 +9,7 @@ import Link from "next/link";
 import NamedSection from "../Typography/NamedSection";
 const TermsPage = ({ showHeader = true, hideTopPadding = false }: { showHeader?: boolean, hideTopPadding?: boolean }) => {
   return (
-    <main className="min-h-screen ${hideTopPadding ? 'pb-12' : 'py-12'} site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
+    <main className="min-h-screen ${hideTopPadding ? 'pt-6 pb-12' : 'py-12'} site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Terms of Use</h1>
@@ -711,8 +711,8 @@ const TermsPage = ({ showHeader = true, hideTopPadding = false }: { showHeader?:
         <Indent className="flex flex-col gap-4">
           <Para>
             The Platform facilitates access to services provided by third-party
-            billers, card issuers, and document providers (“Third-Party
-            Services”). You acknowledge that Nest Money operates as a technical
+            billers, card issuers, document providers, and gift card providers
+            (“Third-Party Services”). You acknowledge that Nest Money operates as a technical
             facilitator and does not exercise direct operational control over
             the uptime, billing accuracy, or internal systems of such third
             parties and the inclusion of any link or reference does not imply
@@ -1359,6 +1359,15 @@ const TermsPage = ({ showHeader = true, hideTopPadding = false }: { showHeader?:
                 but no action can be taken by any Nest Member with respect to another Nest member's FD investment.
               </Para>
               <Para>
+                <Bold>Nest Coins:</Bold> Each Nest Member may view the Nest Coin balance of their Nest and redeem
+                Nest Coins for eligible benefits available on the Platform, subject to these Terms of Use.
+                Nest Coins earned from transactions within a Nest belong to that Nest and are accessible to all its Nest Members.
+              </Para>
+              <Para>
+                <Bold>Gift Cards:</Bold> Each Nest Member may view and use gift cards purchased by any Member within the same Nest.
+                Gift cards purchased within a Nest belong to that Nest and are accessible to all its Nest Members.
+              </Para>
+              <Para>
                 <Bold>Additional features: </Bold>
                 Nest Money may, in compliance with applicable laws and
                 regulatory requirements, introduce additional Nest related
@@ -1764,6 +1773,74 @@ const TermsPage = ({ showHeader = true, hideTopPadding = false }: { showHeader?:
             </TypoLinks> or through the Platform. We will
             escalate unresolved grievances to Blostem and/or the relevant Bank/NBFC and update you on the
             outcome. Resolution timelines depend on the Bank/NBFC concerned, for which we are not liable.
+          </Para>
+        </Indent>
+      </NumberedSection>
+
+      <NumberedSection sl={34} heading="ADDITIONAL TERMS – NEST COINS" id="coins">
+        <Indent className="flex flex-col gap-4">
+          <Para>
+            Nest Coins are reward points credited by Nest Money to Users upon completion of eligible transactions
+            on the Platform. Nest Coins do not constitute currency, legal tender, a prepaid payment instrument, or
+            monetary credit of any kind. Nest Coins have no cash value and cannot be transferred, sold, or exchanged for cash.
+          </Para>
+          <Para>
+            Nest Coins are credited at the rate determined by Nest Money from time to time, based on value of eligible
+            transactions including bill payments and FD bookings. The earning rate is subject to change without
+            prior notice. Nest Money may, at its discretion, implement per-transaction cap to certain transaction types.
+          </Para>
+          <Para>
+            Nest Coins may currently be redeemed for gift cards, subject to this Terms of Use, through the Platform.
+            Nest Money may, at its discretion, introduce additional redemption options from time to time.
+            Redemption options, rates, and terms are subject to change.
+          </Para>
+          <Para>
+            Current earning rates, applicable per-transaction caps, redemption options, values, terms etc.,
+            can be found on the Nest Coins section in the Platform.
+          </Para>
+          <Para>
+            Where a transaction is made by a Nest Member within a Nest, the Nest Coins earned from that transaction are
+            credited to the Nest and are available for redemption by any Nest Member of that Nest. Nest Coins credited to a
+            Nest cannot be transferred to another Nest or to a Nest Member’s individual Account upon exit from the Nest.
+            A Nest Member who exits a Nest forfeits any claim to the Nest Coins held in that Nest.
+          </Para>
+          <Para>
+            Nest Money reserves the right to introduce expiry periods for Nest Coins, to be notified on the Platform in advance.
+            Nest Coins will be forfeited upon Account termination, or termination of a Nest, as applicable.
+            Nest Money reserves the right to modify, suspend, or discontinue the Nest Coins programme at any time and to adjust,
+            cancel, or reverse Nest Coins credited in error or obtained through fraudulent or unauthorised transactions.
+          </Para>
+        </Indent>
+      </NumberedSection>
+
+      <NumberedSection sl={35} heading="ADDITIONAL TERMS – GIFT CARDS">
+        <Indent className="flex flex-col gap-4">
+          <Para>
+            Gift card services on the Platform, for redemption of Nest Coins, are powered by Gullak Technologies Pvt Ltd (“Hubble Money”).
+            All gift card listings, purchases, and fulfilment are managed by Hubble Money. Nest Money is not a party to any gift
+            card purchase transaction and such transactions will solely be governed by Hubble Money’s terms and conditions.
+          </Para>
+          <Para>
+            Nest Money will share the Nest name and Nest Member’s mobile number and email address with Hubble Money solely for the purpose
+            of initiating the gift card purchase session. Gift card purchase data generated through Your use of Hubble Money’s platform will be
+            received and stored by Nest Money for the purpose of Nest Coin deduction and transaction records.
+          </Para>
+          <Para>
+            All payments for Your gift card purchases are processed through Hubble Money’s own payment gateway. No funds pass through Nest Money’s
+            systems. Upon a successful gift card purchase using Nest Coins, Hubble Money will notify Nest Money and We will deduct the corresponding
+            Nest Coins from the relevant Nest balance. Nest Money shall not be not responsible for any delay in Nest Coin redemption or deduction
+            arising from a failure or delay attributable to Hubble Money.
+          </Para>
+          <Para>
+            Nest Money is not responsible or liable for the quality, validity, availability, or fulfilment of any gift card purchased through
+            Hubble Money’s platform. All claims relating to gift card purchases, including payment failures and refunds, must solely be directed to
+            Hubble Money in accordance with Hubble Money’s terms and conditions.
+          </Para>
+          <Para>
+            Gift cards purchased in a Nest cannot be transferred to another Nest or to a Nest Member’s individual Account upon exit from the Nest.
+            A Nest Member who exits a Nest forfeits any claim to the gift cards held in that Nest. Gift cards purchased through the Platform by any
+            Nest Member are visible to all Members of the same Nest. Any Nest Member may view, access, and use gift cards purchased within their Nest,
+            regardless of which Nest Member made the purchase.
           </Para>
         </Indent>
       </NumberedSection>

@@ -32,12 +32,12 @@ const page = () => {
         {' '}expire!
       </h3>
 
-      <NamedSection heading="Earn Nest coins">
+      <NamedSection heading="Earn nest coins">
         <NamedSubSection sl="1">
-          1% of the transaction value, on every bill payment
+          1% of the transaction value as nest coins, on every bill payment and recharge
         </NamedSubSection>
         <NamedSubSection sl="2">
-          1% of the FD booking value, up to 250 nest coins
+          1% of the FD booking value as nest coins, up to 250
         </NamedSubSection>
         <NamedSubSection sl="3">
           250 nest coins on successfully creating a nest
@@ -47,7 +47,7 @@ const page = () => {
         </NamedSubSection>
       </NamedSection>
 
-      <NamedSection heading="Redeem Nest coins">
+      <NamedSection heading="Redeem nest coins">
         <NamedSubSection sl="1">
           Use nest coins to avail attractive discounts on gift card purchases in the reward store
         </NamedSubSection>

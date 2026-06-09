@@ -12,7 +12,7 @@ import { Suspense } from "react";
 
 const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader?: boolean, hideTopPadding?: boolean }) => {
   return (
-    <main className="min-h-screen ${hideTopPadding ? 'pb-12' : 'py-12'} site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
+    <main className="min-h-screen ${hideTopPadding ? 'pt-6 pb-12' : 'py-12'} site-container mx-auto text-justify flex flex-col gap-12 w-full px-[20px] md:px-0">
       {showHeader && (
         <header className="h-[70px] md:h-[152px] text-[20px] md:text-[40px] font-semibold items-center bg-primary-blue text-white bg-[url('/linksPattren.svg')] bg-cover bg-center bg-no-repeat flex pl-6 md:pl-10 md:rounded-tl-[40px] md:rounded-br-[40px] rounded-tl-[24px] rounded-br-[24px]">
           <h1>Privacy Policy</h1>
@@ -302,25 +302,31 @@ const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader
             information companies;
           </NamedSubSection>
           <NamedSubSection sl="d">
-            secure storage of financial and identity documents uploaded by You;
+            administration of the Nest Coins rewards programme;
           </NamedSubSection>
           <NamedSubSection sl="e">
-            customer authentication, KYC and fraud prevention;
+            enabling access to gift card services through Hubble Money, and storage of purchase data;
           </NamedSubSection>
           <NamedSubSection sl="f">
-            regulatory compliance and record retention;
+            secure storage of financial and identity documents uploaded by You;
           </NamedSubSection>
           <NamedSubSection sl="g">
-            customer support, grievance handling and to meet legal obligations;
+            customer authentication, KYC and fraud prevention;
           </NamedSubSection>
           <NamedSubSection sl="h">
+            regulatory compliance and record retention;
+          </NamedSubSection>
+          <NamedSubSection sl="i">
+            customer support, grievance handling and to meet legal obligations;
+          </NamedSubSection>
+          <NamedSubSection sl="j">
             to resolve disputes; troubleshoot problems; technical support and
             fixing bugs; help promote a safe service
           </NamedSubSection>
-          <NamedSubSection sl="i">
+          <NamedSubSection sl="k">
             platform security, system monitoring and incident detection; and
           </NamedSubSection>
-          <NamedSubSection sl="j">
+          <NamedSubSection sl="l">
             marketing and administrative communications and other information
             that may be of interest to You, only where You have provided
             separate consent.
@@ -409,7 +415,6 @@ const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader
           </Para>
 
           <div className="flex flex-col gap-4">
-
             <Para className="mt-4">
               <Bold>Processing of Data for FD Booking:</Bold> Upon initiation of an FD booking,
               depending on the issuer, Nest Money may share Mobile number, PAN, date of birth,
@@ -436,8 +441,13 @@ const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader
               management agencies in case of emergencies or under the instructions
               of the government authorities.
             </Para>
-
           </div>
+
+          <Para className="mt-4">
+            <Bold> Processing of data for Gift Card purchase:</Bold> When you initiate
+            a gift card purchase, your mobile number and email address will be shared
+            with Hubble Money solely for the purpose of opening the gift card session.
+          </Para>
         </Indent>
       </NumberedSection>
 
@@ -474,8 +484,8 @@ const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader
           </NamedSubSection>
 
           <NamedSubSection sl="b">
-            With third parties such as Axis Bank, Razorpay, Setu, and Experian,
-            Blostem the Banks/NBFCs on its network strictly on a need-to-know basis
+            With third parties such as Axis Bank, Razorpay, Setu, Experian,
+            Blostem the Banks/NBFCs on its network, Hubble Money strictly on a need-to-know basis
             and solely for the purpose of providing Services in relation to the Platform.
             You may review the privacy policies of the respective third-party platforms.
           </NamedSubSection>
@@ -1070,9 +1080,12 @@ const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader
                 expressly consented;
               </NamedSubSection>
               <NamedSubSection sl="e">
-                provide Nest-level visibility and controls to Nest Members; and
+                facilitate gift card purchase process
               </NamedSubSection>
               <NamedSubSection sl="f">
+                provide Nest-level visibility and controls to Nest Members; and
+              </NamedSubSection>
+              <NamedSubSection sl="g">
                 comply with applicable legal, regulatory and contractual
                 obligations, where relevant.
               </NamedSubSection>
@@ -1099,12 +1112,20 @@ const PrivacyPage = ({ showHeader = true, hideTopPadding = false }: { showHeader
                 will be visible to other Nest Members of the same Nest. This visibility is read-only.
                 No Nest Member other than the individual investor may take any action with respect to another Nest Member’s FD Investment
               </NamedSubSection>
-              <NamedSubSection sl="c">
+              <NamedSubSection sl='c'>
+                balance and redemption information of Nest Coins credited to a Nest will be visible and accessible to all Members of the Nest.
+                Any Nest Member may take actions to redeem the Nest Coins credited to their Nest
+              </NamedSubSection>
+              <NamedSubSection sl='d'>
+                gift cards purchased by any Nest Member, including related details, will be visible to
+                all Members of the same Nest and can be accessed, used, or redeemed by any Member of that Nest
+              </NamedSubSection>
+              <NamedSubSection sl="e">
                 other Nest Members may take permitted actions as indicated in
                 Our Terms of Use, on Your behalf within the Nest, based on the permissions and
                 consents granted by You,
               </NamedSubSection>
-              <NamedSubSection sl="d">
+              <NamedSubSection sl="f">
                 Documents uploaded to the Nest Safe are visible to other Nest
                 Members only if You explicitly choose to share them.
               </NamedSubSection>

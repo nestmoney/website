@@ -21,7 +21,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0">
             <Image
               className="w-[200px] md:w-[240px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-              src="/utility-bills.png"
+              src="/utilities.png"
               width={400}
               height={400}
               alt="home"
@@ -50,7 +50,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-0 md:gap-11 lg:gap-0">
             <Image
               className="w-[200px] md:w-[240px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-              src="/cc-bills.png"
+              src="/ccs.png"
               width={400}
               height={400}
               alt="credit card"
@@ -93,7 +93,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0">
             <Image
               className="w-[200px] md:w-[240px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-              src="/nest-safe.png"
+              src="/nestsafe.png"
               width={400}
               height={400}
               alt="vault icon"
@@ -123,7 +123,7 @@ const Features = () => {
           <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-0 md:gap-11 lg:gap-0">
             <Image
               className="w-[200px] md:w-[240px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-              src="/credit-report.png"
+              src="/creditreports.png"
               width={400}
               height={400}
               alt="credit card"
