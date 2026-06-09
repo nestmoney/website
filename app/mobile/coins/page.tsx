@@ -35,7 +35,7 @@ const page = () => {
 
       <NamedSection heading="Earn nest coins">
         <NamedSubSection sl="1">
-          1% of the transaction value as nest coins, on every bill payment and recharge
+          1% of the transaction value as nest coins, on every bill payment and recharge. No limits!
         </NamedSubSection>
         <NamedSubSection sl="2">
           1% of the FD booking value as nest coins, up to 250
