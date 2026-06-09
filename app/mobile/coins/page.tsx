@@ -9,8 +9,8 @@ const page = () => {
       <Image
         src="/nestcoins.png"
         alt="Nestcoin"
-        width={1000}
-        height={200}
+        width={1280}
+        height={568}
         className="w-full h-auto pt-4"
       />
 
