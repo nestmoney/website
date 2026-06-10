@@ -17,7 +17,7 @@ const FD = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-11 lg:gap-0">
                     <Image
                         className="w-[200px] md:w-[240px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-                        src="/fixeddeposit.png"
+                        src="/fd.png"
                         width={400}
                         height={400}
                         alt="home"
