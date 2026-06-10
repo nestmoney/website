@@ -36,6 +36,7 @@ export default function NestSection() {
           alt="nestswitch"
           width={2748}
           height={4196}
+          priority
           className="w-[260px] md:w-[320px] lg:w-[380px] xl:w-[420px] object-cover"
         />
 
