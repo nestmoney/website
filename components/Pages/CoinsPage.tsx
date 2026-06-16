@@ -22,41 +22,41 @@ const PrivacyPage = ({ isMobile = false }: { isMobile?: boolean }) => {
                 </h3>
 
                 <p className="text-xs text-secondary-text">
-                    Nest coins are credited to the nest and are accessible to all members of that nest. So every coin earned gets used
+                    Nest Coins are credited to the Nest and are accessible to all members of that Nest. So every coin earned gets used.
                 </p>
             </div>
 
             <h3 className="text-center items-center text-[18px] font-semibold text-secondary">
-                Nest coins{' '}
+                Nest Coins{' '}
                 <span className="text-primary-blue">
                     never
                 </span>
                 {' '}expire!
             </h3>
 
-            <NamedSection heading="Earn nest coins">
+            <NamedSection heading="Earn">
                 <NamedSubSection sl="1">
-                    1% of the transaction value as nest coins, on every bill payment and recharge. No limits!
+                    1% of the transaction value as Nest Coins, on every bill payment and recharge. No limits!
                 </NamedSubSection>
                 <NamedSubSection sl="2">
-                    1% of the FD booking value as nest coins, up to 250
+                    1% of the FD booking value as Nest Coins, up to 250.
                 </NamedSubSection>
                 <NamedSubSection sl="3">
-                    500 nest coins on successfully creating a nest
+                    500 Nest Coins on successfully creating a Nest.
                 </NamedSubSection>
                 <NamedSubSection sl="4">
-                    500 nest coins when a family member joins your nest. Add or invite your family to earn more
+                    500 Nest Coins when a family member joins your Nest. Add or invite your family to earn more.
                 </NamedSubSection>
             </NamedSection>
 
-            <NamedSection heading="Redeem nest coins">
+            <NamedSection heading="Redeem">
                 <NamedSubSection sl="1">
-                    Use nest coins to avail attractive discounts on gift card purchases in the reward store
+                    Redeem Nest Coins on 400+ top brands that you use almost daily, on our newly launched Brand Store.
                 </NamedSubSection>
             </NamedSection>
 
             <p className="text-xs text-secondary-text">
-                <Bold>Note:</Bold> Nest coins are earned on successfully completed transactions on the platform. Nest coins are not credited on transactions that fail, are reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
+                <Bold>Note:</Bold> Nest Coins are earned on successfully completed transactions on the platform. Nest Coins are not credited on transactions that fail, are reversed, refunded, cancelled, or disputed. Reward rates, per-transaction caps and eligible transaction types are as set out above.
             </p>
 
             <p className="text-xs text-secondary-text">
