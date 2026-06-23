@@ -18,7 +18,7 @@ const Footer = () => {
         {/* Top: Image with responsive auto-height */}
         <div className="w-full flex justify-center">
           <Image
-            src="/iso.png"
+            src="/iso-new.png"
             alt="India's family finance app"
             width={600}
             height={90}
