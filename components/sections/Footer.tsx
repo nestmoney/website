@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Links } from "../updatable";
 import Link from "next/link";
+import DownloadBtn from "../DownloadButton";
 const socials = [
   { src: "/linkedin.svg", alt: "LinkedIn", href: Links.linkedin },
   { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
@@ -14,16 +15,16 @@ const Footer = () => {
       id="links"
     >
       <div className="site-container mx-auto flex flex-col md:gap-16 gap-8 w-[320px] md:w-full">
-
-        {/* Top: Image with responsive auto-height */}
-        <div className="w-full flex justify-center">
+        <div className="w-full flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0 md:justify-between">
           <Image
             src="/iso-new.png"
             alt="India's family finance app"
             width={600}
             height={90}
-            className="w-full max-w-[600px] h-auto object-contain"
+            className="w-full md:w-[320px] lg:w-[600px] h-auto object-contain"
           />
+
+          <DownloadBtn isFooter />
         </div>
 
         {/* Bottom container: properly wraps all parts and takes full width */}

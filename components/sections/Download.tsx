@@ -1,29 +1,29 @@
 "use client";
 import Image from "next/image";
-import DownloadBtn from "../DownloadButton";
 
 const Download = () => {
   return (
     <section
-      className="flex flex-col justify-center items-center bg-primary-blue text-white h-[300px] md:h-[400px] bg-[url('/linksPattren.svg')] bg-cover bg-top bg-no-repeat"
+      className="relative flex flex-col items-center justify-center bg-primary-blue text-white h-[300px] md:h-[400px] bg-[url('/linksPattren.svg')] bg-cover bg-top bg-no-repeat"
       aria-labelledby="download-title"
     >
       <h2 id="download-title" className="sr-only">
         Download Nest Money
       </h2>
-      <div className="flex flex-col items-center justify-center space-y-[36px] h-[90%]">
-        <figure>
-          <Image
-            src="/linksLogo.svg"
-            width={600}
-            height={82}
-            alt="Nest Money"
-            className="w-[260px] md:w-[360px]"
-          />
-        </figure>
-        <DownloadBtn isFooter />
-      </div>
-      <p className="flex text-[12px] md:text-[19px]">
+
+      {/* Logo Container - Now perfectly centered because parent uses justify-center */}
+      <figure>
+        <Image
+          src="/linksLogo.svg"
+          width={600}
+          height={82}
+          alt="Nest Money"
+          className="w-[260px] md:w-[360px]"
+        />
+      </figure>
+
+      {/* Text Container - Absolute positioned at the bottom so it doesn't push the logo up */}
+      <p className="absolute bottom-4 flex items-center text-[12px] md:text-[19px]">
         Crafted with
         <Image
           src="/heart.svg"
@@ -38,4 +38,5 @@ const Download = () => {
     </section>
   );
 };
+
 export default Download;
