@@ -5,6 +5,7 @@ import DownloadBtn from "../DownloadButton";
 const socials = [
   { src: "/linkedin.svg", alt: "LinkedIn", href: Links.linkedin },
   { src: "/instagram.svg", alt: "Instagram", href: Links.instagram },
+  { src: "/facebook.svg", alt: "Facebook", href: Links.facebook },
   //{ src: "/x.svg", alt: "X", href: Links.x },
 ];
 
