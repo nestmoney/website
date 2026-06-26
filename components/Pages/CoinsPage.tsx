@@ -51,7 +51,7 @@ const PrivacyPage = ({ isMobile = false }: { isMobile?: boolean }) => {
 
             <NamedSection heading="Redeem">
                 <NamedSubSection sl="1">
-                    Redeem Nest Coins on 400+ top brands that you use almost daily, in our newly launched Reward Store.
+                    Redeem Nest Coins on 500+ top brands that you use almost daily, in our newly launched Reward Store.
                 </NamedSubSection>
             </NamedSection>
 

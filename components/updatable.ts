@@ -3,6 +3,6 @@ export const Links = {
   playStore: "https://play.google.com/store/apps/details?id=in.legentree.nestmoney",
   instagram: "https://www.instagram.com/nestmoney.in/",
   linkedin: "https://www.linkedin.com/company/nestmoney-in/",
-  facebook: "",
+  facebook: "https://www.facebook.com/people/Nest-Money/61591007267852/",
   x: "",
 };
