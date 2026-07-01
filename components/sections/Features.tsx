@@ -30,7 +30,7 @@ const Features = () => {
             <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
-                src="/ic_utility.svg"
+                src="/ic_utility.png"
                 width={100}
                 height={100}
                 alt="home"
@@ -59,7 +59,7 @@ const Features = () => {
             <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
-                src="/ic_cc.svg"
+                src="/ic_cc.png"
                 width={100}
                 height={100}
                 alt="home"
@@ -102,7 +102,7 @@ const Features = () => {
             <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
-                src="/ic_safe.svg"
+                src="/ic_safe.png"
                 width={100}
                 height={100}
                 alt="home"
@@ -132,7 +132,7 @@ const Features = () => {
             <div className="mt-6 md:mt-0 xl:max-w-[600px] lg:max-w-[540px] text-center md:text-left items-center md:items-start flex flex-col gap-4">
               <Image
                 className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
-                src="/ic_report.svg"
+                src="/ic_credit.png"
                 width={100}
                 height={100}
                 alt="home"
