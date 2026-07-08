@@ -100,6 +100,18 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
     creator: "@nestmoney",
   },
+
+  other: {
+    "al:ios:app_store_id": "6756575032",
+    "al:ios:app_name": "Nest Money",
+    "al:ios:url": "https://app.nestmoney.in",
+
+    "al:android:package": "in.legentree.nestmoney",
+    "al:android:app_name": "Nest Money",
+    "al:android:url": "https://app.nestmoney.in",
+
+    "al:web:url": "https://nestmoney.in",
+  },
 };
 
 export default function RootLayout({
