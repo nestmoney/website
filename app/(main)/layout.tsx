@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-img.png",
         width: 1200,
         height: 630,
         alt: "Nest Money | India's family finance app",
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     title: "Nest Money | India's family finance app",
     description:
       "Nest is a shared space for your family, where everyone can see finances, pay each other's bills, keep track of financial wellbeing, and more",
-    images: ["/og-image.png"],
+    images: ["/og-img.png"],
     creator: "@nestmoney",
   },
 
@@ -152,7 +152,7 @@ export default function RootLayout({
               description:
                 "Nest is a shared space for your family, where everyone can see finances, pay each other's bills, keep track of financial wellbeing, and more",
               url: "https://nestmoney.in",
-              image: "https://nestmoney.in/og-image.png",
+              image: "https://nestmoney.in/og-img.png",
               author: {
                 "@type": "Organization",
                 name: "Nest Money",
