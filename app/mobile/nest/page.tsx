@@ -13,9 +13,6 @@ export default function MobileNestSection() {
           <div className="text-center lg:text-left text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px]
           space-y-[30px] lg:space-y-[40px] w-[320px] md:w-[540px] lg:w-[500px] xl:w-[680px] font-normal
           mx-auto lg:mx-0">
-            <p className="font-bold text-[32px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
-              What is a <span className="text-primary-blue font-bold">Nest</span> ?
-            </p>
 
             <p className="text-[24px] md:text-[26px] lg:text-[26px] xl:text-[32px] font-medium">
               <span className="text-primary-blue font-semibold">Nest</span> is a
