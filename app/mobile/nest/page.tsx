@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MobileNestSection() {
   return (
-    <section className="scroll-mt-[70px] md:scroll-mt-[74px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
+    <section className="scroll-mt-[70px] md:scroll-mt-[74px] mb-[64px] md:mb-[128px] xl:mb-[160px] my-10"
       id="nest">
 
       <div className="flex flex-col gap-12 lg:flex-row justify-between items-center">
