@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function NestSection() {
+export default function MobileNestSection() {
   return (
     <section className="scroll-mt-[70px] md:scroll-mt-[74px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
       id="nest">
