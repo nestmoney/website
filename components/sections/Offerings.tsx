@@ -21,7 +21,7 @@ const Offerings = () => {
       <div className="flex flex-col gap-12">
 
         {/* Item 1: Utilities */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
             src="/img_ut2.png"
@@ -30,7 +30,7 @@ const Offerings = () => {
             alt="home"
           />
 
-          <div className="mt-6 md:mt-0 xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-4">
+          <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
             <Image
               className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
               src="/ic_ut_2.png"
@@ -48,7 +48,7 @@ const Offerings = () => {
         </div>
 
         {/* Item 2: Credit Cards */}
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
             src="/img_cc2.png"
@@ -57,7 +57,7 @@ const Offerings = () => {
             alt="credit card"
           />
 
-          <div className="mt-6 md:mt-0 xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-4">
+          <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
             <Image
               className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
               src="/ic_cc_2.png"
@@ -75,7 +75,7 @@ const Offerings = () => {
         </div>
 
         {/* Item 3: Fixed deposit */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
             src="/img_fd2.png"
@@ -84,7 +84,7 @@ const Offerings = () => {
             alt="fd icon"
           />
 
-          <div className="mt-6 md:mt-0 xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-4">
+          <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
             <Image
               className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
               src="/ic_fd_2.png"
@@ -102,7 +102,7 @@ const Offerings = () => {
         </div>
 
         {/* Item 4: Nest Safe */}
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
             src="/img_ns2.png"
@@ -111,7 +111,7 @@ const Offerings = () => {
             alt="vault icon"
           />
 
-          <div className="mt-6 md:mt-0 xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-4">
+          <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
             <Image
               className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
               src="/ic_ns_2.png"
@@ -129,7 +129,7 @@ const Offerings = () => {
         </div>
 
         {/* Item 5: Credit Reports */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
             src="/img_cr2.png"
@@ -138,7 +138,7 @@ const Offerings = () => {
             alt="credit card"
           />
 
-          <div className="mt-6 md:mt-0 xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-4">
+          <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
             <Image
               className="w-[40px] md:w-[50px] lg:w-[70px] xl:w-[80px] h-auto object-contain shrink-0"
               src="/ic_cr_2.png"
