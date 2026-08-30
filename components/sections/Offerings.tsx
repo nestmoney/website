@@ -24,7 +24,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_ut2.png"
+            src="/img_utv2.png"
             width={1240}
             height={1480}
             alt="home"
@@ -51,7 +51,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_cc2.png"
+            src="/img_ccv2.png"
             width={1240}
             height={1480}
             alt="credit card"
@@ -78,7 +78,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_fd2.png"
+            src="/img_fdv2.png"
             width={1240}
             height={1480}
             alt="fd icon"
@@ -105,7 +105,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_ns2.png"
+            src="/img_nsv2.png"
             width={1240}
             height={1480}
             alt="vault icon"
@@ -132,7 +132,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_cr2.png"
+            src="/img_crv2.png"
             width={1240}
             height={1480}
             alt="credit card"
