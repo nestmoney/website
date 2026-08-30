@@ -31,7 +31,7 @@ const NewBadge = () => (
   </span>
 );
 
-const NAV_ITEMS = ["nest", "fixed deposit", "features", "links"] as const;
+const NAV_ITEMS = ["nest", "Offerings", "links"] as const;
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -87,7 +87,7 @@ const Navbar = () => {
                         hover:after:w-full"
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
-                      {item === "fixed deposit" && <NewBadge />}
+                      {/*{item === "fixed deposit" && <NewBadge />}*/}
                     </Link>
                   </li>
                 ))}
@@ -130,7 +130,7 @@ const Navbar = () => {
                       className="flex items-center justify-center gap-1.5 w-full py-4 hover:bg-gray-100 transition-colors"
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
-                      {item === "fixed deposit" && <NewBadge />}
+                      {/* {item === "fixed deposit" && <NewBadge />}*/}
                     </Link>
                   </li>
                 ))}

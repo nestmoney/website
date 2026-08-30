@@ -1,42 +1,49 @@
 "use client";
 
-import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function NestSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.log("Video autoplay prevented by browser (likely Low Power Mode):", error);
+      });
+    }
+  }, []);
+
   return (
-    <section className="scroll-mt-[70px] md:scroll-mt-[74px] mb-[64px] md:mb-[128px] xl:mb-[160px]"
-      id="nest">
+    <section id="nest" className="scroll-mt-[70px] md:scroll-mt-[74px]">
+      <div className="flex lg:flex-row flex-col gap-12 justify-between items-center">
+        <div className="flex flex-col gap-12 text-center lg:text-left 
+        w-full max-w-[320px] md:max-w-[680px] lg:max-w-[580px] xl:max-w-[700px] 
+        mx-auto lg:mx-0">
+          <h2 className="heading2">
+            <span className="text-primary-blue">Nest</span> is a shared space<br />for you and your family,<br />where everyone can<br />manage finances
+            <span className="text-primary-blue font-playfair italic"> together</span>
+          </h2>
 
-      <div className="flex flex-col gap-12 lg:flex-row justify-between items-center">
-        {/* LEFT CONTENT */}
-        <div className="text-center lg:text-left flex flex-col gap-6">
-          <div className="text-center lg:text-left text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px]
-          space-y-[30px] lg:space-y-[40px] w-[320px] md:w-[540px] lg:w-[500px] xl:w-[680px] font-normal
-          mx-auto lg:mx-0">
-            <p className="font-bold text-[32px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
-              What is a <span className="text-primary-blue font-bold">Nest</span> ?
-            </p>
-
-            <p className="text-[24px] md:text-[26px] lg:text-[26px] xl:text-[32px] font-medium">
-              <span className="text-primary-blue font-semibold">Nest</span> is a
-              shared space for you and your family, where everyone can see finances, pay
-              each other&apos;s bills, invest together, and more...
-            </p>
-
-            <p>
-              <span className="font-medium">Boundaries? We&apos;ve got you covered!</span>
-              <br />
-              You can manage finances in different nests, whether it's just you or shared with your spouse, parents, or other family members.
-            </p>
-          </div>
+          <p className="small-body1">
+            <span className="small-heading1 block">
+              <span className="text-primary-blue">Boundaries?</span> We&apos;ve got you covered!
+            </span>
+            <span className="block mt-2 lg:mt-4">
+              Easily manage finances in separate Nests,<br />
+              <span className="text-primary-blue font-semibold italic font-playfair mr-1">solo or shared</span> with your spouse or parents
+            </span>
+          </p>
         </div>
 
-        <Image
-          src="/nestswitch.png"
-          alt="nestswitch"
-          width={2748}
-          height={4196}
-          className="w-[260px] md:w-[320px] lg:w-[380px] xl:w-[420px] object-cover"
+        <video
+          ref={videoRef}
+          src="/nestswitchvid.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="w-[240px] md:w-[320px] lg:w-[320px] xl:w-[360px] object-cover shrink-0"
         />
       </div>
     </section>

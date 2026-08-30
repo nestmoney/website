@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <section
-      className=" mb-[64px] md:mb-[128px] xl:mb-[160px] px-[10px] md:px-[0px]"
+      className="mt-12"
       aria-labelledby="hero-title"
     >
       <link rel="preload" as="image" href="/heroAnimePlaceholder.png" />
@@ -47,13 +47,9 @@ const Hero = () => {
 
       {Links.playStore && Links.appStore && (
         <aside
-          className="fixed bottom-[12px] right-[12px] z-50 hidden md:flex bg-white
-    size-26 rounded-xl 
-    items-center justify-center
-    transition-transform duration-300 ease-out
-    border-[3px] border-[#2b78ff33]
-    origin-bottom-right
-    hover:scale-200"
+          className="fixed bottom-2 right-2 z-50 hidden md:flex bg-white size-26 rounded-xl 
+          items-center justify-center transition-transform duration-300 ease-out
+          border-[3px] border-[#2b78ff33] origin-bottom-right hover:scale-200"
           aria-label="Download QR code"
         >
           <div className="relative size-[95%] rounded-xl overflow-hidden">
@@ -61,6 +57,7 @@ const Hero = () => {
               src="/qr_code.png"
               alt="Download QR code"
               fill
+              sizes="100px"
               className="object-contain size-full"
             />
           </div>
@@ -68,20 +65,17 @@ const Hero = () => {
       )}
 
       {/* Main Content */}
-      <div className=" flex flex-col items-center justify-between pt-5">
-        <header className="flex flex-col items-center space-y-5 md:space-y-0 mb-[128px] xl:mb-8">
-          <h1
-            id="hero-title"
-            className="font-bold mt-[32px] text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] text-secondary pb-0 md:pb-10 text-center">
-            A home for your{" "}
-            <span className="text-primary-blue">
-              <br className="md:hidden" /> family finances
-            </span>
-          </h1>
-          <DownloadBtn />
-        </header>
+      <div className=" flex flex-col gap-12 items-center justify-between">
+        <h1 id="hero-title" className="heading1 text-center">
+          A home for your{" "}
+          <span className="text-primary-blue">
+            <br className="md:hidden" /> family finances
+          </span>
+        </h1>
 
-        <figure className="w-full">
+        <DownloadBtn/>
+
+        <figure className="w-full pt-2 md:pt-0">
           <div className="hidden md:block w-full aspect-[2048/700]">
             <video
               ref={desktopRef}

@@ -1,90 +1,69 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Links } from "./updatable";
 
 type DownloadBtnProps = {
   isFooter?: boolean;
 };
 
-const container = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, x: 20 },
-  show: { opacity: 1, x: 0 },
-};
-
 const DownloadBtn = ({ isFooter = false }: DownloadBtnProps) => {
-  const [device, setDevice] = useState<"desktop" | "android" | "ios">(
-    "desktop",
-  );
+  const [mounted, setMounted] = useState(false);
+  const [device, setDevice] = useState<"desktop" | "android" | "ios">("desktop");
 
   useEffect(() => {
+    // 1. Mark as mounted to prevent hydration glitches
+    setMounted(true);
+
+    // 2. Check device
     const ua = navigator.userAgent;
     if (/Android/i.test(ua)) setDevice("android");
     else if (/iPhone|iPad|iPod/i.test(ua)) setDevice("ios");
   }, []);
 
+  // 3. Return a placeholder until client-side JS kicks in to prevent layout shift
+  if (!mounted) {
+    return <div className="h-[40px] w-full max-w-[316px]" aria-hidden="true" />;
+  }
+
   return (
-    <motion.nav
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="flex space-x-[16px]"
+    <nav
+      data-footer={isFooter}
+      className="flex space-x-4 min-h-[40px]"
       aria-label="Download options"
     >
       {!Links.playStore && !Links.appStore && (
-        <motion.p
-          variants={item}
-          className="font-medium rounded-md text-center py-2 px-4 md:text-[16px] text-[10px] bg-secondary text-white"
-        >
+        <p className="font-medium rounded-md text-center py-2 px-4 md:text-[16px] text-[10px] bg-secondary text-white">
           Launching Soon
-        </motion.p>
+        </p>
       )}
 
       {Links.playStore && (device === "desktop" || device === "android") && (
-        <motion.a
-          variants={item}
-          href={Links.playStore}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={Links.playStore} target="_blank" rel="noopener noreferrer">
           <Image
             src="/googlePlay.svg"
             alt="Google Play"
             width={135}
             height={40}
-            className="w-[100px] md:w-[134px] h-auto"
+            className="w-[150px] h-auto"
+            priority
           />
-        </motion.a>
+        </a>
       )}
 
       {Links.appStore && (device === "desktop" || device === "ios") && (
-        <motion.a
-          variants={item}
-          href={Links.appStore}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={Links.appStore} target="_blank" rel="noopener noreferrer">
           <Image
             src="/appStore.svg"
             alt="App Store"
             width={135}
             height={40}
-            className="w-[100px] md:w-[134px] h-auto"
+            className="w-[150px] h-auto"
+            priority
           />
-        </motion.a>
+        </a>
       )}
-    </motion.nav>
+    </nav>
   );
 };
 

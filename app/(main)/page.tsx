@@ -1,16 +1,14 @@
 import Nest from "@/components/sections/Nest";
-import Features from "@/components/sections/Features";
+import Offerings from "@/components/sections/Offerings";
 import Hero from "@/components/sections/Hero";
 import Partners from "@/components/sections/Partners";
-import FD from "@/components/sections/FD";
 
 export default function Main() {
   return (
-    <main className="site-container mx-auto ">
+    <main className="site-container mx-auto flex flex-col gap-20 lg:gap-32">
       <Hero />
       <Nest />
-      <FD />
-      <Features />
+      <Offerings />
       <Partners />
     </main>
   );
