@@ -24,10 +24,10 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_utv2.png"
-            width={1240}
-            height={1480}
-            alt="home"
+            src="/i_ut2.png"
+            width={1020}
+            height={1240}
+            alt="ut"
           />
 
           <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
@@ -51,10 +51,10 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_ccv2.png"
-            width={1240}
-            height={1480}
-            alt="credit card"
+            src="/i_cc2.png"
+            width={1020}
+            height={1240}
+            alt="cc"
           />
 
           <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
@@ -78,10 +78,10 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_fdv2.png"
-            width={1240}
-            height={1480}
-            alt="fd icon"
+            src="/i_fd2.png"
+            width={1020}
+            height={1240}
+            alt="fd"
           />
 
           <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
@@ -105,10 +105,10 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_nsv2.png"
-            width={1240}
-            height={1480}
-            alt="vault icon"
+            src="/i_ns2.png"
+            width={1020}
+            height={1240}
+            alt="ns"
           />
 
           <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
@@ -132,10 +132,10 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/img_crv2.png"
-            width={1240}
-            height={1480}
-            alt="credit card"
+            src="/i_cr2.png"
+            width={1020}
+            height={1240}
+            alt="cr"
           />
 
           <div className="xl:max-w-[620px] lg:max-w-[540px] text-center lg:text-left items-center lg:items-start flex flex-col gap-2">
