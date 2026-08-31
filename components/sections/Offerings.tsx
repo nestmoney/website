@@ -24,7 +24,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/i_ut2.png"
+            src="/i_ut.png"
             width={1020}
             height={1240}
             alt="ut"
@@ -51,7 +51,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/i_cc2.png"
+            src="/i_cc.png"
             width={1020}
             height={1240}
             alt="cc"
@@ -78,7 +78,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/i_fd2.png"
+            src="/i_fd.png"
             width={1020}
             height={1240}
             alt="fd"
@@ -105,7 +105,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/i_ns2.png"
+            src="/i_ns.png"
             width={1020}
             height={1240}
             alt="ns"
@@ -132,7 +132,7 @@ const Offerings = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <Image
             className="w-[220px] md:w-[300px] lg:w-[300px] xl:w-[340px] h-auto object-contain shrink-0"
-            src="/i_cr2.png"
+            src="/i_cr.png"
             width={1020}
             height={1240}
             alt="cr"
