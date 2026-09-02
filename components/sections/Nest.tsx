@@ -30,7 +30,7 @@ export default function NestSection() {
             </span>
             <span className="block mt-2 lg:mt-4">
               Easily manage finances in separate Nests,<br />
-              <span className="text-primary-blue font-semibold italic font-playfair mr-1">solo or shared</span> with your spouse or parents
+              <span className="text-primary-blue font-semibold italic font-playfair">solo or shared </span> with your spouse or parents
             </span>
           </p>
         </div>
