@@ -42,7 +42,7 @@ const Offerings = () => {
               Utility bills & recharges
             </h3>
             <p className="small-body1">
-              Manage all your <span className="text-primary-blue font-semibold italic font-playfair">household bills </span> like electricity, mobile recharges, insurance premiums, LPG gas, and more in one place
+              Manage all your household bills like<br />electricity, mobile recharges, insurance<br />premiums, LPG, and more <span className="text-primary-blue font-semibold italic font-playfair">in one place</span>
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ const Offerings = () => {
               Credit card bills
             </h3>
             <p className="small-body1">
-              Manage all your family’s <span className="text-primary-blue font-semibold italic font-playfair">credit card bills </span> in one place, get timely reminders, so that no one ever misses a due date
+              Manage all your family’s credit card bills<br /><span className="text-primary-blue font-semibold italic font-playfair">in one place</span>, get timely reminders, so no one<br />ever misses a due date
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Offerings = () => {
               Fixed deposit
             </h3>
             <p className="small-body1">
-              Invest in <span className="text-primary-blue font-semibold italic font-playfair"> high interest rate </span> FDs offered by RBI regulated Banks & NBFCs. Secure. Instant. No new bank account needed
+              Invest in <span className="text-primary-blue font-semibold italic font-playfair"> high interest rate </span> FDs offered by RBI<br />regulated Banks & NBFCs. Secure. Instant.<br />No new bank account needed
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ const Offerings = () => {
               Nest safe
             </h3>
             <p className="small-body1">
-              Securely share <span className="text-primary-blue font-semibold italic font-playfair">important documents </span>like insurance and health cards so your family can access them when it matters most
+              Securely share important documents like<br />insurance and health cards so your family<br />can access them <span className="text-primary-blue font-semibold italic font-playfair">when it matters most</span>
             </p>
           </div>
         </div>
@@ -150,7 +150,7 @@ const Offerings = () => {
               Credit reports
             </h3>
             <p className="small-body1">
-              Track all ongoing loans and monitor each other’s credit reports to maintain your family’s overall <span className="text-primary-blue font-semibold italic font-playfair">financial wellbeing</span>
+              Track all ongoing loans and monitor each<br />other’s credit reports to maintain your<br />family’s overall <span className="text-primary-blue font-semibold italic font-playfair">financial wellbeing</span>
             </p>
           </div>
         </div>
