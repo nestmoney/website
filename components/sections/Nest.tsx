@@ -1,18 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
 export default function NestSection() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch((error) => {
-        console.log("Video autoplay prevented by browser (likely Low Power Mode):", error);
-      });
-    }
-  }, []);
-
   return (
     <section id="nest" className="scroll-mt-[70px] md:scroll-mt-[74px]">
       <div className="flex lg:flex-row flex-col gap-12 justify-between items-center">
@@ -35,14 +23,9 @@ export default function NestSection() {
           </p>
         </div>
 
-        <video
-          ref={videoRef}
-          src="/nestswitchvid.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
+        <img
+          src="/nestswitchvid.gif"
+          alt="Nest switching animation"
           className="w-[240px] md:w-[320px] lg:w-[320px] xl:w-[360px] object-cover shrink-0"
         />
       </div>
